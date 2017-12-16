@@ -72,6 +72,7 @@
 
 		<!--加解密-->
 		<bcprov-ext-jdk15.version>1.46</bcprov-ext-jdk15.version>
+		<bcprov-ext-jdk15on.version>1.58</bcprov-ext-jdk15on.version>
 		<bcprov-jdk15on.version>1.58</bcprov-jdk15on.version>
 		<!-- 冲突包 慎用-->
 		<curator.version>2.12.0</curator.version>
@@ -564,10 +565,15 @@
 				<version>${j8583.version}</version>
 		    </dependency>
 			<!-- 加解密工具 begin -->
-			<dependency>
+		<!--	<dependency>
 				<groupId>org.bouncycastle</groupId>
 				<artifactId>bcprov-ext-jdk15</artifactId>
 				<version>${bcprov-ext-jdk15.version}</version>
+			</dependency>-->
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcprov-ext-jdk15on</artifactId>
+				<version>${bcprov-ext-jdk15on.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.bouncycastle</groupId>
