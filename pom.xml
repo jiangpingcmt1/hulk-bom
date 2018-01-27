@@ -71,9 +71,9 @@
 		<aliyun-sdk-oss.version>3.0.0</aliyun-sdk-oss.version>
 
 		<!--加解密-->
-		<bcprov-ext-jdk15.version>1.46</bcprov-ext-jdk15.version>
 		<bcprov-ext-jdk15on.version>1.59</bcprov-ext-jdk15on.version>
 		<bcprov-jdk15on.version>1.59</bcprov-jdk15on.version>
+		<bcpkix-jdk15on.version>1.59</bcpkix-jdk15on.version>
 		<!-- 冲突包 慎用-->
 		<curator.version>2.12.0</curator.version>
 		<elastic-job.version>2.1.5</elastic-job.version>
@@ -81,7 +81,7 @@
 		<sharding-jdbc.version>1.5.4.1</sharding-jdbc.version>
 		<io.netty.version>4.0.35.Final</io.netty.version>
 
-
+		<!--<bcprov-ext-jdk15.version>1.46</bcprov-ext-jdk15.version>-->
 		<!--<h2.version>1.4.196</h2.version>-->
 		<!--<hessian_lite.version>3.2.1-fixed</hessian_lite.version>-->
 		<!--<fastdfs_client_v.version>1.24</fastdfs_client_v.version>-->
@@ -579,6 +579,11 @@
 				<groupId>org.bouncycastle</groupId>
 				<artifactId>bcprov-jdk15on</artifactId>
 				<version>${bcprov-jdk15on.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcpkix-jdk15on</artifactId>
+				<version>${bcpkix-jdk15on.version}</version>
 			</dependency>
 			 <!-- 加解密工具 end -->
 			<!--图片工具-->
