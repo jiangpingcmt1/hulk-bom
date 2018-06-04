@@ -68,6 +68,7 @@
 		<hutool-all-new.vesion>4.0.10</hutool-all-new.vesion>
 		<jjwt.version>0.9.0</jjwt.version>
 		<flowable.version>6.3.0</flowable.version>
+		<lcn.version>4.1.0</lcn.version>
 
 		<!--阿里云-->
 		<edas-sdk.version>1.8.1</edas-sdk.version>
@@ -762,6 +763,34 @@
 				<artifactId>spring-cloud-starter-pandora</artifactId>
 				<version>${spring-cloud-starter-pandora.version}</version>
 			</dependency>
+
+			<!-- lcn分布式事物 -->
+			<dependency>
+				<groupId>com.codingapi</groupId>
+				<artifactId>tx-client</artifactId>
+				<version>${lcn.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.codingapi</groupId>
+				<artifactId>tx-plugins-db</artifactId>
+				<version>${lcn.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.codingapi</groupId>
+				<artifactId>transaction-dubbo</artifactId>
+				<version>${lcn.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.codingapi</groupId>
+				<artifactId>transaction-motan</artifactId>
+				<version>${lcn.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.codingapi</groupId>
+				<artifactId>transaction-springcloud</artifactId>
+				<version>${lcn.version}</version>
+			</dependency>
+
 
 			<!-- 临时的 begin -->
 			<dependency>
