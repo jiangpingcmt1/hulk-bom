@@ -636,7 +636,6 @@
 				<artifactId>uasparser</artifactId>
 				<version>${uasparser.version}</version>
 			</dependency>
-
 			<!-- mvc路径伪静态 begin -->
 			<dependency>
 				<groupId>org.tuckey</groupId>
@@ -649,7 +648,6 @@
 				<artifactId>UserAgentUtils</artifactId>
 				<version>1.20</version>
 			</dependency>
-
 			<!-- 图片Meta获取 -->
 			<dependency>
 				<groupId>com.drewnoakes</groupId>
@@ -657,14 +655,12 @@
 				<version>2.9.1</version>
 			</dependency>
 			<!-- 缩略图工具  -->
-
 			<!-- 反射工具 -->
 			<dependency>
                 <groupId>org.reflections</groupId>
                 <artifactId>reflections</artifactId>
                 <version>${reflections.version}</version>
             </dependency>
-
 			<!--二维码 begin -->
 			<dependency>
 				<groupId>com.google.zxing</groupId>
@@ -763,7 +759,6 @@
 				<artifactId>spring-cloud-starter-pandora</artifactId>
 				<version>${spring-cloud-starter-pandora.version}</version>
 			</dependency>
-
 			<!-- lcn分布式事物 -->
 			<dependency>
 				<groupId>com.codingapi</groupId>
@@ -790,8 +785,13 @@
 				<artifactId>transaction-springcloud</artifactId>
 				<version>${lcn.version}</version>
 			</dependency>
-
-
+			<!-- 异步操作校验工具 -->
+			<dependency>
+				<groupId>org.awaitility</groupId>
+				<artifactId>awaitility</artifactId>
+				<version>3.1.0</version>
+				<scope>test</scope>
+			</dependency>
 			<!-- 临时的 begin -->
 			<dependency>
 				<groupId>org.apache.tomcat</groupId>
