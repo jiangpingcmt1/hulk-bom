@@ -711,7 +711,7 @@
 			<dependency>
 				<groupId>cn.hutool</groupId>
 				<artifactId>hutool-all</artifactId>
-				<version>${hutool-all-new.vesion}</version>
+				<version>${hutool.vesion}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.flowable</groupId>
