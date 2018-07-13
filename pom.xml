@@ -64,6 +64,8 @@
 		<jpos.version>2.1.1</jpos.version>
 		<j8583.version>1.12.0</j8583.version>
 
+		<metadata-extractor.version>2.11.0</metadata-extractor.version>
+		<UserAgentUtils.version>1.21</UserAgentUtils.version>
 		<jjwt.version>0.9.1</jjwt.version>
 		<flowable.version>6.3.1</flowable.version>
 		<jetcache-starter-redis.version>2.5.5</jetcache-starter-redis.version>
@@ -658,13 +660,13 @@
 			<dependency>
 				<groupId>eu.bitwalker</groupId>
 				<artifactId>UserAgentUtils</artifactId>
-				<version>1.20</version>
+				<version>${UserAgentUtils.version}</version>
 			</dependency>
 			<!-- 图片Meta获取 -->
 			<dependency>
 				<groupId>com.drewnoakes</groupId>
 				<artifactId>metadata-extractor</artifactId>
-				<version>2.9.1</version>
+				<version>${metadata-extractor.version}</version>
 			</dependency>
 			<!-- 缩略图工具  -->
 			<!-- 反射工具 -->
