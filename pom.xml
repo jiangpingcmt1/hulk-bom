@@ -95,42 +95,15 @@
 		<tio.version>3.1.0.v20180705-RELEASE</tio.version>
         <smartboot-aio.version>1.3.12</smartboot-aio.version>
 
+		<!--kotlin -->
+        <kotlin.version>1.2.21</kotlin.version>
+
+
+
 		<!--私服包-->
 		<ojdbc6.version>1.6</ojdbc6.version>
 		<sequence.version>1.0.0</sequence.version>
-		<!--<quartz.version>2.2.3</quartz.version>
-		<quartz-jobs.version>2.2.3</quartz-jobs.version>-->
-		<!--<spring-boot-starter-dubbo.version>1.0.11</spring-boot-starter-dubbo.version>-->
-		<!--<bcprov-ext-jdk15.version>1.46</bcprov-ext-jdk15.version>-->
-		<!--<h2.version>1.4.196</h2.version>-->
-		<!--<hessian_lite.version>3.2.1-fixed</hessian_lite.version>-->
-		<!--<fastdfs_client_v.version>1.24</fastdfs_client_v.version>-->
-        <!--     <cglib-nodep.version>3.2.5</cglib-nodep.version>  -->
-		<!-- <commons-lang.version>2.6</commons-lang.version> -->
-		<!-- <commons-beanutils.version>1.9.2</commons-beanutils.version> -->
-		<!-- <commons-collections.version>3.2.2</commons-collections.version> -->
-		<!-- <javax-validation.version>1.1.0.Final</javax-validation.version> -->
-		<!-- <hibernate-validator.version>5.3.4.Final</hibernate-validator.version> -->
-		<!-- <lombok.version>1.16.4</lombok.version> -->
-		<!-- <joda-time.version>2.9.3</joda-time.version> -->
-		<!-- <mysql.version>5.1.41</mysql.version> -->
-		<!-- <gson.version>2.8.0</gson.version> -->
-		<!-- <jackson.version>2.6.7</jackson.version> -->
-		<!-- <httpclient.version>4.3.2</httpclient.version> -->
-		<!-- <junit.version>4.12</junit.version> -->
-		<!-- <mockito.version>1.10.19</mockito.version> -->
-		<!-- <hamcrest.version>1.3</hamcrest.version> -->
-		<!-- <guava.version>18.0</guava.version> -->
-		<!-- <spring.version>4.3.7.RELEASE</spring.version> -->
-		<!-- <spring-boot.version>1.5.2.RELEASE</spring-boot.version> -->
-		<!-- <spring-retry.version>1.2.0.RELEASE</spring-retry.version> -->
-		<!-- <commons-lang3.version>3.2.1</commons-lang3.version> -->
-		<!-- <activemq.version>5.14.3</activemq.version> -->
-		<!-- <xstream.version>1.4.9</xstream.version> -->
-		<!-- <mybatis-ehcache.version>1.1.0</mybatis-ehcache.version> -->
-		<!-- <aopalliance.version>1.0</aopalliance.version> -->
-		<!-- <jaxen.version>1.1</jaxen.version> -->
-		<!-- <dom4j.version>1.6.1</dom4j.version> -->
+
 	</properties>
 	
 
@@ -388,31 +361,6 @@
                 <artifactId>dubbo-spring-boot-starter</artifactId>
                 <version>${dubbo-spring-boot-starter.version}</version>
             </dependency>
-
-			<!--<dependency>
-				<groupId>com.gitee.reger</groupId>
-				<artifactId>spring-boot-starter-dubbo</artifactId>
-				<version>${spring-boot-starter-dubbo.version}</version>
-                <exclusions>
-					<exclusion>
-						<artifactId>spring-boot-starter</artifactId>
-						<groupId>org.springframework.boot</groupId>
-					</exclusion>
-                    <exclusion>
-                        <artifactId>spring-boot-starter-validation</artifactId>
-                        <groupId>org.springframework.boot</groupId>
-                    </exclusion>
-                    <exclusion>
-                        <artifactId>spring-boot-configuration-processor</artifactId>
-                        <groupId>org.springframework.boot</groupId>
-                    </exclusion>
-            </exclusions>
-			</dependency>-->
-			<!--<dependency>
-				<groupId>com.alibaba</groupId>
-				<artifactId>hessian-lite</artifactId>
-				<version>${hessian_lite.version}</version>
-			</dependency>-->
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-aspects</artifactId>
@@ -600,11 +548,6 @@
 				<version>${j8583.version}</version>
 		    </dependency>
 			<!-- 加解密工具 begin -->
-		<!--	<dependency>
-				<groupId>org.bouncycastle</groupId>
-				<artifactId>bcprov-ext-jdk15</artifactId>
-				<version>${bcprov-ext-jdk15.version}</version>
-			</dependency>-->
 			<dependency>
 				<groupId>org.bouncycastle</groupId>
 				<artifactId>bcprov-ext-jdk15on</artifactId>
@@ -828,6 +771,12 @@
 				<artifactId>aio-pro</artifactId>
 				<version>${smartboot-aio.version}</version>
 			</dependency>
+			<!--kotilin-->
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-noarg</artifactId>
+				<version>${kotlin.version}</version>
+			</dependency>
 			<!--私服包 -->
 			<dependency>
 				<groupId>com.oracle</groupId>
@@ -876,25 +825,10 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-			<dependency>
-				<groupId>org.db4j</groupId>
-				<artifactId>reflectasm</artifactId>
-				<version>1.11.4-2</version>
-			</dependency>
-			<dependency>
-				<groupId>com.google.http-client</groupId>
-				<artifactId>google-http-client</artifactId>
-				<version>1.20.0</version>
-			</dependency>
-			<dependency>
-				<groupId>com.google.apis</groupId>
-				<artifactId>google-api-services-drive</artifactId>
-				<version>v2-rev99-1.17.0-rc</version>
-			</dependency>
-
 			<!-- 临时的 end -->
 		</dependencies>
 	</dependencyManagement>
+
 	<dependencies>
 	
 	</dependencies>
