@@ -107,14 +107,10 @@
 		<sequence.version>1.0.0</sequence.version>
 
 	</properties>
-	
-
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-parent</artifactId> 
-				<version>${spring-boot.version}</version> <type>pom</type> <scope>import</scope> 
-				</dependency> -->
+
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -156,26 +152,6 @@
 				<artifactId>druid</artifactId>
 				<version>${druid.version}</version>
 			</dependency>
-			<!--<dependency>
-				<groupId>org.quartz-scheduler</groupId>
-				<artifactId>quartz</artifactId>
-				<version>${quartz.version}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>slf4j-api</artifactId>
-						<groupId>org.slf4j</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>c3p0</artifactId>
-						<groupId>c3p0</groupId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>org.quartz-scheduler</groupId>
-				<artifactId>quartz-jobs</artifactId>
-				<version>${quartz-jobs.version}</version>
-			</dependency>-->
 			<dependency>
 				<groupId>com.dangdang</groupId>
 				<artifactId>elastic-job-lite-core</artifactId>
@@ -231,18 +207,6 @@
 				<artifactId>fastdfs-client</artifactId>
 				<version>${fastdfs_taobao_client.version}</version>
 			</dependency>
-			<!--<dependency>
-                <groupId>org.csource</groupId>
-                <artifactId>fastdfs</artifactId>
-                <version>${fastdfs_client_v.version}</version>
-            </dependency>-->
-			<!-- <dependency> <groupId>org.mybatis.caches</groupId> <artifactId>mybatis-ehcache</artifactId> 
-				<version>${mybatis-ehcache.version}</version> <exclusions> <exclusion> <artifactId>ehcache-core</artifactId> 
-				<groupId>net.sf.ehcache</groupId> </exclusion> </exclusions> </dependency> -->
-			<!-- <dependency> <groupId>com.dangdang</groupId> <artifactId>sharding-jdbc-transaction-storage</artifactId> 
-				<version>${sharding-jdbc.version}</version> </dependency> <dependency> <groupId>com.dangdang</groupId> 
-				<artifactId>sharding-jdbc-config-common</artifactId> <version>${sharding-jdbc.version}</version> 
-				</dependency> -->
 			<dependency>
 				<groupId>com.101tec</groupId>
 				<artifactId>zkclient</artifactId>
@@ -556,17 +520,11 @@
 				<artifactId>bcpkix-jdk15on</artifactId>
 				<version>${bcpkix-jdk15on.version}</version>
 			</dependency>
-			 <!-- 加解密工具 end -->
 			<!--图片工具-->
 			<dependency>
 				<groupId>net.coobird</groupId>
 				<artifactId>thumbnailator</artifactId>
 				<version>${thumbnailator.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.belerweb</groupId>
-				<artifactId>pinyin4j</artifactId>
-				<version>${pinyin4j.version}</version>
 			</dependency>
 			<!--浏览器识别工具 -->
 			<dependency>
@@ -592,7 +550,6 @@
 				<artifactId>metadata-extractor</artifactId>
 				<version>${metadata-extractor.version}</version>
 			</dependency>
-			<!-- 缩略图工具  -->
 			<!-- 反射工具 -->
 			<dependency>
                 <groupId>org.reflections</groupId>
@@ -634,6 +591,17 @@
 	            <artifactId>disruptor</artifactId>
 	            <version>${disruptor.version}</version>
             </dependency>
+			<!-- html工具 -->
+			<dependency>
+				<groupId>org.jsoup</groupId>
+				<artifactId>jsoup</artifactId>
+				<version>${jsoup.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.belerweb</groupId>
+				<artifactId>pinyin4j</artifactId>
+				<version>${pinyin4j.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>cn.hutool</groupId>
 				<artifactId>hutool-all</artifactId>
@@ -658,18 +626,6 @@
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt</artifactId>
 				<version>${jjwt.version}</version>
-			</dependency>
-			<!-- html工具 -->
-			<dependency>
-			    <groupId>org.jsoup</groupId>
-			    <artifactId>jsoup</artifactId>
-			    <version>${jsoup.version}</version>
-			</dependency>
-			<!-- kotlin jackson 问题解决 -->
-			<dependency>
-				<groupId>com.fasterxml.jackson.module</groupId>
-				<artifactId>jackson-module-kotlin</artifactId>
-				<version>${jackson-module-kotlin.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.alicp.jetcache</groupId>
@@ -697,7 +653,6 @@
 				<artifactId>spring-cloud-starter-pandora</artifactId>
 				<version>${spring-cloud-starter-pandora.version}</version>
 			</dependency>
-
 			<!-- 异步操作校验工具 -->
 			<dependency>
 				<groupId>org.awaitility</groupId>
@@ -705,7 +660,6 @@
 				<version>${awaitility.version}</version>
 				<scope>test</scope>
 			</dependency>
-
 			<!-- lcn分布式事物 -->
 			<dependency>
 				<groupId>com.codingapi</groupId>
@@ -811,6 +765,11 @@
 				<artifactId>kotlin-test-junit</artifactId>
 				<version>${kotlin.version}</version>
 				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.module</groupId>
+				<artifactId>jackson-module-kotlin</artifactId>
+				<version>${jackson-module-kotlin.version}</version>
 			</dependency>
 			<!--plugin-->
 			<!--<dependency>
