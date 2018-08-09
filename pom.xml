@@ -66,10 +66,10 @@
 		<jackson-module-kotlin.version>2.9.6</jackson-module-kotlin.version>
 		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
 
-
 		<!--阿里云-->
 		<edas-sdk.version>1.8.1</edas-sdk.version>
 		<aliyun-sdk-oss.version>3.1.0</aliyun-sdk-oss.version>
+		<ons-client.version>1.7.8.Final</ons-client.version>
         <spring-cloud-starter-vipclient.version>1.1</spring-cloud-starter-vipclient.version>
         <spring-cloud-starter-pandora.version>1.2</spring-cloud-starter-pandora.version>
 
