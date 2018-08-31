@@ -67,7 +67,6 @@
 		<jetcache-starter-redis.version>2.5.6</jetcache-starter-redis.version>
 		<jackson-module-kotlin.version>2.9.6</jackson-module-kotlin.version>
 		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
-		<jsr305.version>3.0.2</jsr305.version>
 
 		<!--阿里云-->
 		<edas-sdk.version>1.8.1</edas-sdk.version>
@@ -639,11 +638,7 @@
 				<artifactId>jetcache-starter-redis</artifactId>
 				<version>${jetcache-starter-redis.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.google.code.findbugs</groupId>
-				<artifactId>jsr305</artifactId>
-				<version>${jsr305.version}</version>
-			</dependency>
+
 			<!--阿里云-->
 			<dependency>
 				<groupId>com.alibaba.edas</groupId>
