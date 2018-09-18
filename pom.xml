@@ -100,17 +100,14 @@
 		<!--私服包-->
 		<sequence.version>1.0.0</sequence.version>
 		<ojdbc6.version>1.6</ojdbc6.version>
-
 	</properties>
-	
-
 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Finchley.RELEASE</version>
+				<version>Finchley.SR1</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -390,7 +387,6 @@
 				</exclusions>
 				<version>${dom4j.version}</version>
 			</dependency>
-
 			<dependency>
 				<groupId>org.apache.curator</groupId>
 				<artifactId>curator-framework</artifactId>
