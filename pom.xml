@@ -33,7 +33,6 @@
 		<dozer.version>5.5.1</dozer.version>
 		<jodd.version>5.0.4</jodd.version>
 
-
 		<fastdfs_taobao_client.version>1.26.2</fastdfs_taobao_client.version>
 		<cglib.version>3.2.8</cglib.version>
 		<saxpath.version>1.0-FCS</saxpath.version>
