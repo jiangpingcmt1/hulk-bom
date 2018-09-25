@@ -66,7 +66,7 @@
 		<jetcache.version>2.5.7</jetcache.version>
 		<jackson-module-kotlin.version>2.9.6</jackson-module-kotlin.version>
 		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
-
+		<easyexcel.version>1.0.4</easyexcel.version>
 		<!--阿里云-->
 		<edas-sdk.version>1.8.1</edas-sdk.version>
 		<aliyun-sdk-oss.version>3.3.0</aliyun-sdk-oss.version>
@@ -703,6 +703,11 @@
 				<groupId>cn.afterturn</groupId>
 				<artifactId>easypoi-annotation</artifactId>
 				<version>${easypoi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>easyexcel</artifactId>
+				<version>${easyexcel.version}</version>
 			</dependency>
 			<!--通讯框架-->
 			<dependency>
