@@ -4,11 +4,11 @@
 	<parent>
         <groupId>io.spring.platform</groupId>
         <artifactId>platform-bom</artifactId>
-        <version>Cairo-SR4</version>
+        <version>Cairo-SR5</version>
     </parent>
 	<groupId>com.hulk</groupId>
 	<artifactId>hulk-bom</artifactId>
-	<version>2.0.5</version>
+	<version>2.0.6</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -658,12 +658,11 @@
 				<artifactId>ons-client</artifactId>
 				<version>${ons-client.version}</version>
 			</dependency>
-			<!-- 异步操作校验工具 -->
+			<!-- 异步操作校验工具 test -->
 			<dependency>
 				<groupId>org.awaitility</groupId>
 				<artifactId>awaitility</artifactId>
 				<version>${awaitility.version}</version>
-				<scope>test</scope>
 			</dependency>
 			<!-- lcn分布式事物 -->
 			<dependency>
