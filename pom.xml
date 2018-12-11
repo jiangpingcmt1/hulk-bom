@@ -71,6 +71,7 @@
 		<wiremock.version>2.19.0</wiremock.version>
 		<p6spy.version>3.8.0</p6spy.version>
 		<modelmapper.version>2.3.2</modelmapper.version>
+		<vjtools.version>1.0.7</vjtools.version>
 
 		<!--阿里云-->
 		<edas-sdk.version>1.8.1</edas-sdk.version>
@@ -112,7 +113,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Finchley.SR1</version>
+				<version>Finchley.SR2</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -120,6 +121,13 @@
 				<groupId>org.apache.rocketmq</groupId>
 				<artifactId>rocketmq-all</artifactId>
 				<version>${rocketmq.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.vip.vjtools</groupId>
+				<artifactId>vjtools</artifactId>
+				<version>${vjtools.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
