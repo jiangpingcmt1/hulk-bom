@@ -8,7 +8,7 @@
     </parent>
 	<groupId>com.hulk</groupId>
 	<artifactId>hulk-bom</artifactId>
-	<version>2.0.7</version>
+	<version>2.0.7.1</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -17,9 +17,9 @@
 
 		<mybatis.version>3.4.6</mybatis.version>
 		<mybatis-spring-boot-starter.version>1.3.2</mybatis-spring-boot-starter.version>
-		<mybatis-plus.version>3.0.6</mybatis-plus.version>
-		<mybatis-plus-boot-starter.version>3.0.6</mybatis-plus-boot-starter.version>
-		<jsqlparser.version>1.3</jsqlparser.version>
+		<mybatis-plus.version>3.0.7.1</mybatis-plus.version>
+		<mybatis-plus-boot-starter.version>3.0.7.1</mybatis-plus-boot-starter.version>
+		<jsqlparser.version>1.4</jsqlparser.version>
 		<druid.version>1.1.10</druid.version>
 		<druid-spring-boot-starter.version>1.1.10</druid-spring-boot-starter.version>
 		<zkclient.version>0.11</zkclient.version>
@@ -27,14 +27,14 @@
 		<dubbo.version>2.6.4</dubbo.version>
         <dubbo-spring-boot-starter.version>0.2.0</dubbo-spring-boot-starter.version>
 		<rocketmq.version>4.3.2</rocketmq.version>
-		<spring-boot-starter-rocketmq.version>1.2.0.RELEASE</spring-boot-starter-rocketmq.version>
+		<rocketmq-spring-boot-starter.version>2.0.1</rocketmq-spring-boot-starter.version>
 
 		<fastjson.version>1.2.54</fastjson.version>
 		<dozer.version>5.5.1</dozer.version>
 		<jodd.version>5.0.6</jodd.version>
 
 		<fastdfs_taobao_client.version>1.26.4</fastdfs_taobao_client.version>
-		<cglib.version>3.2.9</cglib.version>
+		<cglib.version>3.2.10</cglib.version>
 		<saxpath.version>1.0-FCS</saxpath.version>
 
 		<contiperf.version>2.3.4</contiperf.version>
@@ -62,21 +62,21 @@
 		<metadata-extractor.version>2.11.0</metadata-extractor.version>
 		<UserAgentUtils.version>1.21</UserAgentUtils.version>
 		<jjwt.version>0.9.1</jjwt.version>
-		<flowable.version>6.4.0</flowable.version>
-		<jetcache.version>2.5.9</jetcache.version>
-		<jackson-module-kotlin.version>2.9.7</jackson-module-kotlin.version>
+		<flowable.version>6.4.1</flowable.version>
+		<jetcache.version>2.5.10.1</jetcache.version>
+		<jackson-module-kotlin.version>2.9.8</jackson-module-kotlin.version>
 		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
-		<easyexcel.version>1.1.1</easyexcel.version>
+
 		<ttl.version>2.10.2</ttl.version>
 		<wiremock.version>2.19.0</wiremock.version>
-		<p6spy.version>3.8.0</p6spy.version>
+		<p6spy.version>3.8.1</p6spy.version>
 		<modelmapper.version>2.3.2</modelmapper.version>
-		<vjtools.version>1.0.7</vjtools.version>
-
+		<vjtools.version>1.0.8</vjtools.version>
+		<easyexcel.version>1.1.1</easyexcel.version>
 		<!--阿里云-->
-		<edas-sdk.version>1.8.1</edas-sdk.version>
-		<aliyun-sdk-oss.version>3.3.0</aliyun-sdk-oss.version>
-		<ons-client.version>1.7.8.Final</ons-client.version>
+		<edas-sdk.version>1.8.2</edas-sdk.version>
+		<aliyun-sdk-oss.version>3.4.0</aliyun-sdk-oss.version>
+		<ons-client.version>1.7.9.Final</ons-client.version>
 
 		<!--加解密-->
 		<bcprov-ext-jdk15on.version>1.60</bcprov-ext-jdk15on.version>
@@ -84,7 +84,7 @@
 		<bcpkix-jdk15on.version>1.60</bcpkix-jdk15on.version>
 
 		<!--异步校验工具-->
-		<awaitility.version>3.1.2</awaitility.version>
+		<awaitility.version>3.1.5</awaitility.version>
 
 		<!-- 冲突包 慎用-->
 		<curator.version>2.12.0</curator.version>
@@ -93,14 +93,14 @@
 		<io.netty.version>4.0.56.Final</io.netty.version>
 
 		<!--码云项目-->
-		<easypoi.version>3.3.0</easypoi.version>
+		<easypoi.version>4.0.0</easypoi.version>
 		<lcn.version>4.1.0</lcn.version>
-		<hutool.vesion>4.3.0</hutool.vesion>
-		<tio.version>3.2.3.v20181212-RELEASE</tio.version>
+		<hutool.vesion>4.4.1</hutool.vesion>
+		<tio.version>3.2.6.v20190110-RELEASE</tio.version>
         <smartboot-aio.version>1.3.23</smartboot-aio.version>
 
 		<!--微信工具包-->
-		<weixin-java.version>3.2.8.B</weixin-java.version>
+		<weixin-java.version>3.3.0</weixin-java.version>
 		<fastweixin.version>1.3.15</fastweixin.version>
 
 		<!--私服包-->
@@ -193,6 +193,11 @@
 			<dependency>
 				<groupId>com.baomidou</groupId>
 				<artifactId>mybatis-plus</artifactId>
+				<version>${mybatis-plus.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatis-plus-generator</artifactId>
 				<version>${mybatis-plus.version}</version>
 			</dependency>
 			<dependency>
@@ -337,9 +342,9 @@
 				</exclusions>
 			</dependency>
 			<dependency>
-				<groupId>org.rocketmq</groupId>
-				<artifactId>spring-boot-starter-rocketmq</artifactId>
-				<version>${spring-boot-starter-rocketmq.version}</version>
+				<groupId>org.apache.rocketmq</groupId>
+				<artifactId>rocketmq-spring-boot-starter</artifactId>
+				<version>${rocketmq-spring-boot-starter.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
