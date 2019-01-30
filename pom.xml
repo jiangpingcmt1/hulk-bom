@@ -16,9 +16,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- BOM -->
 		<platform-bom.version>Cairo-SR7</platform-bom.version>
-		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+		<spring-cloud.version>Finchley.SR2</spring-cloud.version>
+		<!--<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
 		<spring-boot-dependencies.version>2.1.2.RELEASE</spring-boot-dependencies.version>
-		<spring-boot-starter-parent.version>2.1.2.RELEASE</spring-boot-starter-parent.version>
+		<spring-boot-starter-parent.version>2.1.2.RELEASE</spring-boot-starter-parent.version>-->
 		<jackson.modules.version>2.9.7</jackson.modules.version>
 		<rocketmq.version>4.4.0</rocketmq.version>
 		<vjtools.version>1.0.8</vjtools.version>
@@ -132,6 +133,13 @@
 				<scope>import</scope>
 			</dependency>
 			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!--<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
 				<version>${spring-boot-dependencies.version}</version>
@@ -144,14 +152,8 @@
 				<version>${spring-boot-starter-parent.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
+			</dependency>-->
+
 			<!--jackson模块-->
 			<dependency>
 				<groupId>com.fasterxml.jackson.module</groupId>
