@@ -117,8 +117,9 @@
 		<sequence.version>1.0.0</sequence.version>
 		<ojdbc6.version>1.6</ojdbc6.version>
 
-		<spring-boot-maven-plugin.version>2.1.2.RELEASE</spring-boot-maven-plugin.version>
+		<spring-boot-maven-plugin.version>2.0.8.RELEASE</spring-boot-maven-plugin.version>
 		<docker-maven-plugin.version>0.4.12</docker-maven-plugin.version>
+		<nexus.staging.maven.plugin.version>1.6.3</nexus.staging.maven.plugin.version>
 
 
 	</properties>
@@ -956,6 +957,19 @@
 					</configuration>
 					-->
 				</plugin>
+				<!--
+				<plugin>
+					<groupId>org.sonatype.plugins</groupId>
+					<artifactId>nexus-staging-maven-plugin</artifactId>
+					<version>${nexus.staging.maven.plugin.version}</version>
+					<extensions>true</extensions>
+					<configuration>
+						<serverId>ossrh</serverId>
+						<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+						<autoReleaseAfterClose>true</autoReleaseAfterClose>
+					</configuration>
+				</plugin>
+				-->
 			</plugins>
 		</pluginManagement>
 	</build>
