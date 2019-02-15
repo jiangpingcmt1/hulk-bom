@@ -81,7 +81,9 @@
 		<modelmapper.version>2.3.2</modelmapper.version>
 		<easyexcel.version>1.1.1</easyexcel.version>
 		<dynamic-datasource-spring-boot-starter.version>2.5.0</dynamic-datasource-spring-boot-starter.version>
-
+		<oshi.version>3.13.0</oshi.version>
+		<jna.version>5.2.0</jna.version>
+		<jna-platform.version>5.2.0</jna-platform.version>
 
 		<!--阿里云-->
 		<edas-sdk.version>1.8.2</edas-sdk.version>
@@ -849,7 +851,22 @@
 				<artifactId>modelmapper</artifactId>
 				<version>${modelmapper.version}</version>
 			</dependency>
-
+			<!-- 获取系统信息 -->
+			<dependency>
+				<groupId>com.github.oshi</groupId>
+				<artifactId>oshi-core</artifactId>
+				<version>${oshi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.java.dev.jna</groupId>
+				<artifactId>jna</artifactId>
+				<version>${jna.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.java.dev.jna</groupId>
+				<artifactId>jna-platform</artifactId>
+				<version>${jna-platform.version}</version>
+			</dependency>
 			<!--私服包 -->
 			<dependency>
 				<groupId>com.oracle</groupId>
