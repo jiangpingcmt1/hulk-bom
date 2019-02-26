@@ -23,6 +23,13 @@
 		<rocketmq.version>4.4.0</rocketmq.version>
 		<vjtools.version>1.0.8</vjtools.version>
 		<vertx.version>3.6.3</vertx.version>
+		<zxing.version>3.3.3</zxing.version>
+		<smartboot-aio.version>1.4.0-rc.4</smartboot-aio.version>
+		<sharding-jdbc.version>3.1.0</sharding-jdbc.version>
+		<easypoi.version>4.0.0</easypoi.version>
+		<tx-lcn.version>5.0.1.RELEASE</tx-lcn.version>
+		<wx-java.version>3.3.4.B</wx-java.version>
+
 
 		<mybatis.version>3.4.6</mybatis.version>
 		<mybatis-spring-boot-starter.version>1.3.2</mybatis-spring-boot-starter.version>
@@ -51,7 +58,7 @@
 		<shiro-spring-boot-starter.version>1.4.0</shiro-spring-boot-starter.version>
 		<kaptcha-axet.version>0.0.9</kaptcha-axet.version>
 		<kaptcha-penggle.version>2.3.2</kaptcha-penggle.version>
-		<zxing.version>3.3.3</zxing.version>
+
 		<qrext4j.version>1.3.1</qrext4j.version>
 		<beetl.version>2.9.8</beetl.version>
 		<redisson.version>3.9.1</redisson.version>
@@ -99,17 +106,9 @@
 		<xxl-job-core.version>2.0.1</xxl-job-core.version>
 		<xxl-sso-core.version>1.1.0</xxl-sso-core.version>
 		<xxl-conf-core.version>1.6.1</xxl-conf-core.version>
-		<sharding-jdbc.version>3.1.0</sharding-jdbc.version>
 
-		<!--码云项目-->
-		<easypoi.version>4.0.0</easypoi.version>
-		<tx-lcn.version>5.0.1.RELEASE</tx-lcn.version>
 		<hutool.vesion>4.4.3</hutool.vesion>
 		<tio.version>3.2.6.v20190110-RELEASE</tio.version>
-        <smartboot-aio.version>1.4.0-rc.4</smartboot-aio.version>
-
-		<!--微信工具包-->
-		<wx-java.version>3.3.4.B</wx-java.version>
 		<fastweixin.version>1.3.15</fastweixin.version>
 
 		<!--私服包-->
