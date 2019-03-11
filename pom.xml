@@ -20,26 +20,28 @@
 		<spring-cloud-alibaba.version>0.2.1.RELEASE</spring-cloud-alibaba.version>
 		<spring-boot-admin.version>2.1.3</spring-boot-admin.version>
 
-		<jackson.modules.version>2.9.7</jackson.modules.version>
+		<jackson.modules.version>2.9.8</jackson.modules.version>
 		<rocketmq.version>4.4.0</rocketmq.version>
 		<vjtools.version>1.0.8</vjtools.version>
 		<vertx.version>3.6.3</vertx.version>
 		<zxing.version>3.3.3</zxing.version>
-		<smartboot-aio.version>1.4.0-rc.4</smartboot-aio.version>
-		<sharding-jdbc.version>3.1.0</sharding-jdbc.version>
+		<smartboot-aio.version>1.4.0-rc.5</smartboot-aio.version>
+		<sharding-jdbc.version>4.0.0</sharding-jdbc.version>
 		<easypoi.version>4.0.0</easypoi.version>
-		<tx-lcn.version>5.0.1.RELEASE</tx-lcn.version>
-		<wx-java.version>3.3.4.B</wx-java.version>
-		<jodd.version>5.0.8</jodd.version>
-
+		<easypoi-spring-boot-starter.version>4.0.0</easypoi-spring-boot-starter.version>
+		<tx-lcn.version>5.0.2.RELEASE</tx-lcn.version>
+		<wx-java.version>3.3.5.B</wx-java.version>
+		<jodd.version>5.0.10</jodd.version>
+		<redisson.version>3.10.3</redisson.version>
+		<redisson-spring-boot-starter.version>3.10.4</redisson-spring-boot-starter.version>
 
 		<mybatis.version>3.4.6</mybatis.version>
-		<mybatis-spring-boot-starter.version>1.3.2</mybatis-spring-boot-starter.version>
+		<mybatis-spring-boot-starter.version>1.3.3</mybatis-spring-boot-starter.version>
 		<mybatis-plus.version>3.0.7.1</mybatis-plus.version>
 		<mybatis-plus-boot-starter.version>3.0.7.1</mybatis-plus-boot-starter.version>
 		<jsqlparser.version>1.4</jsqlparser.version>
-		<druid.version>1.1.12</druid.version>
-		<druid-spring-boot-starter.version>1.1.10</druid-spring-boot-starter.version>
+		<druid.version>1.1.14</druid.version>
+		<druid-spring-boot-starter.version>1.1.14</druid-spring-boot-starter.version>
 		<zkclient.version>0.11</zkclient.version>
 		<zookeeper.version>3.4.13</zookeeper.version>
 		<dubbo.version>2.6.4</dubbo.version>
@@ -48,7 +50,6 @@
 
 		<fastjson.version>1.2.56</fastjson.version>
 		<dozer.version>5.5.1</dozer.version>
-
 
 		<fastdfs_taobao_client.version>1.26.4</fastdfs_taobao_client.version>
 		<cglib.version>3.2.10</cglib.version>
@@ -63,7 +64,7 @@
 
 		<qrext4j.version>1.3.1</qrext4j.version>
 		<beetl.version>2.9.8</beetl.version>
-		<redisson.version>3.9.1</redisson.version>
+
         <disruptor.version>3.4.2</disruptor.version>
         <nanohttpd.version>2.3.1</nanohttpd.version>
 
@@ -85,11 +86,11 @@
 		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
 
 		<ttl.version>2.10.2</ttl.version>
-		<wiremock.version>2.19.0</wiremock.version>
+		<wiremock-jre8.version>2.21.0</wiremock-jre8.version>
 		<p6spy.version>3.8.1</p6spy.version>
 		<modelmapper.version>2.3.2</modelmapper.version>
 		<easyexcel.version>1.1.1</easyexcel.version>
-		<dynamic-datasource-spring-boot-starter.version>2.5.0</dynamic-datasource-spring-boot-starter.version>
+		<dynamic-datasource-spring-boot-starter.version>2.5.1</dynamic-datasource-spring-boot-starter.version>
 		<oshi.version>3.13.0</oshi.version>
 		<jna.version>5.2.0</jna.version>
 		<jna-platform.version>5.2.0</jna-platform.version>
@@ -104,14 +105,13 @@
 		<!--加解密-->
 		<bouncycastle.version>1.61</bouncycastle.version>
 		<!--异步校验工具-->
-		<awaitility.version>3.1.5</awaitility.version>
-
+		<awaitility.version>3.1.6</awaitility.version>
 
 		<xxl-job-core.version>2.0.1</xxl-job-core.version>
 		<xxl-sso-core.version>1.1.0</xxl-sso-core.version>
 		<xxl-conf-core.version>1.6.1</xxl-conf-core.version>
-		<hutool.vesion>4.4.3</hutool.vesion>
-		<tio.version>3.2.6.v20190110-RELEASE</tio.version>
+		<hutool.vesion>4.5.1</hutool.vesion>
+		<tio.version>3.2.7.v20190222-RELEASE</tio.version>
 		<fastweixin.version>1.3.15</fastweixin.version>
 
 		<!--私服包-->
@@ -155,16 +155,23 @@
 				<scope>import</scope>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.rocketmq</groupId>
-				<artifactId>rocketmq-all</artifactId>
-				<version>${rocketmq.version}</version>
+				<groupId>io.vertx</groupId>
+				<artifactId>vertx-stack-depchain</artifactId>
+				<version>${vertx.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 			<dependency>
-				<groupId>com.vip.vjtools</groupId>
-				<artifactId>vjtools</artifactId>
-				<version>${vjtools.version}</version>
+				<groupId>org.jodd</groupId>
+				<artifactId>jodd-bom</artifactId>
+				<version>${jodd.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.rocketmq</groupId>
+				<artifactId>rocketmq-all</artifactId>
+				<version>${rocketmq.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -176,51 +183,9 @@
 				<scope>import</scope>
 			</dependency>
 			<dependency>
-				<groupId>io.shardingsphere</groupId>
-				<artifactId>sharding-jdbc</artifactId>
-				<version>${sharding-jdbc.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>com.github.binarywang</groupId>
-				<artifactId>wx-java</artifactId>
-				<version>${wx-java.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>cn.afterturn</groupId>
-				<artifactId>easypoi</artifactId>
-				<version>${easypoi.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.smartboot.socket</groupId>
-				<artifactId>smart-socket-parent</artifactId>
-				<version>${smartboot-aio.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>io.vertx</groupId>
-				<artifactId>vertx-stack-depchain</artifactId>
-				<version>${vertx.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
 				<groupId>com.google.zxing</groupId>
 				<artifactId>zxing-parent</artifactId>
 				<version>${zxing.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.jodd</groupId>
-				<artifactId>jodd-bom</artifactId>
-				<version>${jodd.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -477,12 +442,6 @@
 				<artifactId>beetl</artifactId>
 				<version>${beetl.version}</version>
 			</dependency>
-			<!-- jedis 扩展 -->
-			<dependency>
-				<groupId>org.redisson</groupId>
-				<artifactId>redisson</artifactId>
-				<version>${redisson.version}</version>
-			</dependency>
 			   <!-- 并发框架 -->
 			<dependency>
 	            <groupId>com.lmax</groupId>
@@ -560,8 +519,28 @@
 			</dependency>
 			<dependency>
 				<groupId>cn.afterturn</groupId>
-				<artifactId>easypoi-spring-boot-starter</artifactId>
+				<artifactId>easypoi-web</artifactId>
 				<version>${easypoi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.afterturn</groupId>
+				<artifactId>easypoi-base</artifactId>
+				<version>${easypoi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.afterturn</groupId>
+				<artifactId>easypoi-spring-boot-starter</artifactId>
+				<version>${easypoi-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.smartboot.socket</groupId>
+				<artifactId>aio-core</artifactId>
+				<version>${smartboot-aio.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.smartboot.socket</groupId>
+				<artifactId>aio-pro</artifactId>
+				<version>${smartboot-aio.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.alibaba</groupId>
@@ -590,11 +569,6 @@
 				<version>${ttl.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.tomakehurst</groupId>
-				<artifactId>wiremock</artifactId>
-				<version>${wiremock.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>p6spy</groupId>
 				<artifactId>p6spy</artifactId>
 				<version>${p6spy.version}</version>
@@ -603,6 +577,72 @@
 				<groupId>org.modelmapper</groupId>
 				<artifactId>modelmapper</artifactId>
 				<version>${modelmapper.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vip.vjtools</groupId>
+				<artifactId>vjkit</artifactId>
+				<version>${vjtools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vip.vjtools</groupId>
+				<artifactId>vjmap</artifactId>
+				<version>${vjtools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vip.vjtools</groupId>
+				<artifactId>vjtop</artifactId>
+				<version>${vjtools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vip.vjtools</groupId>
+				<artifactId>vjmxcli</artifactId>
+				<version>${vjtools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.binarywang</groupId>
+				<artifactId>weixin-java-mp</artifactId>
+				<version>${wx-java.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.binarywang</groupId>
+				<artifactId>weixin-java-miniapp</artifactId>
+				<version>${wx-java.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.binarywang</groupId>
+				<artifactId>weixin-java-pay</artifactId>
+				<version>${wx-java.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.binarywang</groupId>
+				<artifactId>weixin-java-open</artifactId>
+				<version>${wx-java.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.binarywang</groupId>
+				<artifactId>weixin-java-cp</artifactId>
+				<version>${wx-java.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.redisson</groupId>
+				<artifactId>redisson</artifactId>
+				<version>${redisson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.redisson</groupId>
+				<artifactId>redisson-spring-boot-starter</artifactId>
+				<version>${redisson-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.tomakehurst</groupId>
+				<artifactId>wiremock-jre8</artifactId>
+				<version>${wiremock-jre8.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.shardingsphere</groupId>
+				<artifactId>sharding-jdbc-core</artifactId>
+				<version>${sharding-jdbc.version}</version>
 			</dependency>
 			<!-- 获取系统信息 -->
 			<dependency>
@@ -631,6 +671,7 @@
 				<artifactId>itextpdf</artifactId>
 				<version>${itextpdf.version}</version>
 			</dependency>
+
 			<!--私服包 -->
 			<dependency>
 				<groupId>com.oracle</groupId>
@@ -738,7 +779,7 @@
 				<groupId>com.alibaba</groupId>
 				<artifactId>dubbo</artifactId>
 				<version>${dubbo.version}</version>
-				<!--<exclusions>
+				<exclusions>
 					<exclusion>
 						<artifactId>spring</artifactId>
 						<groupId>org.springframework</groupId>
@@ -767,7 +808,7 @@
 						<artifactId>spring-beans</artifactId>
 						<groupId>org.springframework</groupId>
 					</exclusion>
-				</exclusions>-->
+				</exclusions>
 			</dependency>
 			<!--有排除 end-->
 			<!--上层有 begin-->
