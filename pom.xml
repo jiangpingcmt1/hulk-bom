@@ -415,7 +415,6 @@
 				<artifactId>metadata-extractor</artifactId>
 				<version>${metadata-extractor.version}</version>
 			</dependency>
-			<!-- 缩略图工具  -->
 			<!-- 反射工具 -->
 			<dependency>
                 <groupId>org.reflections</groupId>
