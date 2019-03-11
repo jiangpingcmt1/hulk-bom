@@ -182,13 +182,6 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<dependency>
-				<groupId>com.google.zxing</groupId>
-				<artifactId>zxing-parent</artifactId>
-				<version>${zxing.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
 			<!--bom-->
 			<dependency>
 				<groupId>com.alibaba</groupId>
@@ -472,6 +465,16 @@
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt</artifactId>
 				<version>${jjwt.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.zxing</groupId>
+				<artifactId>core</artifactId>
+				<version>${zxing.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.zxing</groupId>
+				<artifactId>javase</artifactId>
+				<version>${zxing.version}</version>
 			</dependency>
 			<!-- html工具 -->
 			<dependency>
