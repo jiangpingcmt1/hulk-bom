@@ -261,7 +261,6 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-
 			<dependency>
 				<groupId>io.vertx</groupId>
 				<artifactId>vertx-stack-depchain</artifactId>
@@ -276,6 +275,8 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<!--bom-->
+			<!--打包bom-->
 			<dependency>
 				<groupId>org.apache.rocketmq</groupId>
 				<artifactId>rocketmq-all</artifactId>
@@ -290,7 +291,15 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<!--bom-->
+			<dependency>
+				<groupId>com.fasterxml.jackson.module</groupId>
+				<artifactId>jackson-modules-java8</artifactId>
+				<version>${jackson.modules.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!--打包bom-->
+
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>fastjson</artifactId>
@@ -583,11 +592,7 @@
 				<artifactId>javase</artifactId>
 				<version>${zxing.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.fasterxml.jackson.module</groupId>
-				<artifactId>jackson-modules-java8</artifactId>
-				<version>${jackson.modules.version}</version>
-			</dependency>
+
 			<!-- html工具 -->
 			<dependency>
 			    <groupId>org.jsoup</groupId>
