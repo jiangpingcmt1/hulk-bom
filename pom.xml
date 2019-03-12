@@ -122,11 +122,14 @@
 		<!--私服包-->
 		<sequence.version>1.0.0</sequence.version>
 		<ojdbc6.version>1.6</ojdbc6.version>
-		<!--插件包-->
 
-		<docker-maven-plugin.version>0.4.12</docker-maven-plugin.version>
-		<nexus.staging.maven.plugin.version>1.6.3</nexus.staging.maven.plugin.version>
+		<!--插件包-->
+		<nexus.staging.plugin.version>1.6.8</nexus.staging.plugin.version>
 		<git-commit-id-plugin.version>2.2.5</git-commit-id-plugin.version>
+		<docker.plugin.version>0.4.12</docker.plugin.version>
+
+		<registry.url>192.168.0.13:5000</registry.url>
+		<docker.url>http://192.168.0.13:4243</docker.url>
 
 
 		<!--COPY-->
@@ -218,7 +221,7 @@
 		<protobuf-java-format.version>1.4</protobuf-java-format.version>
 		<rabbit-http-client.version>2.0.2.RELEASE</rabbit-http-client.version>
 		<rometools.version>1.9.0</rometools.version>
-		<selenium-htmlunit-driver.version>${selenium.version}</selenium-htmlunit-driver.version>
+		<!--<selenium-htmlunit-driver.version>${selenium.version}</selenium-htmlunit-driver.version>-->
 		<smack4.version>4.2.4</smack4.version>
 		<sun-facelets.version>1.1.14</sun-facelets.version>
 		<sun-jsf.version>2.2.18</sun-jsf.version>
@@ -1886,6 +1889,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<!--<version>3.8.0</version>-->
 				<configuration>
 					<failOnError>true</failOnError>
 					<verbose>true</verbose>
@@ -1918,12 +1922,7 @@
 				<plugin>
 					<groupId>com.spotify</groupId>
 					<artifactId>docker-maven-plugin</artifactId>
-					<version>${docker-maven-plugin.version}</version>
-					<!--
-					<docker.url>http://192.168.0.13:4243</docker.url>
-					<registry.url>192.168.0.13:5000</registry.url>
-					-->
-					<!--
+					<version>${docker.plugin.version}</version>
 					<configuration>
 						<imageName>${registry.url}/${project.name}:0.0.1</imageName>
 						<dockerHost>${docker.url}</dockerHost>
@@ -1938,18 +1937,16 @@
 						<serverId>docker-hub</serverId>
 						<registryUrl>https://index.docker.io/v1/</registryUrl>
 					</configuration>
-					-->
 				</plugin>
 				<plugin>
 					<groupId>pl.project13.maven</groupId>
 					<artifactId>git-commit-id-plugin</artifactId>
 					<version>${git-commit-id-plugin.version}</version>
 				</plugin>
-				<!--
 				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
 					<artifactId>nexus-staging-maven-plugin</artifactId>
-					<version>${nexus.staging.maven.plugin.version}</version>
+					<version>${nexus.staging.plugin.version}</version>
 					<extensions>true</extensions>
 					<configuration>
 						<serverId>ossrh</serverId>
@@ -1957,7 +1954,6 @@
 						<autoReleaseAfterClose>true</autoReleaseAfterClose>
 					</configuration>
 				</plugin>
-				-->
 			</plugins>
 		</pluginManagement>
 	</build>
