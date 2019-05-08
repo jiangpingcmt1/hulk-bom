@@ -43,8 +43,10 @@
 		<mybatis-plus-boot-starter.version>3.1.1</mybatis-plus-boot-starter.version>
 		<mybatis-plus-dts.version>3.1.1</mybatis-plus-dts.version>
 		<dynamic-datasource-spring-boot-starter.version>2.5.4</dynamic-datasource-spring-boot-starter.version>
-		<jsqlparser.version>1.4</jsqlparser.version>
-       <!-- <jsqlparser.version>2.0</jsqlparser.version>-->
+		<jsqlparser.version>1.2</jsqlparser.version>
+       <!--
+        <jsqlparser.version>1.4</jsqlparser.version>
+        <jsqlparser.version>2.0</jsqlparser.version>-->
 		<druid.version>1.1.16</druid.version>
 		<druid-spring-boot-starter.version>1.1.16</druid-spring-boot-starter.version>
 		<sharding-sphere.version>4.0.0-RC1</sharding-sphere.version>
@@ -122,9 +124,11 @@
 		<!--异步校验工具-->
 		<awaitility.version>3.1.6</awaitility.version>
 
+		<xxl-conf-core.version>1.6.1</xxl-conf-core.version>
 		<xxl-job-core.version>2.0.2</xxl-job-core.version>
 		<xxl-sso-core.version>1.1.1</xxl-sso-core.version>
-		<xxl-conf-core.version>1.6.1</xxl-conf-core.version>
+		<kisso.version>3.7.5</kisso.version>
+
 		<hutool.vesion>4.5.8</hutool.vesion>
 		<tio.version>3.2.9.v20190401-RELEASE</tio.version>
 		<fastweixin.version>1.3.15</fastweixin.version>
@@ -240,14 +244,20 @@
 			</dependency>
 			<dependency>
 				<groupId>com.xuxueli</groupId>
+				<artifactId>xxl-conf-core</artifactId>
+				<version>{xxl-conf-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.xuxueli</groupId>
 				<artifactId>xxl-sso-core</artifactId>
 				<version>${xxl-sso-core.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.xuxueli</groupId>
-				<artifactId>xxl-conf-core</artifactId>
-				<version>{xxl-conf-core.version}</version>
+				<groupId>com.baomidou</groupId>
+				<artifactId>kisso</artifactId>
+				<version>${kisso.version}</version>
 			</dependency>
+
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
