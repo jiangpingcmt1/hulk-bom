@@ -26,7 +26,7 @@
 		<vertx.version>3.7.0</vertx.version>
 		<rocketmq.version>4.5.0</rocketmq.version>
 		<!--分布式事物-->
-		<tx-lcn.version>5.0.2.RELEASE</tx-lcn.version>
+		<tx-codingapi.txlcn.version>5.0.2.RELEASE</tx-codingapi.txlcn.version>
 
 		<jackson.version>2.9.8</jackson.version>
 		<vjtools.version>1.0.8</vjtools.version>
@@ -212,22 +212,77 @@
 				<scope>import</scope>
 			</dependency>
 			<!--bom-->
-			<!--打包bom-->
+
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>rocketmq-client</artifactId>
+				<version>${rocketmq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>rocketmq-broker</artifactId>
+				<version>${rocketmq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>rocketmq-store</artifactId>
+				<version>${rocketmq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>rocketmq-namesrv</artifactId>
+				<version>${rocketmq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>rocketmq-tools</artifactId>
+				<version>${rocketmq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>rocketmq-remoting</artifactId>
+				<version>${rocketmq.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>rocketmq-srvutil</artifactId>
+				<version>${rocketmq.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.apache.rocketmq</groupId>
-				<artifactId>rocketmq-all</artifactId>
+				<artifactId>rocketmq-filter</artifactId>
 				<version>${rocketmq.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>rocketmq-acl</artifactId>
+				<version>${rocketmq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.codingapi.txlcn</groupId>
-				<artifactId>tx-lcn</artifactId>
-				<version>${tx-lcn.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
+				<artifactId>txlcn-tc</artifactId>
+				<version>${codingapi.txlcn.version}</version>
 			</dependency>
-			<!--打包bom-->
+			<dependency>
+				<groupId>com.codingapi.txlcn</groupId>
+				<artifactId>txlcn-tm</artifactId>
+				<version>${codingapi.txlcn.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.codingapi.txlcn</groupId>
+				<artifactId>txlcn-txmsg-netty</artifactId>
+				<version>${codingapi.txlcn.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.codingapi.txlcn</groupId>
+				<artifactId>txlcn-txmsg</artifactId>
+				<version>${codingapi.txlcn.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.codingapi.txlcn</groupId>
+				<artifactId>txlcn-tracing</artifactId>
+				<version>${codingapi.txlcn.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>fastjson</artifactId>
@@ -253,12 +308,12 @@
 				<artifactId>xxl-sso-core</artifactId>
 				<version>${xxl-sso-core.version}</version>
 			</dependency>
+			<!--单点登录-->
 			<dependency>
 				<groupId>com.baomidou</groupId>
 				<artifactId>kisso</artifactId>
 				<version>${kisso.version}</version>
 			</dependency>
-
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
@@ -306,22 +361,6 @@
 				<artifactId>fastdfs-client</artifactId>
 				<version>${fastdfs_taobao_client.version}</version>
 			</dependency>
-			<!--<dependency>
-				<groupId>com.alibaba.boot</groupId>
-				<artifactId>dubbo-spring-boot-starter</artifactId>
-				<version>${dubbo-spring-boot-starter.version}</version>
-			</dependency>
-			 <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>${dubbo-spring-boot-starter.version}</version>
-            </dependency>
-			<dependency>
-				<groupId>org.apache.rocketmq</groupId>
-				<artifactId>rocketmq-spring-boot-starter</artifactId>
-				<version>${rocketmq-spring-boot-starter.version}</version>
-			</dependency>
-			-->
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-aspects</artifactId>
