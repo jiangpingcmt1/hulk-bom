@@ -794,6 +794,7 @@
 				<artifactId>javamelody-spring-boot-starter</artifactId>
 				<version>${javamelody-spring-boot-starter.version}</version>
 			</dependency>
+			<!--PDF工具-->
 			<dependency>
 				<groupId>com.itextpdf</groupId>
 				<artifactId>itextpdf</artifactId>
@@ -816,6 +817,16 @@
 				<groupId>com.github.xiaoymin</groupId>
 				<artifactId>swagger-bootstrap-ui</artifactId>
 				<version>${swagger-bootstrap-ui.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.101tec</groupId>
+				<artifactId>zkclient</artifactId>
+				<version>${zkclient.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.zookeeper</groupId>
+				<artifactId>zookeeper</artifactId>
+				<version>${zookeeper.version}</version>
 			</dependency>
 			<!--私服包 -->
 			<dependency>
@@ -850,99 +861,6 @@
 				</exclusions>
 			</dependency>
 			<dependency>
-				<groupId>com.101tec</groupId>
-				<artifactId>zkclient</artifactId>
-				<version>${zkclient.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.zookeeper</groupId>
-				<artifactId>zookeeper</artifactId>
-				<version>${zookeeper.version}</version>
-			</dependency>
-			<!--
-			<dependency>
-				<groupId>com.alibaba</groupId>
-				<artifactId>dubbo</artifactId>
-				<version>${dubbo.version}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>spring</artifactId>
-						<groupId>org.springframework</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>spring-aop</artifactId>
-						<groupId>org.springframework</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>spring-expression</artifactId>
-						<groupId>org.springframework</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>spring-context</artifactId>
-						<groupId>org.springframework</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>spring-web</artifactId>
-						<groupId>org.springframework</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>spring-core</artifactId>
-						<groupId>org.springframework</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>spring-beans</artifactId>
-						<groupId>org.springframework</groupId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			-->
-			<!--有排除 end-->
-			<!--上层有 begin-->
-			<!--<dependency>
-				<groupId>jaxen</groupId>
-				<artifactId>jaxen</artifactId>
-				<version>${jaxen.version}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>com.ibm.icu</groupId>
-						<artifactId>icu4j</artifactId>
-					</exclusion>
-					<exclusion>
-						<artifactId>xalan</artifactId>
-						<groupId>xalan</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>jdom</artifactId>
-						<groupId>jdom</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>xercesImpl</artifactId>
-						<groupId>xerces</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>xml-apis</artifactId>
-						<groupId>xml-apis</groupId>
-					</exclusion>
-					<exclusion>
-						<artifactId>xom</artifactId>
-						<groupId>xom</groupId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>dom4j</groupId>
-				<artifactId>dom4j</artifactId>
-				<exclusions>
-					<exclusion>
-						<artifactId>xml-apis</artifactId>
-						<groupId>xml-apis</groupId>
-					</exclusion>
-				</exclusions>
-				<version>${dom4j.version}</version>
-			</dependency>-->
-			<!--上层有 end-->
-
-			<dependency>
 				<groupId>net.sf.jmimemagic</groupId>
 				<artifactId>jmimemagic</artifactId>
 				<version>0.1.5</version>
@@ -965,7 +883,6 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-			<!-- 临时的 end -->
 		</dependencies>
 	</dependencyManagement>
 
