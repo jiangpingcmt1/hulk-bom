@@ -123,6 +123,7 @@
 		<bouncycastle.version>1.61</bouncycastle.version>
 		<!--异步校验工具-->
 		<awaitility.version>3.1.6</awaitility.version>
+		<shedlock.version>2.5.0</shedlock.version>
 
 		<xxl-conf-core.version>1.6.1</xxl-conf-core.version>
 		<xxl-job-core.version>2.0.2</xxl-job-core.version>
@@ -787,6 +788,16 @@
 				<groupId>net.java.dev.jna</groupId>
 				<artifactId>jna-platform</artifactId>
 				<version>${jna-platform.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.javacrumbs.shedlock</groupId>
+				<artifactId>shedlock-core</artifactId>
+				<version>${shedlock.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.javacrumbs.shedlock</groupId>
+				<artifactId>shedlock-spring</artifactId>
+				<version>${shedlock.version}</version>
 			</dependency>
 			<!--监控-->
 			<dependency>
