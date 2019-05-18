@@ -123,6 +123,7 @@
 		<bouncycastle.version>1.61</bouncycastle.version>
 		<!--异步校验工具-->
 		<awaitility.version>3.1.6</awaitility.version>
+		<!--分布式调度-->
 		<shedlock.version>2.5.0</shedlock.version>
 
 		<xxl-conf-core.version>1.6.1</xxl-conf-core.version>
@@ -302,7 +303,7 @@
 			<dependency>
 				<groupId>com.xuxueli</groupId>
 				<artifactId>xxl-conf-core</artifactId>
-				<version>{xxl-conf-core.version}</version>
+				<version>${xxl-conf-core.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.xuxueli</groupId>
@@ -593,7 +594,7 @@
 			<dependency>
 				<groupId>com.github.ulisesbocchio</groupId>
 				<artifactId>jasypt-spring-boot-starter</artifactId>
-				<version>${ jasypt-spring-boot-starter.version}</version>
+				<version>${jasypt-spring-boot-starter.version}</version>
 			</dependency>
 			<!-- html工具 -->
 			<dependency>
