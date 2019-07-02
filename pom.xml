@@ -10,11 +10,11 @@
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- BOM -->
-		<spring-boot.version>2.1.4.RELEASE</spring-boot.version>
+		<spring-boot.version>2.1.6.RELEASE</spring-boot.version>
 		<spring-platform.version>Cairo-SR8</spring-platform.version>
-		<spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
 		<spring-cloud-alibaba.version>0.9.0.RELEASE</spring-cloud-alibaba.version>
-		<spring-boot-admin.version>2.1.4</spring-boot-admin.version>
+		<spring-boot-admin.version>2.1.5</spring-boot-admin.version>
 
 		<!--参考spring-boot-bom-->
 		<spring.version>5.1.6.RELEASE</spring.version>
@@ -39,10 +39,10 @@
 
 		<mybatis.version>3.5.1</mybatis.version>
 		<mybatis-spring-boot-starter.version>2.0.1</mybatis-spring-boot-starter.version>
-		<mybatis-plus.version>3.1.1</mybatis-plus.version>
-		<mybatis-plus-boot-starter.version>3.1.1</mybatis-plus-boot-starter.version>
-		<mybatis-plus-dts.version>3.1.1</mybatis-plus-dts.version>
-		<dynamic-datasource-spring-boot-starter.version>2.5.4</dynamic-datasource-spring-boot-starter.version>
+		<mybatis-plus.version>3.1.2</mybatis-plus.version>
+		<mybatis-plus-boot-starter.version>3.1.2</mybatis-plus-boot-starter.version>
+		<mybatis-plus-dts.version>3.1.2</mybatis-plus-dts.version>
+		<dynamic-datasource-spring-boot-starter.version>2.5.5</dynamic-datasource-spring-boot-starter.version>
 		<jsqlparser.version>1.2</jsqlparser.version>
        <!--
         <jsqlparser.version>1.4</jsqlparser.version>
@@ -177,6 +177,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -602,12 +603,7 @@
 			    <artifactId>jsoup</artifactId>
 			    <version>${jsoup.version}</version>
 			</dependency>
-			<!-- kotlin jackson 问题解决 -->
-			<dependency>
-				<groupId>com.fasterxml.jackson.module</groupId>
-				<artifactId>jackson-module-kotlin</artifactId>
-				<version>${jackson-module-kotlin.version}</version>
-			</dependency>
+			<!--缓存框架-->
 			<dependency>
 				<groupId>com.alicp.jetcache</groupId>
 				<artifactId>jetcache-starter-redis</artifactId>
@@ -674,6 +670,11 @@
 			<dependency>
 				<groupId>org.t-io</groupId>
 				<artifactId>tio-core</artifactId>
+				<version>${tio.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.t-io</groupId>
+				<artifactId>tio-websocket-spring-boot-starter</artifactId>
 				<version>${tio.version}</version>
 			</dependency>
 			<dependency>
@@ -820,7 +821,7 @@
 				<artifactId>shedlock-provider-elasticsearch</artifactId>
 				<version>${shedlock.version}</version>
 			</dependency>
-			<!--监控-->
+			<!--数据库监控-->
 			<dependency>
 				<groupId>net.bull.javamelody</groupId>
 				<artifactId>javamelody-spring-boot-starter</artifactId>
@@ -859,6 +860,12 @@
 				<groupId>org.apache.zookeeper</groupId>
 				<artifactId>zookeeper</artifactId>
 				<version>${zookeeper.version}</version>
+			</dependency>
+			<!-- kotlin jackson 问题解决 -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.module</groupId>
+				<artifactId>jackson-module-kotlin</artifactId>
+				<version>${jackson-module-kotlin.version}</version>
 			</dependency>
 			<!--私服包 -->
 			<dependency>
@@ -933,13 +940,13 @@
 			</dependency>
 			<dependency>
 				<groupId>org.hswebframework.web</groupId>
-				<artifactId>hsweb-concurrent-lock-redis</artifactId>
+				<artifactId>hsweb-concurrent-counter-redis</artifactId>
 				<version>3.0.8</version>
 			</dependency>
 			<dependency>
-				<groupId>org.hswebframework.web</groupId>
-				<artifactId>hsweb-concurrent-counter-redis</artifactId>
-				<version>3.0.8</version>
+				<groupId>wiki.xsx</groupId>
+				<artifactId>spring-boot-starter-slf4j</artifactId>
+				<version>1.1.0</version>
 			</dependency>
 			<dependency>
 				<groupId>com.alicp.jetcache</groupId>
