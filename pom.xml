@@ -9,17 +9,19 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!-- BOM -->
+		<!-- ####BOM#### -->
 		<spring-boot.version>2.1.6.RELEASE</spring-boot.version>
 		<spring-platform.version>Cairo-SR8</spring-platform.version>
 		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
 		<spring-cloud-alibaba.version>0.9.0.RELEASE</spring-cloud-alibaba.version>
 		<spring-boot-admin.version>2.1.5</spring-boot-admin.version>
 
-		<!--参考spring-boot-bom-->
+		<!--####参考spring-boot-bom####-->
 		<spring.version>5.1.8.RELEASE</spring.version>
-		<!--参考platform-bom-->
+		<!--#####参考platform-bom####-->
 		<curator.version>2.12.0</curator.version>
+		<!--#####参考spring-web#####-->
+		<jackson.version>2.9.9</jackson.version>
 
 		<!--瑞士军刀-->
 		<jodd.version>5.0.13</jodd.version>
@@ -27,8 +29,7 @@
 		<rocketmq.version>4.5.1</rocketmq.version>
 		<!--分布式事物-->
 		<tx-codingapi.txlcn.version>5.0.2.RELEASE</tx-codingapi.txlcn.version>
-		<!--参考spring-web-->
-		<jackson.version>2.9.9</jackson.version>
+
 		<vjtools.version>1.0.8</vjtools.version>
 		<zxing.version>3.4.0</zxing.version>
 
@@ -41,7 +42,9 @@
 		<mybatis-spring-boot-starter.version>2.0.1</mybatis-spring-boot-starter.version>
 		<mybatis-plus.version>3.1.2</mybatis-plus.version>
 		<mybatis-plus-boot-starter.version>3.1.2</mybatis-plus-boot-starter.version>
+		<!--持久层分布式事务-->
 		<mybatis-plus-dts.version>3.1.2</mybatis-plus-dts.version>
+		<!--动态数据源-->
 		<dynamic-datasource-spring-boot-starter.version>2.5.5</dynamic-datasource-spring-boot-starter.version>
 		<jsqlparser.version>1.2</jsqlparser.version>
        <!--
@@ -56,7 +59,9 @@
 		<zookeeper.version>3.4.14</zookeeper.version>
 
 		<springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+		<!--swagger-ui-->
 		<swagger-bootstrap-ui.version>1.9.4</swagger-bootstrap-ui.version>
+		<!-- 模版引擎 -->
 		<beetl.version>3.0.7.RELEASE</beetl.version>
         <!-- 依赖spring-cloud-alibaba -->
 		<!--
@@ -77,26 +82,35 @@
 		<shiro-spring-boot-web-starter.version>1.4.1</shiro-spring-boot-web-starter.version>
 		<kaptcha-axet.version>0.0.9</kaptcha-axet.version>
 		<kaptcha-penggle.version>2.3.2</kaptcha-penggle.version>
+		<!--二维码 begin-->
 		<qrext4j.version>1.3.1</qrext4j.version>
-
+		<!-- 并发框架 -->
         <disruptor.version>3.4.2</disruptor.version>
         <nanohttpd.version>2.3.1</nanohttpd.version>
 
         <easyrules.version>2.5.0</easyrules.version>
+		<!-- html工具 -->
         <jsoup.version>1.12.1</jsoup.version>
+		<!-- 反射工具 -->
         <reflections.version>0.9.11</reflections.version>
+		<!--浏览器识别工具 -->
 		<uasparser.version>0.6.2</uasparser.version>
+		<!-- 图片工具 -->
 		<thumbnailator.version>0.4.8</thumbnailator.version>
 		<pinyin4j.version>2.5.1</pinyin4j.version>
 		<jpos.version>2.1.3</jpos.version>
 		<j8583.version>1.14.1</j8583.version>
-
+		<!-- 图片Meta获取 -->
 		<metadata-extractor.version>2.11.0</metadata-extractor.version>
+		<!-- User Agent -->
 		<UserAgentUtils.version>1.21</UserAgentUtils.version>
 		<jjwt.version>0.9.1</jjwt.version>
 		<flowable.version>6.4.1</flowable.version>
+		<!--缓存框架-->
 		<jetcache.version>2.5.13</jetcache.version>
+		<!-- kotlin jackson 问题解决 -->
 		<jackson-module-kotlin.version>2.9.9</jackson-module-kotlin.version>
+		<!-- mvc路径伪静态 begin -->
 		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
 
 		<ttl.version>2.10.2</ttl.version>
@@ -104,13 +118,16 @@
 		<p6spy.version>3.8.2</p6spy.version>
 		<modelmapper.version>2.3.5</modelmapper.version>
 		<easyexcel.version>1.1.1</easyexcel.version>
-
+		<!-- 获取系统信息 -->
 		<oshi.version>3.13.3</oshi.version>
 		<jna.version>5.3.1</jna.version>
 		<jna-platform.version>5.3.1</jna-platform.version>
+		<!--数据库监控-->
 		<javamelody-spring-boot-starter.version>1.77.0</javamelody-spring-boot-starter.version>
+		<!--PDF工具-->
 		<itextpdf.version>5.5.13.1</itextpdf.version>
 		<spark-core.version>2.9.1</spark-core.version>
+		<!--jasypt配置文件加解密-->
 		<jasypt-spring-boot-starter.version>2.1.1</jasypt-spring-boot-starter.version>
 
 		<!--分布式存储-->
@@ -123,26 +140,28 @@
 		<shedlock.version>2.5.0</shedlock.version>
 		<!--分布式调度-->
 		<xxl-job-core.version>2.0.2</xxl-job-core.version>
-
+		<!--NIO框架-->
 		<tio.version>3.3.3.v20190620-RELEASE</tio.version>
+		<!--bean copy转换-->
+		<mapstruct.version>1.3.0.Final</mapstruct.version>
 		<hutool.vesion>4.5.16</hutool.vesion>
 
 
-		<!--阿里云-->
+		<!--####阿里云####-->
 		<edas-sdk.version>1.8.2</edas-sdk.version>
 		<aliyun-sdk-oss.version>3.5.0</aliyun-sdk-oss.version>
 		<ons-client.version>1.8.0.Final</ons-client.version>
-		<!--私服包-->
+		<!--####私服包####-->
 		<sequence.version>1.0.0</sequence.version>
 		<ojdbc6.version>1.6</ojdbc6.version>
-		<!--很少使用-->
-		<fastweixin.version>1.3.15</fastweixin.version>
-		<ikanalyzer.version>2012_u6</ikanalyzer.version>
-		<xxl-conf-core.version>1.6.1</xxl-conf-core.version>
-		<xxl-sso-core.version>1.1.1</xxl-sso-core.version>
-		<kisso.version>3.7.5</kisso.version>
 
-		<!--插件包-->
+		<!--####很少使用####-->
+		<!--微型工具包-->
+		<fastweixin.version>1.3.15</fastweixin.version>
+		<!--分词器-->
+		<ikanalyzer.version>2012_u6</ikanalyzer.version>
+
+		<!--####插件包####-->
 		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
 		<nexus.staging.plugin.version>1.6.8</nexus.staging.plugin.version>
 		<git-commit-id-plugin.version>2.2.5</git-commit-id-plugin.version>
@@ -180,7 +199,6 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-alibaba-dependencies</artifactId>
@@ -305,22 +323,6 @@
 			    <version>${xxl-job-core.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.xuxueli</groupId>
-				<artifactId>xxl-conf-core</artifactId>
-				<version>${xxl-conf-core.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.xuxueli</groupId>
-				<artifactId>xxl-sso-core</artifactId>
-				<version>${xxl-sso-core.version}</version>
-			</dependency>
-			<!--单点登录-->
-			<dependency>
-				<groupId>com.baomidou</groupId>
-				<artifactId>kisso</artifactId>
-				<version>${kisso.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
 				<version>${mybatis.version}</version>
@@ -345,13 +347,11 @@
 				<artifactId>mybatis-plus-boot-starter</artifactId>
 				<version>${mybatis-plus-boot-starter.version}</version>
 			</dependency>
-			<!--动态数据源-->
 			<dependency>
 				<groupId>com.baomidou</groupId>
 				<artifactId>dynamic-datasource-spring-boot-starter</artifactId>
 				<version>${dynamic-datasource-spring-boot-starter.version}</version>
 			</dependency>
-			<!--分布式事务-->
 			<dependency>
 				<groupId>com.baomidou</groupId>
 				<artifactId>mybatis-plus-dts</artifactId>
@@ -499,7 +499,6 @@
 				<version>${bouncycastle.version}</version>
 			</dependency>
 			 <!-- 加解密工具 end -->
-			<!--图片工具-->
 			<dependency>
 				<groupId>net.coobird</groupId>
 				<artifactId>thumbnailator</artifactId>
@@ -510,50 +509,41 @@
 				<artifactId>pinyin4j</artifactId>
 				<version>${pinyin4j.version}</version>
 			</dependency>
-			<!--浏览器识别工具 -->
 			<dependency>
 				<groupId>cz.mallat.uasparser</groupId>
 				<artifactId>uasparser</artifactId>
 				<version>${uasparser.version}</version>
 			</dependency>
-			<!-- mvc路径伪静态 begin -->
 			<dependency>
 				<groupId>org.tuckey</groupId>
 				<artifactId>urlrewritefilter</artifactId>
 				<version>${urlrewritefilter.version}</version>
 			</dependency>
-			<!-- User Agent -->
 			<dependency>
 				<groupId>eu.bitwalker</groupId>
 				<artifactId>UserAgentUtils</artifactId>
 				<version>${UserAgentUtils.version}</version>
 			</dependency>
-			<!-- 图片Meta获取 -->
 			<dependency>
 				<groupId>com.drewnoakes</groupId>
 				<artifactId>metadata-extractor</artifactId>
 				<version>${metadata-extractor.version}</version>
 			</dependency>
-			<!-- 反射工具 -->
 			<dependency>
                 <groupId>org.reflections</groupId>
                 <artifactId>reflections</artifactId>
                 <version>${reflections.version}</version>
             </dependency>
-			<!--二维码 begin -->
 			<dependency>
 				<groupId>org.iherus</groupId>
 				<artifactId>qrext4j</artifactId>
 				<version>${qrext4j.version}</version>
 			</dependency>
-			 <!--二维码 end -->
-			<!-- 模版引擎 -->
 			<dependency>
 				<groupId>com.ibeetl</groupId>
 				<artifactId>beetl</artifactId>
 				<version>${beetl.version}</version>
 			</dependency>
-			   <!-- 并发框架 -->
 			<dependency>
 	            <groupId>com.lmax</groupId>
 	            <artifactId>disruptor</artifactId>
@@ -594,19 +584,16 @@
 				<artifactId>javase</artifactId>
 				<version>${zxing.version}</version>
 			</dependency>
-			<!--jasypt配置文件加解密-->
 			<dependency>
 				<groupId>com.github.ulisesbocchio</groupId>
 				<artifactId>jasypt-spring-boot-starter</artifactId>
 				<version>${jasypt-spring-boot-starter.version}</version>
 			</dependency>
-			<!-- html工具 -->
 			<dependency>
 			    <groupId>org.jsoup</groupId>
 			    <artifactId>jsoup</artifactId>
 			    <version>${jsoup.version}</version>
 			</dependency>
-			<!--缓存框架-->
 			<dependency>
 				<groupId>com.alicp.jetcache</groupId>
 				<artifactId>jetcache-starter-redis</artifactId>
@@ -617,7 +604,6 @@
 				<artifactId>jetcache-starter-redis-lettuce4</artifactId>
 				<version>${jetcache.version}</version>
 			</dependency>
-			<!-- 异步操作校验工具 test -->
 			<dependency>
 				<groupId>org.awaitility</groupId>
 				<artifactId>awaitility</artifactId>
@@ -653,7 +639,6 @@
 				<artifactId>easyexcel</artifactId>
 				<version>${easyexcel.version}</version>
 			</dependency>
-			<!--通讯框架-->
 			<dependency>
 				<groupId>org.t-io</groupId>
 				<artifactId>tio-core</artifactId>
@@ -750,19 +735,16 @@
 				<artifactId>sharding-jdbc-core</artifactId>
 				<version>${sharding-sphere.version}</version>
 			</dependency>
-            <!-- for spring boot -->
             <dependency>
                 <groupId>org.apache.shardingsphere</groupId>
                 <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
                 <version>${sharding-sphere.version}</version>
             </dependency>
-            <!-- for spring namespace -->
             <dependency>
                 <groupId>org.apache.shardingsphere</groupId>
                 <artifactId>sharding-jdbc-spring-namespace</artifactId>
                 <version>${sharding-sphere.version}</version>
             </dependency>
-			<!-- 获取系统信息 -->
 			<dependency>
 				<groupId>com.github.oshi</groupId>
 				<artifactId>oshi-core</artifactId>
@@ -808,31 +790,31 @@
 				<artifactId>shedlock-provider-elasticsearch</artifactId>
 				<version>${shedlock.version}</version>
 			</dependency>
-			<!--数据库监控-->
+			<dependency>
+				<groupId>org.mapstruct</groupId>
+				<artifactId>mapstruct-jdk8</artifactId>
+				<version>${mapstruct.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>net.bull.javamelody</groupId>
 				<artifactId>javamelody-spring-boot-starter</artifactId>
 				<version>${javamelody-spring-boot-starter.version}</version>
 			</dependency>
-			<!--PDF工具-->
 			<dependency>
 				<groupId>com.itextpdf</groupId>
 				<artifactId>itextpdf</artifactId>
 				<version>${itextpdf.version}</version>
 			</dependency>
-			<!--分布式存储-->
 			<dependency>
 				<groupId>io.minio</groupId>
 				<artifactId>minio</artifactId>
 				<version>${minio.version}</version>
 			</dependency>
-            <!--分词器-->
             <dependency>
                 <groupId>com.janeluo</groupId>
                 <artifactId>ikanalyzer</artifactId>
                 <version>${ikanalyzer.version}</version>
             </dependency>
-			<!--swagger-ui-->
 			<dependency>
 				<groupId>com.github.xiaoymin</groupId>
 				<artifactId>swagger-bootstrap-ui</artifactId>
@@ -848,7 +830,6 @@
 				<artifactId>zookeeper</artifactId>
 				<version>${zookeeper.version}</version>
 			</dependency>
-			<!--阿里云-->
 			<dependency>
 				<groupId>com.alibaba.edas</groupId>
 				<artifactId>edas-sdk</artifactId>
@@ -864,7 +845,6 @@
 				<artifactId>ons-client</artifactId>
 				<version>${ons-client.version}</version>
 			</dependency>
-			<!-- kotlin jackson 问题解决 -->
 			<dependency>
 				<groupId>com.fasterxml.jackson.module</groupId>
 				<artifactId>jackson-module-kotlin</artifactId>
