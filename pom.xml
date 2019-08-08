@@ -27,7 +27,7 @@
 		<rocketmq.version>4.5.1</rocketmq.version>
 
 		<!--工具包-->
-		<hutool.vesion>4.5.16</hutool.vesion>
+		<hutool.vesion>4.6.1</hutool.vesion>
 		<!--瑞士军刀-->
 		<jodd.version>5.0.13</jodd.version>
 		<vertx.version>3.7.1</vertx.version>
@@ -244,6 +244,13 @@
 				<groupId>org.jodd</groupId>
 				<artifactId>jodd-bom</artifactId>
 				<version>${jodd.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>cn.hutool</groupId>
+				<artifactId>hutool-bom</artifactId>
+				<version>${hutool.vesion}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
