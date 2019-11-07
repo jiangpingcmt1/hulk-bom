@@ -855,7 +855,7 @@
 			<dependency>
 				<groupId>cn.teaey.apns4j</groupId>
 				<artifactId>apns4j</artifactId>
-				<version>${apns4j.versio}</version>
+				<version>${apns4j.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.module</groupId>
