@@ -53,6 +53,8 @@
 		<zookeeper.version>3.4.14</zookeeper.version>
 
 		<springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+		<!--knife4j是为Java MVC框架集成Swagger生成Api文档的增强-->
+		<knife4j.version>1.9.6</knife4j.version>
 		<!--swagger-ui-->
 		<swagger-bootstrap-ui.version>1.9.4</swagger-bootstrap-ui.version>
 		<!-- 模版引擎 -->
@@ -837,6 +839,11 @@
                 <artifactId>ikanalyzer</artifactId>
                 <version>${ikanalyzer.version}</version>
             </dependency>
+			<dependency>
+				<groupId>com.github.xiaoymin</groupId>
+				<artifactId>knife4j-micro-spring-boot-starter</artifactId>
+				<version>${knife4j.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.github.xiaoymin</groupId>
 				<artifactId>swagger-bootstrap-ui</artifactId>
