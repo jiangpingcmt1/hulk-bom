@@ -64,7 +64,7 @@
         <!-- 依赖spring-cloud-alibaba -->
 		<!--
 		<dubbo.version>2.6.6</dubbo.version>
-        <dubbo-spring-boot-starter.version>0.2.1.RELEASE</dubbo-spring-boot-starter.version>
+        <dubbo-spring-boot-starterersion>0.2.1.RELEASE</dubbo-spring-boot-starter.version>
 		<rocketmq-spring-boot-starter.version>2.0.2</rocketmq-spring-boot-starter.version>
 		-->
 		<fastjson.version>1.2.58</fastjson.version>
@@ -161,7 +161,7 @@
 
 		<!--####私服包####-->
 		<sequence.version>1.0.0</sequence.version>
-		<ojdbc6.version>1.6</ojdbc6.version>
+		<ojdbc6.version>12.1.0.1-atlassian-hosted</ojdbc6.version>
 
 		<!--####很少使用####-->
 		<!--微型工具包-->
@@ -869,13 +869,12 @@
 				<artifactId>jackson-module-kotlin</artifactId>
 				<version>${jackson-module-kotlin.version}</version>
 			</dependency>
-			<!--私服包 -->
 			<dependency>
 				<groupId>com.oracle</groupId>
 				<artifactId>ojdbc6</artifactId>
 				<version>${ojdbc6.version}</version>
-				<scope>runtime</scope>
 			</dependency>
+			<!--私服包 -->
 			<dependency>
 				<groupId>cn.ms</groupId>
 				<artifactId>sequence</artifactId>
