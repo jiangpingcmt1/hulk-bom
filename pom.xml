@@ -60,7 +60,7 @@
 		<!-- 模版引擎 -->
 		<beetl.version>3.0.7.RELEASE</beetl.version>
 		<!--分布式事物-->
-		<tx-codingapi.txlcn.version>5.0.2.RELEASE</tx-codingapi.txlcn.version>
+		<codingapi.txlcn.version>5.0.2.RELEASE</codingapi.txlcn.version>
         <!-- 依赖spring-cloud-alibaba -->
 		<!--
 		<dubbo.version>2.6.6</dubbo.version>
