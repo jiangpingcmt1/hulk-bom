@@ -96,66 +96,74 @@
 		<jpos.version>2.1.3</jpos.version>
 		<j8583.version>1.14.1</j8583.version>
 		<!-- 图片Meta获取 -->
-		<metadata-extractor.version>2.11.0</metadata-extractor.version>
+		<metadata-extractor.version>2.13.0</metadata-extractor.version>
 		<!-- User Agent -->
 		<UserAgentUtils.version>1.21</UserAgentUtils.version>
+		<!--端到端的JWT创建和验证的Java库-->
 		<jjwt.version>0.9.1</jjwt.version>
 		<!-- 业务流程引擎-->
-		<flowable.version>6.4.1</flowable.version>
+		<flowable.version>6.5.0</flowable.version>
 		<!-- 缓存框架-->
 		<jetcache.version>2.6.0.M3</jetcache.version>
-		<!-- kotlin jackson 问题解决 -->
-		<jackson-module-kotlin.version>2.9.9</jackson-module-kotlin.version>
 		<!-- mvc路径伪静态 begin -->
 		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
 		<!-- 在使用线程池等会缓存线程的组件情况下传递ThreadLocal -->
-		<ttl.version>2.10.2</ttl.version>
+		<ttl.version>2.11.4</ttl.version>
 		<!-- 数据库操作跟踪工具-->
-		<p6spy.version>3.8.2</p6spy.version>
+		<p6spy.version>3.8.7</p6spy.version>
 		<!-- 获取系统信息 -->
-		<oshi.version>3.13.3</oshi.version>
+		<oshi.version>4.4.0</oshi.version>
 		<!-- 运行期动态访问系统本地库-->
-		<jna.version>5.3.1</jna.version>
-		<jna-platform.version>5.3.1</jna-platform.version>
+		<jna.version>5.5.0</jna.version>
+		<jna-platform.version>5.5.0</jna-platform.version>
 		<!-- 数据库监控-->
-		<javamelody-spring-boot-starter.version>1.77.0</javamelody-spring-boot-starter.version>
+		<javamelody-spring-boot-starter.version>1.81.0</javamelody-spring-boot-starter.version>
 		<!-- PDF工具-->
 		<itextpdf.version>5.5.13.1</itextpdf.version>
-
+		<!--Web应用程序框架-->
 		<spark-core.version>2.9.1</spark-core.version>
-		<vertx.version>3.7.1</vertx.version>
+		<!--
+			Vertx，是一个基于JVM、轻量级、高性能的应用平台，非常适用于移动端后台、互联网、企业应用架构。
+			Vertx，基于Netty全异步通信，并扩展出了很多有用的特性。
+			Vertx，是基于事件总线设计的高性能架构，保证应用中不同部分以一种非堵塞的线程安全方式通讯。
+			Vertx，是借鉴Erlang和Akka架构设计，能充分利用多核处理器性能并实现高并发编程需求的框架。
+		-->
+		<vertx-bom.version>3.8.5</vertx-bom.version>
 		<!--jasypt配置文件加解密-->
-		<jasypt-spring-boot-starter.version>2.1.1</jasypt-spring-boot-starter.version>
-		<!--分布式存储-->
-		<minio.version>6.0.8</minio.version>
+		<jasypt-spring-boot-starter.version>3.0.2</jasypt-spring-boot-starter.version>
+		<!--对象存储服务器-->
+		<minio.version>6.0.13</minio.version>
 		<!--加解密-->
-		<bouncycastle.version>1.62</bouncycastle.version>
-		<!--分布式调度-->
-		<shedlock.version>2.5.0</shedlock.version>
-
+		<bouncycastle.version>1.64</bouncycastle.version>
+		<!--基于布式定时任务锁, 实现分布式调度-->
+		<shedlock.version>4.3.0</shedlock.version>
+		<!--唯品会java工具集 -->
 		<vjtools.version>1.0.8</vjtools.version>
-		<easyexcel.version>1.1.1</easyexcel.version>
-		<easypoi.version>4.1.0</easypoi.version>
-		<easypoi-spring-boot-starter.version>4.1.0</easypoi-spring-boot-starter.version>
-		<wx-java.version>3.4.5.B</wx-java.version>
-
+		<!--alibaba极速操作excel工具-->
+		<easyexcel.version>2.1.6</easyexcel.version>
+		<!--poi扩展工具-->
+		<easypoi.version>4.1.3</easypoi.version>
+		<easypoi-spring-boot-starter.version>4.1.3</easypoi-spring-boot-starter.version>
+		<!--微信开发JavaSDK-->
+		<wx-java.version>3.6.8.B</wx-java.version>
 		<!--分布式调度-->
 		<xxl-job-core.version>2.1.1</xxl-job-core.version>
 		<!--NIO框架-->
-		<tio.version>3.3.3.v20190620-RELEASE</tio.version>
-		<smartboot-aio.version>1.4.2.rc-2</smartboot-aio.version>
+		<tio.version>3.5.9.v20200214-RELEASE</tio.version>
+		<smartboot-aio.version>1.4.7</smartboot-aio.version>
 		<!--bean copy转换-->
-		<mapstruct.version>1.3.0.Final</mapstruct.version>
-		<modelmapper.version>2.3.5</modelmapper.version>
+		<mapstruct.version>1.3.1.Final</mapstruct.version>
+		<modelmapper.version>2.3.6</modelmapper.version>
 		<!--性能测试工具-->
-		<contiperf.version>2.3.4</contiperf.version>
+		<contiperf.version>2.4.3</contiperf.version>
 		<!--基准测试-->
-		<jmh.version>1.21</jmh.version>
-		<wiremock-jre8.version>2.23.2</wiremock-jre8.version>
-		<!--异步校验工具-->
-		<awaitility.version>3.1.6</awaitility.version>
+		<jmh.version>1.23</jmh.version>
+		<!--基于HTTP的API模拟器-->
+		<wiremock.version>2.26.0</wiremock.version>
+		<!--异步校验工具,用于同步异步操作的小型 Java DSL-->
+		<awaitility.version>4.0.2</awaitility.version>
+		<!--alibaba对象存储服务器-->
 		<fastdfs_taobao_client.version>1.26.4</fastdfs_taobao_client.version>
-		<saxpath.version>1.0-FCS</saxpath.version>
 		<!--IOS推送通知服务-->
 		<apns4j.version>1.1.4</apns4j.version>
 
@@ -249,7 +257,7 @@
 			<dependency>
 				<groupId>io.vertx</groupId>
 				<artifactId>vertx-stack-depchain</artifactId>
-				<version>${vertx.version}</version>
+				<version>${vertx-bom.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -383,11 +391,6 @@
 				<groupId>com.github.tobato</groupId>
 				<artifactId>fastdfs-client</artifactId>
 				<version>${fastdfs_taobao_client.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>saxpath</groupId>
-				<artifactId>saxpath</artifactId>
-				<version>${saxpath.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.curator</groupId>
@@ -723,11 +726,17 @@
 			<dependency>
 				<groupId>com.github.tomakehurst</groupId>
 				<artifactId>wiremock-jre8</artifactId>
-				<version>${wiremock-jre8.version}</version>
+				<version>${wiremock.version}</version>
 				<scope>test</scope>
 			</dependency>
-			<dependency>
+			<!--<dependency>
 				<groupId>org.databene</groupId>
+				<artifactId>contiperf</artifactId>
+				<version>${contiperf.version}</version>
+				<scope>test</scope>
+			</dependency>-->
+			<dependency>
+				<groupId>com.github.javatlacati</groupId>
 				<artifactId>contiperf</artifactId>
 				<version>${contiperf.version}</version>
 				<scope>test</scope>
@@ -860,11 +869,6 @@
 				<version>${apns4j.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.fasterxml.jackson.module</groupId>
-				<artifactId>jackson-module-kotlin</artifactId>
-				<version>${jackson-module-kotlin.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>com.oracle</groupId>
 				<artifactId>ojdbc6</artifactId>
 				<version>${ojdbc6.version}</version>
@@ -944,6 +948,13 @@
 		</snapshotRepository>
 	</distributionManagement>
 	<build>
+		<finalName>${project.name}</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -1020,7 +1031,6 @@
 		<repository>
 			<id>nexus-aliyun</id>
 			<name>Nexus aliyun</name>
-			<!--<url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
 			<url>https://maven.aliyun.com/repository/public</url>
 			<releases>
 				<enabled>true</enabled>
@@ -1030,6 +1040,33 @@
 			</snapshots>
 		</repository>
 	</repositories>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<!-- 环境标识，需要与配置文件的名称相对应 -->
+				<profiles.active>dev</profiles.active>
+			</properties>
+			<activation>
+				<!-- 默认环境 -->
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>test</id>
+			<properties>
+				<profiles.active>test</profiles.active>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<profiles.active>prod</profiles.active>
+			</properties>
+		</profile>
+	</profiles>
+
 	 <developers>
         <developer>
             <name>cmt</name>
@@ -1041,4 +1078,5 @@
             <timezone>+8</timezone>
         </developer>
     </developers>
+
 </project>
