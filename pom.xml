@@ -10,89 +10,89 @@
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- ####BOM#### -->
-		<spring-boot.version>2.1.6.RELEASE</spring-boot.version>
+		<spring-framework.version>5.2.2.RELEASE</spring-framework.version>
+		<spring-boot.version>2.2.2.RELEASE</spring-boot.version>
 		<spring-platform.version>Cairo-SR8</spring-platform.version>
-		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
-		<spring-cloud-alibaba.version>2.1.0.RELEASE</spring-cloud-alibaba.version>
-		<spring-boot-admin.version>2.1.6</spring-boot-admin.version>
+		<spring-cloud.version>Hoxton.SR1</spring-cloud.version>
+		<spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
+		<spring-boot-admin.version>2.2.2</spring-boot-admin.version>
 
-		<!--####参考spring-boot-bom####-->
-		<spring.version>5.1.8.RELEASE</spring.version>
 		<!--#####参考platform-bom####-->
 		<curator.version>2.12.0</curator.version>
 		<!--#####参考spring-web#####-->
-		<jackson.version>2.9.9</jackson.version>
+		<jackson.version>2.10.1</jackson.version>
 		<!--#####参考spring-cloud-alibaba#####-->
-		<rocketmq.version>4.5.1</rocketmq.version>
-
+		<rocketmq.version>4.6.0</rocketmq.version>
+		<!--稳定版本，替代spring security bom内置-->
+		<security.oauth.version>2.3.6.RELEASE</security.oauth.version>
 		<!--工具包-->
-		<hutool.vesion>4.6.1</hutool.vesion>
+		<hutool.vesion>5.1.3</hutool.vesion>
 		<!--瑞士军刀-->
-		<jodd.version>5.0.13</jodd.version>
+		<jodd.version>5.1.3</jodd.version>
+		<!--二维码工具-->
 		<zxing.version>3.4.0</zxing.version>
-
-		<mybatis.version>3.5.1</mybatis.version>
-		<mybatis-spring-boot-starter.version>2.0.1</mybatis-spring-boot-starter.version>
-		<mybatis-plus.version>3.1.2</mybatis-plus.version>
-		<mybatis-plus-boot-starter.version>3.1.2</mybatis-plus-boot-starter.version>
+		<!--mybatis-->
+		<mybatis.version>3.5.4</mybatis.version>
+		<mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
+		<mybatis-plus.version>3.3.1</mybatis-plus.version>
+		<mybatis-plus-boot-starter.version>3.3.1</mybatis-plus-boot-starter.version>
 		<!--持久层分布式事务-->
 		<mybatis-plus-dts.version>3.1.2</mybatis-plus-dts.version>
 		<!--动态数据源-->
 		<dynamic-datasource-spring-boot-starter.version>2.5.5</dynamic-datasource-spring-boot-starter.version>
 		<!--SQL语法解释器-->
-		<jsqlparser.version>1.2</jsqlparser.version>
-       <!--
-        <jsqlparser.version>1.4</jsqlparser.version>
-        <jsqlparser.version>2.0</jsqlparser.version>
-        -->
-		<druid.version>1.1.18</druid.version>
-		<druid-spring-boot-starter.version>1.1.18</druid-spring-boot-starter.version>
-		<sharding-sphere.version>4.0.0-RC2</sharding-sphere.version>
-
+		<jsqlparser.version>3.1</jsqlparser.version>
+		<!--数据库连接池-->
+		<druid.version>1.1.21</druid.version>
+		<druid-spring-boot-starter.version>1.1.21</druid-spring-boot-starter.version>
+		<!--分布式数据库中间件-->
+		<sharding-sphere.version>4.0.0</sharding-sphere.version>
+		<!--zookeeper客户端工具-->
 		<zkclient.version>0.11</zkclient.version>
 		<zookeeper.version>3.4.14</zookeeper.version>
-
+		<!--Api文档-->
 		<springfox-swagger2.version>2.9.2</springfox-swagger2.version>
 		<!--knife4j是为Java MVC框架集成Swagger生成Api文档的增强-->
-		<knife4j.version>1.9.6</knife4j.version>
-		<!--swagger-ui-->
-		<swagger-bootstrap-ui.version>1.9.4</swagger-bootstrap-ui.version>
+		<knife4j.version>2.0.1</knife4j.version>
 		<!-- 模版引擎 -->
-		<beetl.version>3.0.7.RELEASE</beetl.version>
+		<beetl.version>3.0.17.RELEASE</beetl.version>
 		<!--分布式事物-->
-		<tx-codingapi.txlcn.version>5.0.2.RELEASE</tx-codingapi.txlcn.version>
-        <!-- 依赖spring-cloud-alibaba -->
-		<!--
-		<dubbo.version>2.6.6</dubbo.version>
-        <dubbo-spring-boot-starterersion>0.2.1.RELEASE</dubbo-spring-boot-starter.version>
-		<rocketmq-spring-boot-starter.version>2.0.2</rocketmq-spring-boot-starter.version>
-		-->
-		<fastjson.version>1.2.58</fastjson.version>
-		<!--<dozer.version>5.5.1</dozer.version>-->
-		<cglib.version>3.2.12</cglib.version>
-		<redisson.version>3.11.1</redisson.version>
-		<redisson-spring-boot-starter.version>3.11.1</redisson-spring-boot-starter.version>
+		<codingapi.txlcn.version>5.0.2.RELEASE</codingapi.txlcn.version>
+		<!--alibaba的json api工具-->
+		<fastjson.version>1.2.62</fastjson.version>
 
-		<shiro.version>1.4.1</shiro.version>
-		<shiro-spring-boot-web-starter.version>1.4.1</shiro-spring-boot-web-starter.version>
+		<cglib.version>3.3.0</cglib.version>
+		<!--分布式应用，缓存，分布式会话，分布式任务/服务/延迟执行服务，Redis客户端-->
+		<redisson.version>3.12.1</redisson.version>
+		<redisson-spring-boot-starter.version>3.12.1</redisson-spring-boot-starter.version>
+		<!--Java安全框架,执行身份验证、授权、密码和会话管理-->
+		<shiro.version>1.5.0</shiro.version>
+		<shiro-spring-boot-web-starter.version>1.5.0</shiro-spring-boot-web-starter.version>
+		<!--验证码工具 推荐使用-->
+		<easy-captcha.version>1.6.2</easy-captcha.version>
+		<!--验证码工具 Y2013-->
 		<kaptcha-axet.version>0.0.9</kaptcha-axet.version>
+		<!--验证码工具 Y2015-->
 		<kaptcha-penggle.version>2.3.2</kaptcha-penggle.version>
 		<!--二维码 begin-->
 		<qrext4j.version>1.3.1</qrext4j.version>
 		<!-- 并发框架 -->
         <disruptor.version>3.4.2</disruptor.version>
+		<!--轻量级的java HTTP Server-->
         <nanohttpd.version>2.3.1</nanohttpd.version>
 		<!--规则引擎-->
         <easyrules.version>2.5.0</easyrules.version>
 		<!-- html工具 -->
-        <jsoup.version>1.12.1</jsoup.version>
+        <jsoup.version>1.12.2</jsoup.version>
 		<!-- 反射工具 -->
-        <reflections.version>0.9.11</reflections.version>
-		<!--浏览器识别工具 -->
+        <reflections.version>0.9.12</reflections.version>
+		<!--浏览器识别工具 Y2014-->
 		<uasparser.version>0.6.2</uasparser.version>
 		<!-- 图片工具 -->
-		<thumbnailator.version>0.4.8</thumbnailator.version>
+		<thumbnailator.version>0.4.9</thumbnailator.version>
+		<!--支持中文字符和拼音之间的转换 Y2016-->
 		<pinyin4j.version>2.5.1</pinyin4j.version>
+		<!--8583工具-->
 		<jpos.version>2.1.3</jpos.version>
 		<j8583.version>1.14.1</j8583.version>
 		<!-- 图片Meta获取 -->
@@ -140,7 +140,7 @@
 		<wx-java.version>3.4.5.B</wx-java.version>
 
 		<!--分布式调度-->
-		<xxl-job-core.version>2.0.2</xxl-job-core.version>
+		<xxl-job-core.version>2.1.1</xxl-job-core.version>
 		<!--NIO框架-->
 		<tio.version>3.3.3.v20190620-RELEASE</tio.version>
 		<smartboot-aio.version>1.4.2.rc-2</smartboot-aio.version>
@@ -185,6 +185,12 @@
 		<dependencies>
 			<!--bom-->
 			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-framework-bom</artifactId>
+				<version>${spring-framework.version}</version>
+				<type>pom</type>
+			</dependency>
+			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-parent</artifactId>
 				<version>${spring-boot.version}</version>
@@ -227,13 +233,6 @@
 				<scope>import</scope>
 			</dependency>
 			<dependency>
-				<groupId>io.vertx</groupId>
-				<artifactId>vertx-stack-depchain</artifactId>
-				<version>${vertx.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
 				<groupId>org.jodd</groupId>
 				<artifactId>jodd-bom</artifactId>
 				<version>${jodd.version}</version>
@@ -247,8 +246,19 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<dependency>
+				<groupId>io.vertx</groupId>
+				<artifactId>vertx-stack-depchain</artifactId>
+				<version>${vertx.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 			<!--bom-->
-
+			<dependency>
+				<groupId>org.springframework.security.oauth</groupId>
+				<artifactId>spring-security-oauth2</artifactId>
+				<version>${security.oauth.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
 				<artifactId>rocketmq-client</artifactId>
@@ -375,21 +385,6 @@
 				<version>${fastdfs_taobao_client.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-aspects</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-orm</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-oxm</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>saxpath</groupId>
 				<artifactId>saxpath</artifactId>
 				<version>${saxpath.version}</version>
@@ -463,6 +458,11 @@
 			   <groupId>com.alibaba</groupId>
 			   <artifactId>druid-spring-boot-starter</artifactId>
 			   <version>${druid-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.whvcse</groupId>
+				<artifactId>easy-captcha</artifactId>
+				<version>${easy-captcha.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.penggle</groupId>
@@ -843,11 +843,6 @@
 				<groupId>com.github.xiaoymin</groupId>
 				<artifactId>knife4j-micro-spring-boot-starter</artifactId>
 				<version>${knife4j.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.xiaoymin</groupId>
-				<artifactId>swagger-bootstrap-ui</artifactId>
-				<version>${swagger-bootstrap-ui.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.101tec</groupId>
