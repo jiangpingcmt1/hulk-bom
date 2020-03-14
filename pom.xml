@@ -58,16 +58,7 @@
 		<beetl.version>3.0.17.RELEASE</beetl.version>
 		<!--分布式事物-->
 		<codingapi.txlcn.version>5.0.2.RELEASE</codingapi.txlcn.version>
-        <!-- 依赖spring-cloud-alibaba -->
-		<!--
-		<dubbo.version>2.6.6</dubbo.version>
-        <dubbo-spring-boot-starterersion>0.2.1.RELEASE</dubbo-spring-boot-starter.version>
-		<rocketmq-spring-boot-starter.version>2.0.2</rocketmq-spring-boot-starter.version>
-		-->
-		<!--<dozer.version>5.5.1</dozer.version>-->
-		<cglib.version>3.2.12</cglib.version>
-		<redisson.version>3.11.1</redisson.version>
-		<redisson-spring-boot-starter.version>3.11.1</redisson-spring-boot-starter.version>
+        
 		<!--alibaba的json api工具-->
 		<fastjson.version>1.2.62</fastjson.version>
 		<cglib.version>3.3.0</cglib.version>
