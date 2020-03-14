@@ -58,9 +58,18 @@
 		<beetl.version>3.0.17.RELEASE</beetl.version>
 		<!--分布式事物-->
 		<codingapi.txlcn.version>5.0.2.RELEASE</codingapi.txlcn.version>
+        <!-- 依赖spring-cloud-alibaba -->
+		<!--
+		<dubbo.version>2.6.6</dubbo.version>
+        <dubbo-spring-boot-starterersion>0.2.1.RELEASE</dubbo-spring-boot-starter.version>
+		<rocketmq-spring-boot-starter.version>2.0.2</rocketmq-spring-boot-starter.version>
+		-->
+		<!--<dozer.version>5.5.1</dozer.version>-->
+		<cglib.version>3.2.12</cglib.version>
+		<redisson.version>3.11.1</redisson.version>
+		<redisson-spring-boot-starter.version>3.11.1</redisson-spring-boot-starter.version>
 		<!--alibaba的json api工具-->
 		<fastjson.version>1.2.62</fastjson.version>
-
 		<cglib.version>3.3.0</cglib.version>
 		<!--分布式应用，缓存，分布式会话，分布式任务/服务/延迟执行服务，Redis客户端-->
 		<redisson.version>3.12.1</redisson.version>
@@ -104,7 +113,7 @@
 		<!-- 业务流程引擎-->
 		<flowable.version>6.5.0</flowable.version>
 		<!-- 缓存框架-->
-		<jetcache.version>2.6.0.M3</jetcache.version>
+		<jetcache.version>2.6.0.RC</jetcache.version>
 		<!-- mvc路径伪静态 begin -->
 		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
 		<!-- 在使用线程池等会缓存线程的组件情况下传递ThreadLocal -->
@@ -608,6 +617,11 @@
 				<version>${jetcache.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.alicp.jetcache</groupId>
+				<artifactId>jetcache-starter-redis-lettuce</artifactId>
+				<version>${jetcache.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.xuxueli</groupId>
 				<artifactId>xxl-job-core</artifactId>
 				<version>${xxl-job-core.version}</version>
@@ -953,6 +967,7 @@
 			<url>http://jiangpingcmt1.imwork.net:34924/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
+
 	<build>
 		<finalName>${project.name}</finalName>
 		<resources>
