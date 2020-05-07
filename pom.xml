@@ -118,7 +118,7 @@
 		<!-- 运行期动态访问系统本地库-->
 		<jna.version>5.5.0</jna.version>
 		<jna-platform.version>5.5.0</jna-platform.version>
-		<!-- 数据库监控-->
+		<!-- JVM性能监控-->
 		<javamelody-spring-boot-starter.version>1.81.0</javamelody-spring-boot-starter.version>
 		<!-- PDF工具-->
 		<itextpdf.version>5.5.13.1</itextpdf.version>
@@ -679,7 +679,6 @@
 				<artifactId>p6spy</artifactId>
 				<version>${p6spy.version}</version>
 			</dependency>
-
 			<dependency>
 				<groupId>com.vip.vjtools</groupId>
 				<artifactId>vjkit</artifactId>
