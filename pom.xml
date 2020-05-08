@@ -164,7 +164,6 @@
 		<smartboot-aio.version>1.4.10</smartboot-aio.version>
 		<!--bean copy转换-->
 		<mapstruct.version>1.3.1.Final</mapstruct.version>
-		<!--<modelmapper.version>2.3.6</modelmapper.version>-->
 		<!--性能测试工具-->
 		<contiperf.version>2.4.3</contiperf.version>
 		<!--基准测试-->
