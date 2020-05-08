@@ -159,7 +159,8 @@
 		<!--分布式调度-->
 		<xxl-job-core.version>2.2.0</xxl-job-core.version>
 		<!--NIO框架-->
-		<tio.version>3.5.9.v20200214-RELEASE</tio.version>
+		<tio.version>3.6.0.v20200315-RELEASE</tio.version>
+		<tio-websocket-spring-boot-starter.version>${tio.version}</tio-websocket-spring-boot-starter.version>
 		<smartboot-aio.version>1.4.10</smartboot-aio.version>
 		<!--bean copy转换-->
 		<mapstruct.version>1.3.1.Final</mapstruct.version>
@@ -702,7 +703,7 @@
 			<dependency>
 				<groupId>org.t-io</groupId>
 				<artifactId>tio-websocket-spring-boot-starter</artifactId>
-				<version>${tio.version}</version>
+				<version>${tio-websocket-spring-boot-starter.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.sd4324530</groupId>
