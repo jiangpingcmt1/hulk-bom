@@ -156,6 +156,7 @@
 		<easypoi-spring-boot-starter.version>${easypoi.version}</easypoi-spring-boot-starter.version>
 		<!--微信开发JavaSDK-->
 		<wx-java.version>3.7.8.B</wx-java.version>
+		<ijpay.version>1.2.0</ijpay.version>
 		<!--分布式调度-->
 		<xxl-job-core.version>2.2.0</xxl-job-core.version>
 		<!--NIO框架-->
@@ -763,6 +764,11 @@
 				<groupId>com.github.binarywang</groupId>
 				<artifactId>weixin-java-cp</artifactId>
 				<version>${wx-java.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.javen205</groupId>
+				<artifactId>IJPay</artifactId>
+				<version>${ijpay.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.redisson</groupId>
