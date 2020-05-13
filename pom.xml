@@ -109,6 +109,9 @@
 		<flowable-spring-boot-starter-basic.version>${flowable.version}</flowable-spring-boot-starter-basic.version>
 		<!-- 缓存框架-->
 		<jetcache.version>2.6.0</jetcache.version>
+		<jetcache-starter-redis.version>${jetcache.version}</jetcache-starter-redis.version>
+		<jetcache-starter-redis-springdata.version>${jetcache.version}</jetcache-starter-redis-springdata.version>
+		<jetcache-starter-redis-lettuce.version>${jetcache.version}</jetcache-starter-redis-lettuce.version>
 		<!-- mvc路径伪静态 begin -->
 		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
 		<!-- 在使用线程池等会缓存线程的组件情况下传递ThreadLocal -->
@@ -647,18 +650,38 @@
 			</dependency>
 			<dependency>
 				<groupId>com.alicp.jetcache</groupId>
-				<artifactId>jetcache-starter-redis</artifactId>
+				<artifactId>jetcache-core</artifactId>
 				<version>${jetcache.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alicp.jetcache</groupId>
+				<artifactId>jetcache-anno</artifactId>
+				<version>${jetcache.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alicp.jetcache</groupId>
+				<artifactId>jetcache-anno-api</artifactId>
+				<version>${jetcache.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alicp.jetcache</groupId>
+				<artifactId>jetcache-autoconfigure</artifactId>
+				<version>${jetcache.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alicp.jetcache</groupId>
+				<artifactId>jetcache-starter-redis</artifactId>
+				<version>${jetcache-starter-redis.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.alicp.jetcache</groupId>
 				<artifactId>jetcache-starter-redis-springdata</artifactId>
-				<version>${jetcache.version}</version>
+				<version>${jetcache-starter-redis-springdata.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.alicp.jetcache</groupId>
 				<artifactId>jetcache-starter-redis-lettuce</artifactId>
-				<version>${jetcache.version}</version>
+				<version>${jetcache-starter-redis-lettuce.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.xuxueli</groupId>
