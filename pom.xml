@@ -30,6 +30,10 @@
 		<jodd.version>5.1.4</jodd.version>
 		<!--二维码工具-->
 		<zxing.version>3.4.0</zxing.version>
+		<!--谷歌身份验证器 TOTP-->
+		<googleauth.version>1.5.0</googleauth.version>
+		<!-- 一次性口令( HOTP和 TOTP )-->
+		<java-otp.version>0.2.0</java-otp.version>
 		<!--mybatis-->
 		<mybatis.version>3.5.4</mybatis.version>
 		<mybatis-spring-boot-starter.version>2.1.2</mybatis-spring-boot-starter.version>
@@ -91,8 +95,6 @@
         <reflections.version>0.9.12</reflections.version>
 		<!--浏览器识别工具 Y2014-->
 		<uasparser.version>0.6.2</uasparser.version>
-		<!-- 图片工具 -->
-		<thumbnailator.version>0.4.11</thumbnailator.version>
 		<!--支持中文字符和拼音之间的转换 Y2016-->
 		<pinyin4j.version>2.5.1</pinyin4j.version>
 		<!--8583工具-->
@@ -182,6 +184,14 @@
 		<apns4j.version>1.1.4</apns4j.version>
 		<!--oracle数据库驱动 -->
 		<ojdbc7.version>12.1.0.2</ojdbc7.version>
+		<!-- 图片裁剪压缩 -->
+		<thumbnailator.version>0.4.11</thumbnailator.version>
+		<!--图像识别-->
+		<tess4j.version>4.5.1</tess4j.version>
+		<!--OpenCV是一个用于图像处理、分析、机器视觉方面的库-->
+		<opencv.version>4.0.1-1.4.4</opencv.version>
+		<!--视觉处理库集合 封装了计算机视觉编程人员常用库的接口-->
+		<javacv.version>1.5.3</javacv.version>
 
 		<!--####过气的工具包，已经有新服务替换####-->
 		<!--zookeeper客户端工具-->
@@ -534,11 +544,6 @@
 				<version>${bouncycastle.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>net.coobird</groupId>
-				<artifactId>thumbnailator</artifactId>
-				<version>${thumbnailator.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>com.belerweb</groupId>
 				<artifactId>pinyin4j</artifactId>
 				<version>${pinyin4j.version}</version>
@@ -632,6 +637,16 @@
 				<groupId>com.google.zxing</groupId>
 				<artifactId>javase</artifactId>
 				<version>${zxing.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.warrenstrange</groupId>
+				<artifactId>googleauth</artifactId>
+				<version>${googleauth.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.eatthepath</groupId>
+				<artifactId>java-otp</artifactId>
+				<version>${java-otp.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jasypt</groupId>
@@ -965,6 +980,36 @@
 				<groupId>com.oracle</groupId>
 				<artifactId>ojdbc7</artifactId>
 				<version>${ojdbc7.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.coobird</groupId>
+				<artifactId>thumbnailator</artifactId>
+				<version>${thumbnailator.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.sourceforge.tess4j</groupId>
+				<artifactId>tess4j</artifactId>
+				<version>${tess4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bytedeco.javacpp-presets</groupId>
+				<artifactId>opencv</artifactId>
+				<version>${opencv.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bytedeco.javacpp-presets</groupId>
+				<artifactId>opencv-platform</artifactId>
+				<version>${opencv.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bytedeco</groupId>
+				<artifactId>javacv</artifactId>
+				<version>${javacv.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bytedeco</groupId>
+				<artifactId>javacv-platform</artifactId>
+				<version>${javacv.version}</version>
 			</dependency>
 			<!--过气的工具包 -->
 			<dependency>
