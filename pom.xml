@@ -214,6 +214,7 @@
 		<jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
 		<nexus-staging-plugin.version>1.6.8</nexus-staging-plugin.version>
 		<git-commit-id-plugin.version>2.2.5</git-commit-id-plugin.version>
+		<build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
 
 		<docker.registry>192.168.0.13</docker.registry>
 		<docker.host>http://192.168.0.13:2375</docker.host>
@@ -1189,6 +1190,57 @@
 						<nexusUrl>https://oss.sonatype.org/</nexusUrl>
 						<autoReleaseAfterClose>true</autoReleaseAfterClose>
 					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>build-helper-maven-plugin</artifactId>
+					<version>${build-helper-maven-plugin.version}</version>
+					<executions>
+						<execution>
+							<id>add-source</id>
+							<phase>generate-sources</phase>
+							<goals>
+								<goal>add-source</goal>
+							</goals>
+							<configuration>
+								<sources>
+									<source>${basedir}/src/main/java</source>
+									<source>${basedir}/src/main/kotlin</source>
+								</sources>
+							</configuration>
+						</execution>
+						<execution>
+							<id>add-test-source</id>
+							<phase>generate-test-sources</phase>
+							<goals>
+								<goal>add-test-source</goal>
+							</goals>
+							<configuration>
+								<sources>
+									<source>${basedir}/src/test/java</source>
+									<source>${basedir}/src/test/kotlin</source>
+								</sources>
+							</configuration>
+						</execution>
+						<execution>
+							<id>add-resource</id>
+							<phase>generate-resources</phase>
+							<goals>
+								<goal>add-resource</goal>
+							</goals>
+							<configuration>
+								<resources>
+									<resource>
+										<directory>src/main/resources</directory>
+										<targetPath>resources</targetPath>
+										<excludes>
+											<exclude>**/fonts/**</exclude>
+										</excludes>
+									</resource>
+								</resources>
+							</configuration>
+						</execution>
+					</executions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
