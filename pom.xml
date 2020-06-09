@@ -28,8 +28,6 @@
 		<hutool.vesion>5.3.3</hutool.vesion>
 		<!--瑞士军刀-->
 		<jodd.version>5.1.4</jodd.version>
-		<!--二维码工具-->
-		<zxing.version>3.4.0</zxing.version>
 		<!--谷歌身份验证器 TOTP-->
 		<googleauth.version>1.5.0</googleauth.version>
 		<!-- 一次性口令( HOTP和 TOTP )-->
@@ -45,7 +43,7 @@
 		<!--mybatis各种json类型的处理器-->
 		<mybatis-json-typehandler.version>1.0.2</mybatis-json-typehandler.version>
 		<!--动态数据源-->
-		<dynamic-datasource-spring-boot-starter.version>3.1.0</dynamic-datasource-spring-boot-starter.version>
+		<dynamic-datasource-spring-boot-starter.version>3.1.1</dynamic-datasource-spring-boot-starter.version>
 		<!--SQL语法解释器-->
 		<jsqlparser.version>3.1</jsqlparser.version>
 		<!--数据库连接池-->
@@ -80,7 +78,9 @@
 		<kaptcha-axet.version>0.0.9</kaptcha-axet.version>
 		<!--验证码工具 Y2015-->
 		<kaptcha-penggle.version>2.3.2</kaptcha-penggle.version>
-		<!--二维码 begin-->
+		<!--二维码工具-->
+		<zxing.version>3.4.0</zxing.version>
+		<!--二维码工具 -->
 		<qrext4j.version>1.3.1</qrext4j.version>
 		<!-- 并发框架 -->
         <disruptor.version>3.4.2</disruptor.version>
@@ -88,22 +88,20 @@
         <nanohttpd.version>2.3.1</nanohttpd.version>
 		<!--规则引擎-->
         <easyrules.version>2.5.0</easyrules.version>
-		<easyrules-spring-boot-starter.version>2.5.0</easyrules-spring-boot-starter.version>
+		<easyrules-spring-boot-starter.version>${easyrules.version}</easyrules-spring-boot-starter.version>
 		<!-- html工具 -->
         <jsoup.version>1.13.1</jsoup.version>
 		<!-- 反射工具 -->
         <reflections.version>0.9.12</reflections.version>
-		<!--浏览器识别工具 Y2014-->
-		<uasparser.version>0.6.2</uasparser.version>
+		<!-- 反射工具 java8环境 请引入joor-java-8-->
+		<joor.version>0.9.13</joor.version>
+		<!-- 浏览器识别工具 Y2018-->
+		<UserAgentUtils.version>1.21</UserAgentUtils.version>
 		<!--支持中文字符和拼音之间的转换 Y2016-->
 		<pinyin4j.version>2.5.1</pinyin4j.version>
 		<!--8583工具-->
 		<jpos.version>2.1.4</jpos.version>
 		<j8583.version>1.16.0</j8583.version>
-		<!-- 图片Meta获取 -->
-		<metadata-extractor.version>2.13.0</metadata-extractor.version>
-		<!-- User Agent -->
-		<UserAgentUtils.version>1.21</UserAgentUtils.version>
 		<!--端到端的JWT创建和验证的Java库-->
 		<jjwt.version>0.9.1</jjwt.version>
 		<!-- 业务流程引擎-->
@@ -124,7 +122,7 @@
 		<oshi.version>5.0.1</oshi.version>
 		<!-- 运行期动态访问系统本地库-->
 		<jna.version>5.5.0</jna.version>
-		<jna-platform.version>5.5.0</jna-platform.version>
+		<jna-platform.version>${jna.version}</jna-platform.version>
 		<!-- JVM性能监控-->
 		<javamelody.version>1.82.0</javamelody.version>
 		<javamelody-spring-boot-starter.version>${javamelody.version}</javamelody-spring-boot-starter.version>
@@ -184,6 +182,8 @@
 		<apns4j.version>1.1.4</apns4j.version>
 		<!--oracle数据库驱动 -->
 		<ojdbc7.version>12.1.0.2</ojdbc7.version>
+		<!-- 图片Meta获取 -->
+		<metadata-extractor.version>2.13.0</metadata-extractor.version>
 		<!-- 图片裁剪压缩 -->
 		<thumbnailator.version>0.4.11</thumbnailator.version>
 		<!--图像识别-->
@@ -194,6 +194,9 @@
 		<javacv.version>1.5.3</javacv.version>
 
 		<!--####过气的工具包，已经有新服务替换####-->
+
+		<!-- 浏览器识别工具 Y2014-->
+		<uasparser.version>0.6.2</uasparser.version>
 		<!--zookeeper客户端工具-->
 		<zkclient.version>0.11</zkclient.version>
 		<zookeeper.version>3.4.14</zookeeper.version>
@@ -550,24 +553,15 @@
 				<version>${pinyin4j.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>cz.mallat.uasparser</groupId>
-				<artifactId>uasparser</artifactId>
-				<version>${uasparser.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.tuckey</groupId>
 				<artifactId>urlrewritefilter</artifactId>
 				<version>${urlrewritefilter.version}</version>
 			</dependency>
+
 			<dependency>
 				<groupId>eu.bitwalker</groupId>
 				<artifactId>UserAgentUtils</artifactId>
 				<version>${UserAgentUtils.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.drewnoakes</groupId>
-				<artifactId>metadata-extractor</artifactId>
-				<version>${metadata-extractor.version}</version>
 			</dependency>
 			<dependency>
                 <groupId>org.reflections</groupId>
@@ -575,9 +569,14 @@
                 <version>${reflections.version}</version>
             </dependency>
 			<dependency>
-				<groupId>org.iherus</groupId>
-				<artifactId>qrext4j</artifactId>
-				<version>${qrext4j.version}</version>
+				<groupId>org.jooq</groupId>
+				<artifactId>joor</artifactId>
+				<version>${joor.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jooq</groupId>
+				<artifactId>joor-java-8</artifactId>
+				<version>${joor.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.ibeetl</groupId>
@@ -638,6 +637,11 @@
 				<groupId>com.google.zxing</groupId>
 				<artifactId>javase</artifactId>
 				<version>${zxing.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.iherus</groupId>
+				<artifactId>qrext4j</artifactId>
+				<version>${qrext4j.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.warrenstrange</groupId>
@@ -983,6 +987,11 @@
 				<version>${ojdbc7.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.drewnoakes</groupId>
+				<artifactId>metadata-extractor</artifactId>
+				<version>${metadata-extractor.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>net.coobird</groupId>
 				<artifactId>thumbnailator</artifactId>
 				<version>${thumbnailator.version}</version>
@@ -1022,6 +1031,11 @@
 				<groupId>org.apache.zookeeper</groupId>
 				<artifactId>zookeeper</artifactId>
 				<version>${zookeeper.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cz.mallat.uasparser</groupId>
+				<artifactId>uasparser</artifactId>
+				<version>${uasparser.version}</version>
 			</dependency>
 			<!--私服包 -->
 			<dependency>
