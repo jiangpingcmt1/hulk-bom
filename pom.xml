@@ -189,7 +189,7 @@
 		<!--IOS推送通知服务-->
 		<apns4j.version>1.1.4</apns4j.version>
 		<!--oracle数据库驱动 -->
-		<ojdbc7.version>12.1.0.2</ojdbc7.version>
+		<ojdbc8.version>19.7.0.0</ojdbc8.version>
 		<!-- 图片Meta获取 -->
 		<metadata-extractor.version>2.13.0</metadata-extractor.version>
 		<!-- 图片裁剪压缩 -->
@@ -1020,9 +1020,9 @@
 				<version>${apns4j.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.oracle</groupId>
-				<artifactId>ojdbc7</artifactId>
-				<version>${ojdbc7.version}</version>
+				<groupId>com.oracle.database.jdbc</groupId>
+				<artifactId>ojdbc8</artifactId>
+				<version>${ojdbc8.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.drewnoakes</groupId>
@@ -1142,6 +1142,44 @@
 			<url>http://jiangpingcmt1.imwork.net:34924/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
+	<repositories>
+		<repository>
+			<id>aliyunmaven</id>
+			<url>https://maven.aliyun.com/repository/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>maven-public</id>
+			<url>http://jiangpingcmt1.imwork.net:34924/repository/maven-public/</url>
+		</repository>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+		<!--需要科学上网 -->
+		<repository>
+           <id>google</id>
+           <name>google maven</name>
+           <url>https://maven.google.com</url>
+         </repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>aliyunmaven</id>
+			<url>https://maven.aliyun.com/repository/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 
 	<build>
 		<finalName>${project.name}</finalName>
@@ -1302,19 +1340,6 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	<repositories>
-		<repository>
-			<id>nexus-aliyun</id>
-			<name>Nexus aliyun</name>
-			<url>https://maven.aliyun.com/repository/public</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 
 	<profiles>
 		<profile>
