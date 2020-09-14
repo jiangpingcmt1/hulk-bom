@@ -39,8 +39,6 @@
 		<mybatis-plus-boot-starter.version>${mybatis-plus.version}</mybatis-plus-boot-starter.version>
 		<!--持久层分布式事务-->
 		<mybatis-plus-dts.version>${mybatis-plus.version}</mybatis-plus-dts.version>
-		<!--mybatis各种json类型的处理器-->
-		<mybatis-json-typehandler.version>1.0.2</mybatis-json-typehandler.version>
 		<!--动态数据源-->
 		<dynamic-datasource-spring-boot-starter.version>3.1.1</dynamic-datasource-spring-boot-starter.version>
 		<!--SQL语法解释器-->
@@ -399,11 +397,6 @@
 				<groupId>org.mybatis.spring.boot</groupId>
 				<artifactId>mybatis-spring-boot-starter</artifactId>
 				<version>${mybatis-spring-boot-starter.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>io.wkz.kotlin</groupId>
-				<artifactId>mybatis-json-typehandler</artifactId>
-				<version>${mybatis-json-typehandler.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.baomidou</groupId>
