@@ -167,7 +167,7 @@
 		<!--微信开发JavaSDK-->
 		<wx-java.version>3.9.0</wx-java.version>
 		<wx-java-spring-boot-starter.version>${wx-java.version}</wx-java-spring-boot-starter.version>
-		<ijpay.version>1.2.0</ijpay.version>
+		<ijpay.version>2.7.0</ijpay.version>
 		<!--分布式调度-->
 		<xxl-job-core.version>2.2.0</xxl-job-core.version>
 		<!--NIO框架-->
@@ -840,7 +840,37 @@
 			</dependency>
 			<dependency>
 				<groupId>com.github.javen205</groupId>
-				<artifactId>IJPay</artifactId>
+				<artifactId>IJPay-WxPay</artifactId>
+				<version>${ijpay.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.javen205</groupId>
+				<artifactId>IJPay-AliPay</artifactId>
+				<version>${ijpay.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.javen205</groupId>
+				<artifactId>IJPay-JDPay</artifactId>
+				<version>${ijpay.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.javen205</groupId>
+				<artifactId>IJPay-QQ</artifactId>
+				<version>${ijpay.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.javen205</groupId>
+				<artifactId>IJPay-UnionPay</artifactId>
+				<version>${ijpay.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.javen205</groupId>
+				<artifactId>IJPay-PayPal</artifactId>
+				<version>${ijpay.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.javen205</groupId>
+				<artifactId>IJPay-XPay</artifactId>
 				<version>${ijpay.version}</version>
 			</dependency>
 			<dependency>
