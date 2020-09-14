@@ -3,76 +3,76 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hulk</groupId>
 	<artifactId>hulk-bom</artifactId>
-	<version>2.2.6</version>
+	<version>2.3.3</version>
 	<packaging>pom</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- ####BOM#### -->
-		<spring-framework.version>5.2.5.RELEASE</spring-framework.version>
-		<spring-boot.version>2.2.6.RELEASE</spring-boot.version>
-		<spring-cloud.version>Hoxton.SR3</spring-cloud.version>
-		<spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
-		<spring-boot-admin.version>2.2.2</spring-boot-admin.version>
+		<spring-framework.version>5.2.8.RELEASE</spring-framework.version>
+		<spring-boot.version>2.3.3.RELEASE</spring-boot.version>
+		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+		<spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
+		<spring-boot-admin.version>2.3.0</spring-boot-admin.version>
 
 		<!--#####参考spring-web#####-->
 		<!--<jackson.version>2.10.3</jackson.version>
 		<jackson-bom.version>${jackson.version}</jackson-bom.version>-->
 		<!--#####参考spring-cloud-alibaba#####-->
-		<rocketmq.version>4.7.0</rocketmq.version>
+		<rocketmq.version>4.7.1</rocketmq.version>
 		<!--稳定版本，替代spring security bom内置-->
 		<security.oauth.version>2.3.6.RELEASE</security.oauth.version>
 		<!--工具包-->
-		<hutool.vesion>5.3.3</hutool.vesion>
+		<hutool.vesion>5.4.2</hutool.vesion>
 		<!--瑞士军刀-->
-		<jodd.version>5.1.4</jodd.version>
+		<jodd.version>5.1.6</jodd.version>
 		<!--谷歌身份验证器 TOTP-->
 		<googleauth.version>1.5.0</googleauth.version>
 		<!-- 一次性口令( HOTP和 TOTP )-->
 		<java-otp.version>0.2.0</java-otp.version>
 		<!--mybatis-->
-		<mybatis.version>3.5.4</mybatis.version>
-		<mybatis-spring-boot-starter.version>2.1.2</mybatis-spring-boot-starter.version>
+		<mybatis.version>3.5.5</mybatis.version>
+		<mybatis-spring-boot-starter.version>2.1.3</mybatis-spring-boot-starter.version>
 		<!--mybatis-plus-->
-		<mybatis-plus.version>3.3.1</mybatis-plus.version>
+		<mybatis-plus.version>3.4.0</mybatis-plus.version>
 		<mybatis-plus-boot-starter.version>${mybatis-plus.version}</mybatis-plus-boot-starter.version>
 		<!--持久层分布式事务-->
-		<mybatis-plus-dts.version>${mybatis-plus.version}</mybatis-plus-dts.version>
+		<mybatis-plus-dts.version>3.3.1</mybatis-plus-dts.version>
 		<!--动态数据源-->
-		<dynamic-datasource-spring-boot-starter.version>3.1.1</dynamic-datasource-spring-boot-starter.version>
+		<dynamic-datasource-spring-boot-starter.version>3.2.0</dynamic-datasource-spring-boot-starter.version>
 		<!--SQL语法解释器-->
-		<jsqlparser.version>3.1</jsqlparser.version>
+		<jsqlparser.version>3.2</jsqlparser.version>
 		<!--数据库连接池-->
-		<druid.version>1.1.22</druid.version>
+		<druid.version>1.1.23</druid.version>
 		<druid-spring-boot-starter.version>${druid.version}</druid-spring-boot-starter.version>
 		<!--分布式数据库中间件-->
-		<sharding-sphere.version>4.1.0</sharding-sphere.version>
+		<sharding-sphere.version>4.1.1</sharding-sphere.version>
 		<sharding-jdbc-spring.version>${sharding-sphere.version}</sharding-jdbc-spring.version>
 		<sharding-jdbc-spring-boot-starter.version>${sharding-sphere.version}</sharding-jdbc-spring-boot-starter.version>
 		<!--Api文档-->
 		<springfox-swagger2.version>2.9.2</springfox-swagger2.version>
 		<!--knife4j是为Java MVC框架集成Swagger生成Api文档的增强-->
-		<knife4j.version>2.0.2</knife4j.version>
+		<knife4j.version>2.0.4</knife4j.version>
 		<!--knife4j Spring Boot 项目starter,快速使用knife4j增强文档 -->
 		<knife4j-spring-boot-starter.version>${knife4j.version}</knife4j-spring-boot-starter.version>
 		<!--knife4j Spring Cloud微服务架构下,子服务无需引用前端UI模块,只需引入后端的Jar包 -->
 		<knife4j-micro-spring-boot-starter.version>${knife4j.version}</knife4j-micro-spring-boot-starter.version>
 		<!--无需额外注解的通过注释的 SpringBoot API文档生成工具-->
-		<japidocs.version>1.3</japidocs.version>
+		<japidocs.version>1.4.3</japidocs.version>
 
 		<!-- 模版引擎 -->
-		<beetl.version>3.1.5.RELEASE</beetl.version>
+		<beetl.version>3.2.0.RELEASE</beetl.version>
 		<!--分布式事物-->
 		<codingapi.txlcn.version>5.0.2.RELEASE</codingapi.txlcn.version>
 		<!--alibaba的json api工具-->
-		<fastjson.version>1.2.68</fastjson.version>
+		<fastjson.version>1.2.73</fastjson.version>
 		<cglib.version>3.3.0</cglib.version>
 		<!--分布式应用，缓存，分布式会话，分布式任务/服务/延迟执行服务，Redis客户端-->
-		<redisson.version>3.12.5</redisson.version>
+		<redisson.version>3.13.4</redisson.version>
 		<redisson-spring-boot-starter.version>${redisson.version}</redisson-spring-boot-starter.version>
 		<!--Java安全框架,执行身份验证、授权、密码和会话管理-->
-		<shiro.version>1.5.3</shiro.version>
+		<shiro.version>1.6.0</shiro.version>
 		<shiro-spring-boot-web-starter.version>${shiro.version}</shiro-spring-boot-web-starter.version>
 		<!--验证码工具 推荐使用-->
 		<easy-captcha.version>1.6.2</easy-captcha.version>
@@ -103,7 +103,7 @@
 		<pinyin4j.version>2.5.1</pinyin4j.version>
 		<!--8583工具-->
 		<jpos.version>2.1.4</jpos.version>
-		<j8583.version>1.16.0</j8583.version>
+		<j8583.version>1.17.0</j8583.version>
 		<!--端到端的JWT创建和验证的Java库-->
 		<jjwt.version>0.9.1</jjwt.version>
 		<!-- 业务流程引擎-->
@@ -117,39 +117,39 @@
 		<!-- mvc路径伪静态 begin -->
 		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
 		<!-- 在使用线程池等会缓存线程的组件情况下传递ThreadLocal -->
-		<ttl.version>2.11.4</ttl.version>
+		<ttl.version>2.11.5</ttl.version>
 		<!-- 数据库操作跟踪工具-->
-		<p6spy.version>3.8.7</p6spy.version>
+		<p6spy.version>3.9.1</p6spy.version>
 		<!-- 获取系统信息 -->
-		<oshi.version>5.0.1</oshi.version>
+		<oshi.version>5.2.5</oshi.version>
 		<!-- 运行期动态访问系统本地库-->
-		<jna.version>5.5.0</jna.version>
+		<jna.version>5.6.0</jna.version>
 		<jna-platform.version>${jna.version}</jna-platform.version>
 		<!-- JVM性能监控-->
-		<javamelody.version>1.82.0</javamelody.version>
+		<javamelody.version>1.85.0</javamelody.version>
 		<javamelody-spring-boot-starter.version>${javamelody.version}</javamelody-spring-boot-starter.version>
 		<!-- PDF工具-->
 		<itextpdf.version>5.5.13.1</itextpdf.version>
 		<!--Web应用程序框架-->
-		<spark-core.version>2.9.1</spark-core.version>
+		<spark-core.version>2.9.2</spark-core.version>
 		<!--
 			Vertx，是一个基于JVM、轻量级、高性能的应用平台，非常适用于移动端后台、互联网、企业应用架构。
 			Vertx，基于Netty全异步通信，并扩展出了很多有用的特性。
 			Vertx，是基于事件总线设计的高性能架构，保证应用中不同部分以一种非堵塞的线程安全方式通讯。
 			Vertx，是借鉴Erlang和Akka架构设计，能充分利用多核处理器性能并实现高并发编程需求的框架。
 		-->
-		<vertx-bom.version>3.9.0</vertx-bom.version>
+		<vertx-bom.version>3.9.2</vertx-bom.version>
 		<!--jasypt配置文件加解密-->
 		<jasypt.version>1.9.3</jasypt.version>
-		<jasypt-spring-boot-starter.version>3.0.2</jasypt-spring-boot-starter.version>
+		<jasypt-spring-boot-starter.version>3.0.3</jasypt-spring-boot-starter.version>
 		<!--对象存储服务器-->
-		<minio.version>7.0.2</minio.version>
+		<minio.version>7.1.2</minio.version>
 		<!--alibaba对象存储服务器-->
 		<fastdfs_taobao_client.version>1.27.2</fastdfs_taobao_client.version>
 		<!--加解密-->
-		<bouncycastle.version>1.65</bouncycastle.version>
+		<bouncycastle.version>1.66</bouncycastle.version>
 		<!--基于布式定时任务锁, 实现分布式调度-->
-		<shedlock.version>4.9.2</shedlock.version>
+		<shedlock.version>4.14.0</shedlock.version>
 		<shedlock-provider-jdbc-template.version>${shedlock.version}</shedlock-provider-jdbc-template.version>
 		<shedlock-provider-redis-spring.version>${shedlock.version}</shedlock-provider-redis-spring.version>
 		<shedlock-provider-mongo.version>${shedlock.version}</shedlock-provider-mongo.version>
@@ -157,9 +157,9 @@
 		<!--唯品会java工具集 -->
 		<vjtools.version>1.0.8</vjtools.version>
 		<!--alibaba极速操作excel工具-->
-		<easyexcel.version>2.2.3</easyexcel.version>
+		<easyexcel.version>2.2.6</easyexcel.version>
 		<!--poi扩展工具-->
-		<easypoi.version>4.1.3</easypoi.version>
+		<easypoi.version>4.2.0</easypoi.version>
 		<easypoi-spring-boot-starter.version>${easypoi.version}</easypoi-spring-boot-starter.version>
 		<!--微信开发JavaSDK-->
 		<wx-java.version>3.9.0</wx-java.version>
@@ -169,35 +169,35 @@
 		<!--分布式调度-->
 		<xxl-job-core.version>2.2.0</xxl-job-core.version>
 		<!--NIO框架-->
-		<tio.version>3.6.0.v20200315-RELEASE</tio.version>
+		<tio.version>3.6.2.v20200808-RELEASE</tio.version>
 		<tio-websocket-spring-boot-starter.version>${tio.version}</tio-websocket-spring-boot-starter.version>
-		<smartboot-aio.version>1.4.10</smartboot-aio.version>
+		<smartboot-aio.version>1.4.12</smartboot-aio.version>
 		<!--bean copy转换-->
 		<mapstruct.version>1.3.1.Final</mapstruct.version>
 		<!--性能测试工具-->
 		<contiperf.version>2.4.3</contiperf.version>
 		<!--基准测试-->
-		<jmh.version>1.23</jmh.version>
+		<jmh.version>1.25.2</jmh.version>
 		<!--基于HTTP的API模拟器-->
-		<wiremock.version>2.26.3</wiremock.version>
+		<wiremock.version>2.27.2</wiremock.version>
 		<!--异步校验工具,用于同步异步操作的小型 Java DSL-->
-		<awaitility.version>4.0.2</awaitility.version>
+		<awaitility.version>4.0.3</awaitility.version>
 		<!-- 极简的RPC方式的HTTP调用API框架-->
-		<spring-boot-starter-forest.version>1.3.0</spring-boot-starter-forest.version>
+		<spring-boot-starter-forest.version>1.4.8</spring-boot-starter-forest.version>
 		<!--IOS推送通知服务-->
 		<apns4j.version>1.1.4</apns4j.version>
 		<!--oracle数据库驱动 -->
 		<ojdbc8.version>19.7.0.0</ojdbc8.version>
 		<!-- 图片Meta获取 -->
-		<metadata-extractor.version>2.13.0</metadata-extractor.version>
+		<metadata-extractor.version>2.14.0</metadata-extractor.version>
 		<!-- 图片裁剪压缩 -->
-		<thumbnailator.version>0.4.11</thumbnailator.version>
+		<thumbnailator.version>0.4.12</thumbnailator.version>
 		<!--图像识别-->
-		<tess4j.version>4.5.1</tess4j.version>
+		<tess4j.version>4.5.3</tess4j.version>
 		<!--OpenCV是一个用于图像处理、分析、机器视觉方面的库-->
 		<opencv.version>4.0.1-1.4.4</opencv.version>
 		<!--视觉处理库集合 封装了计算机视觉编程人员常用库的接口-->
-		<javacv.version>1.5.3</javacv.version>
+		<javacv.version>1.5.4</javacv.version>
 
 		<!--####过气的工具包，已经有新服务替换####-->
 
@@ -220,12 +220,12 @@
 
 		<!--####插件包####-->
 		<!--代码格式插件，默认使用spring 规则-->
-		<spring-checkstyle-plugin.version>0.0.22</spring-checkstyle-plugin.version>
+		<spring-checkstyle-plugin.version>0.0.23</spring-checkstyle-plugin.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
 		<nexus-staging-plugin.version>1.6.8</nexus-staging-plugin.version>
 		<git-commit-id-plugin.version>2.2.5</git-commit-id-plugin.version>
-		<build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
+		<build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>
 
 		<docker.registry>192.168.0.13</docker.registry>
 		<docker.host>http://192.168.0.13:2375</docker.host>
@@ -876,7 +876,7 @@
 			</dependency>
 			<dependency>
 				<groupId>com.github.tomakehurst</groupId>
-				<artifactId>wiremock-jre8</artifactId>
+				<artifactId>wiremock</artifactId>
 				<version>${wiremock.version}</version>
 				<scope>test</scope>
 			</dependency>
