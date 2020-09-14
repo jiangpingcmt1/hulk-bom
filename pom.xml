@@ -167,6 +167,7 @@
 		<!--微信开发JavaSDK-->
 		<wx-java.version>3.9.0</wx-java.version>
 		<wx-java-spring-boot-starter.version>${wx-java.version}</wx-java-spring-boot-starter.version>
+		<!--聚合支付，封装了微信支付、QQ支付、支付宝支付、京东支付、银联支付、PayPal支付-->
 		<ijpay.version>2.7.0</ijpay.version>
 		<!--分布式调度-->
 		<xxl-job-core.version>2.2.0</xxl-job-core.version>
