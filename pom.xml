@@ -15,6 +15,7 @@
 		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
 		<spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
 		<spring-boot-admin.version>2.3.0</spring-boot-admin.version>
+		<mica.version>2.0.6-GA</mica.version>
 
 		<!--#####参考spring-web#####-->
 		<!--<jackson.version>2.10.3</jackson.version>
@@ -271,6 +272,13 @@
 				<groupId>de.codecentric</groupId>
 				<artifactId>spring-boot-admin-dependencies</artifactId>
 				<version>${spring-boot-admin.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>net.dreamlu</groupId>
+				<artifactId>mica-bom</artifactId>
+				<version>${mica.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
