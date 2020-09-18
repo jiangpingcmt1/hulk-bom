@@ -17,6 +17,7 @@
 		<spring-boot-admin.version>2.3.0</spring-boot-admin.version>
 		<mica.version>2.0.6-GA</mica.version>
 
+
 		<!--#####参考spring-web#####-->
 		<!--<jackson.version>2.10.3</jackson.version>
 		<jackson-bom.version>${jackson.version}</jackson-bom.version>-->
@@ -28,6 +29,9 @@
 		<hutool.vesion>5.4.2</hutool.vesion>
 		<!--瑞士军刀-->
 		<jodd.version>5.1.6</jodd.version>
+		<!--第三方授权登录的工具类库-->
+		<JustAuth.version>1.15.7</JustAuth.version>
+		<justauth-spring-boot-starter.version>1.3.4</justauth-spring-boot-starter.version>
 		<!--谷歌身份验证器 TOTP-->
 		<googleauth.version>1.5.0</googleauth.version>
 		<!-- 一次性口令( HOTP和 TOTP )-->
@@ -646,6 +650,16 @@
 				<groupId>org.iherus</groupId>
 				<artifactId>qrext4j</artifactId>
 				<version>${qrext4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>me.zhyd.oauth</groupId>
+				<artifactId>JustAuth</artifactId>
+				<version>${JustAuth.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.xkcoding.justauth</groupId>
+				<artifactId>justauth-spring-boot-starter</artifactId>
+				<version>${justauth-spring-boot-starter.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.warrenstrange</groupId>
