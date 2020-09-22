@@ -63,6 +63,8 @@
 		<knife4j-spring-boot-starter.version>${knife4j.version}</knife4j-spring-boot-starter.version>
 		<!--knife4j Spring Cloud微服务架构下,子服务无需引用前端UI模块,只需引入后端的Jar包 -->
 		<knife4j-micro-spring-boot-starter.version>${knife4j.version}</knife4j-micro-spring-boot-starter.version>
+		<!--轻量级的分布式日志标记追踪神器-->
+		<tlog-all-spring-boot-starter.version>1.0.3</tlog-all-spring-boot-starter.version>
 		<!--无需额外注解的通过注释的 SpringBoot API文档生成工具-->
 		<japidocs.version>1.4.3</japidocs.version>
 
@@ -1035,6 +1037,11 @@
 				<groupId>com.github.xiaoymin</groupId>
 				<artifactId>knife4j-spring-boot-starter</artifactId>
 				<version>${knife4j-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yomahub</groupId>
+				<artifactId>tlog-all-spring-boot-starter</artifactId>
+				<version>${tlog-all-spring-boot-starter.version}</version>
 			</dependency>
 			<!--微服务项目引用注解,同UI剥离 -->
 			<dependency>
