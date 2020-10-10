@@ -93,10 +93,12 @@
 		<!--Java安全框架,执行身份验证、授权、密码和会话管理-->
 		<shiro.version>1.6.0</shiro.version>
 		<shiro-spring-boot-web-starter.version>${shiro.version}</shiro-spring-boot-web-starter.version>
+
+		<!--滑块验证码工具 推荐使用-->
+		<captcha.version>1.2.4</captcha.version>
+		<captcha-spring-boot-starter.version>${captcha.version}</captcha-spring-boot-starter.version>
 		<!--验证码工具 推荐使用-->
 		<easy-captcha.version>1.6.2</easy-captcha.version>
-		<!--验证码工具 Y2013-->
-		<kaptcha-axet.version>0.0.9</kaptcha-axet.version>
 		<!--验证码工具 Y2015-->
 		<kaptcha-penggle.version>2.3.2</kaptcha-penggle.version>
 		<!--二维码工具-->
@@ -551,6 +553,16 @@
 			   <version>${druid-spring-boot-starter.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.github.anji-plus</groupId>
+				<artifactId>captcha</artifactId>
+				<version>${captcha.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.anji-plus</groupId>
+				<artifactId>captcha-spring-boot-starter</artifactId>
+				<version>${captcha-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.github.whvcse</groupId>
 				<artifactId>easy-captcha</artifactId>
 				<version>${easy-captcha.version}</version>
@@ -559,11 +571,6 @@
 				<groupId>com.github.penggle</groupId>
 				<artifactId>kaptcha</artifactId>
 				<version>${kaptcha-penggle.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.axet</groupId>
-				<artifactId>kaptcha</artifactId>
-				<version>${kaptcha-axet.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jpos</groupId>
