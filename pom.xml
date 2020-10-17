@@ -15,18 +15,16 @@
 		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
 		<spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
 		<spring-boot-admin.version>2.3.0</spring-boot-admin.version>
-		<!--springcloud微服务核心-->
+		<!--SpringCloud微服务核心-->
 		<mica.version>2.0.6-GA</mica.version>
 		<!--Java工具类库-->
 		<hutool.vesion>5.4.2</hutool.vesion>
 		<!--瑞士军刀Java工具类库-->
 		<jodd.version>5.1.6</jodd.version>
 
-
 		<!--#####参考spring-web#####-->
 		<!--<jackson.version>2.10.3</jackson.version>
 		<jackson-bom.version>${jackson.version}</jackson-bom.version>-->
-
 
 		<!--apache-common 扩展和增加标准的 Collection框架-->
 		<commons-collections4.version>4.4</commons-collections4.version>
@@ -36,7 +34,6 @@
 		<commons-io.version>2.8.0</commons-io.version>
 		<!--apache-common 对各种各式的配置和参考文件提供读取帮助-->
 		<commons-configuration2.version>2.7</commons-configuration2.version>
-
 		<!--#####参考spring-cloud-alibaba#####-->
 		<rocketmq.version>4.7.1</rocketmq.version>
 		<!--稳定版本，替代spring security bom内置-->
@@ -46,7 +43,7 @@
 		<justauth-spring-boot-starter.version>1.3.4</justauth-spring-boot-starter.version>
 		<!--谷歌身份验证器 TOTP-->
 		<googleauth.version>1.5.0</googleauth.version>
-		<!-- 一次性口令( HOTP和 TOTP )-->
+		<!--一次性口令( HOTP和 TOTP )-->
 		<java-otp.version>0.2.0</java-otp.version>
 		<!--mybatis-->
 		<mybatis.version>3.5.5</mybatis.version>
@@ -79,7 +76,6 @@
 		<tlog-all-spring-boot-starter.version>1.0.3</tlog-all-spring-boot-starter.version>
 		<!--无需额外注解的通过注释的 SpringBoot API文档生成工具-->
 		<japidocs.version>1.4.3</japidocs.version>
-
 		<!-- 模版引擎 -->
 		<beetl.version>3.2.0.RELEASE</beetl.version>
 		<!--分布式事物-->
@@ -93,7 +89,6 @@
 		<!--Java安全框架,执行身份验证、授权、密码和会话管理-->
 		<shiro.version>1.6.0</shiro.version>
 		<shiro-spring-boot-web-starter.version>${shiro.version}</shiro-spring-boot-web-starter.version>
-
 		<!--滑动和点选验证码 推荐使用-->
 		<captcha.version>1.2.4</captcha.version>
 		<captcha-spring-boot-starter.version>${captcha.version}</captcha-spring-boot-starter.version>
@@ -107,7 +102,7 @@
 		<qrext4j.version>1.3.1</qrext4j.version>
 		<!-- 并发框架 -->
         <disruptor.version>3.4.2</disruptor.version>
-		<!--轻量级的java HTTP Server-->
+		<!--轻量级的java HTTP Server Y2016-->
         <nanohttpd.version>2.3.1</nanohttpd.version>
 		<!--规则引擎-->
         <easyrules.version>2.5.0</easyrules.version>
@@ -151,6 +146,8 @@
 		<javamelody-spring-boot-starter.version>${javamelody.version}</javamelody-spring-boot-starter.version>
 		<!-- PDF工具-->
 		<itextpdf.version>5.5.13.1</itextpdf.version>
+		<!--日期时间处理库-->
+		<joda-time.version>2.10.6</joda-time.version>
 		<!--Web应用程序框架-->
 		<spark-core.version>2.9.2</spark-core.version>
 		<!--
@@ -175,8 +172,6 @@
 		<shedlock-provider-redis-spring.version>${shedlock.version}</shedlock-provider-redis-spring.version>
 		<shedlock-provider-mongo.version>${shedlock.version}</shedlock-provider-mongo.version>
 		<shedlock-provider-elasticsearch.version>${shedlock.version}</shedlock-provider-elasticsearch.version>
-		<!--唯品会java工具集 -->
-		<vjtools.version>1.0.8</vjtools.version>
 		<!--alibaba极速操作excel工具-->
 		<easyexcel.version>2.2.6</easyexcel.version>
 		<!--poi扩展工具-->
@@ -194,13 +189,16 @@
 		<tio-websocket-spring-boot-starter.version>${tio.version}</tio-websocket-spring-boot-starter.version>
 		<smartboot-aio.version>1.4.12</smartboot-aio.version>
 		<!--bean copy转换-->
-		<mapstruct.version>1.3.1.Final</mapstruct.version>
+		<mapstruct.version>1.4.1.Final</mapstruct.version>
 		<!-- 极简的RPC方式的HTTP调用API框架-->
 		<spring-boot-starter-forest.version>1.4.8</spring-boot-starter-forest.version>
-		<!--IOS推送通知服务-->
+		<!--IOS推送通知服务 Y2017-->
 		<apns4j.version>1.1.4</apns4j.version>
 		<!--oracle数据库驱动 -->
 		<ojdbc8.version>19.7.0.0</ojdbc8.version>
+		<!--中文分词器-->
+		<ansj_seg.version>5.1.6</ansj_seg.version>
+		<jcseg-core.version>2.6.2</jcseg-core.version>
 		<!-- 图片Meta获取 -->
 		<metadata-extractor.version>2.14.0</metadata-extractor.version>
 		<!-- 图片裁剪压缩 -->
@@ -234,11 +232,6 @@
 		<!--####私服包####-->
 		<sequence.version>1.0.0</sequence.version>
 
-		<!--####很少使用####-->
-		<!--微型工具包-->
-		<fastweixin.version>1.3.15</fastweixin.version>
-		<!--分词器-->
-		<ikanalyzer.version>2012_u6</ikanalyzer.version>
 
 		<!--####插件包####-->
 		<!--代码格式插件，默认使用spring 规则-->
@@ -784,6 +777,11 @@
 				<version>${easypoi-spring-boot-starter.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>easyexcel</artifactId>
+				<version>${easyexcel.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.smartboot.socket</groupId>
 				<artifactId>aio-core</artifactId>
 				<version>${smartboot-aio.version}</version>
@@ -792,11 +790,6 @@
 				<groupId>org.smartboot.socket</groupId>
 				<artifactId>aio-pro</artifactId>
 				<version>${smartboot-aio.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.alibaba</groupId>
-				<artifactId>easyexcel</artifactId>
-				<version>${easyexcel.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.t-io</groupId>
@@ -809,11 +802,6 @@
 				<version>${tio-websocket-spring-boot-starter.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.sd4324530</groupId>
-				<artifactId>fastweixin</artifactId>
-				<version>${fastweixin.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>transmittable-thread-local</artifactId>
 				<version>${ttl.version}</version>
@@ -822,26 +810,6 @@
 				<groupId>p6spy</groupId>
 				<artifactId>p6spy</artifactId>
 				<version>${p6spy.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.vip.vjtools</groupId>
-				<artifactId>vjkit</artifactId>
-				<version>${vjtools.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.vip.vjtools</groupId>
-				<artifactId>vjmap</artifactId>
-				<version>${vjtools.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.vip.vjtools</groupId>
-				<artifactId>vjtop</artifactId>
-				<version>${vjtools.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.vip.vjtools</groupId>
-				<artifactId>vjmxcli</artifactId>
-				<version>${vjtools.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.binarywang</groupId>
@@ -938,36 +906,7 @@
 				<artifactId>spring-boot-starter-forest</artifactId>
 				<version>${spring-boot-starter-forest.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.github.tomakehurst</groupId>
-				<artifactId>wiremock</artifactId>
-				<version>${wiremock.version}</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>com.github.javatlacati</groupId>
-				<artifactId>contiperf</artifactId>
-				<version>${contiperf.version}</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.openjdk.jmh</groupId>
-				<artifactId>jmh-core</artifactId>
-				<version>${jmh.version}</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.openjdk.jmh</groupId>
-				<artifactId>jmh-generator-annprocess</artifactId>
-				<version>${jmh.version}</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.awaitility</groupId>
-				<artifactId>awaitility</artifactId>
-				<version>${awaitility.version}</version>
-				<scope>test</scope>
-			</dependency>
+
 			<dependency>
 				<groupId>org.apache.shardingsphere</groupId>
 				<artifactId>sharding-jdbc-core</artifactId>
@@ -1059,15 +998,26 @@
 				<version>${itextpdf.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>joda-time</groupId>
+				<artifactId>joda-time</artifactId>
+				<version>${joda-time.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>io.minio</groupId>
 				<artifactId>minio</artifactId>
 				<version>${minio.version}</version>
 			</dependency>
-            <dependency>
-                <groupId>com.janeluo</groupId>
-                <artifactId>ikanalyzer</artifactId>
-                <version>${ikanalyzer.version}</version>
-            </dependency>
+			<!--微服务项目引用注解,同UI剥离 -->
+			<dependency>
+				<groupId>com.github.xiaoymin</groupId>
+				<artifactId>knife4j-spring-ui</artifactId>
+				<version>${knife4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.xiaoymin</groupId>
+				<artifactId>knife4j-spring</artifactId>
+				<version>${knife4j.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.github.xiaoymin</groupId>
 				<artifactId>knife4j-micro-spring-boot-starter</artifactId>
@@ -1083,17 +1033,6 @@
 				<artifactId>tlog-all-spring-boot-starter</artifactId>
 				<version>${tlog-all-spring-boot-starter.version}</version>
 			</dependency>
-			<!--微服务项目引用注解,同UI剥离 -->
-			<dependency>
-				<groupId>com.github.xiaoymin</groupId>
-				<artifactId>knife4j-spring-ui</artifactId>
-				<version>${knife4j.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.xiaoymin</groupId>
-				<artifactId>knife4j-spring</artifactId>
-				<version>${knife4j.version}</version>
-			</dependency>
 			<dependency>
 				<groupId>io.github.yedaxia</groupId>
 				<artifactId>japidocs</artifactId>
@@ -1108,6 +1047,16 @@
 				<groupId>com.oracle.database.jdbc</groupId>
 				<artifactId>ojdbc8</artifactId>
 				<version>${ojdbc8.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ansj</groupId>
+				<artifactId>ansj_seg</artifactId>
+				<version>${ansj_seg.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.lionsoul</groupId>
+				<artifactId>jcseg-core</artifactId>
+				<version>${jcseg-core.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.drewnoakes</groupId>
@@ -1144,6 +1093,37 @@
 				<artifactId>javacv-platform</artifactId>
 				<version>${javacv.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.github.tomakehurst</groupId>
+				<artifactId>wiremock</artifactId>
+				<version>${wiremock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.github.javatlacati</groupId>
+				<artifactId>contiperf</artifactId>
+				<version>${contiperf.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openjdk.jmh</groupId>
+				<artifactId>jmh-core</artifactId>
+				<version>${jmh.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openjdk.jmh</groupId>
+				<artifactId>jmh-generator-annprocess</artifactId>
+				<version>${jmh.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.awaitility</groupId>
+				<artifactId>awaitility</artifactId>
+				<version>${awaitility.version}</version>
+				<scope>test</scope>
+			</dependency>
+
 			<!--过气的工具包 -->
 			<dependency>
 				<groupId>com.101tec</groupId>
@@ -1166,31 +1146,6 @@
 				<artifactId>sequence</artifactId>
 				<version>${sequence.version}</version>
 			</dependency>
-			<!--有排除 begin-->
-			<!--获取文件的类型 Y2017-->
-			<dependency>
-				<groupId>net.sf.jmimemagic</groupId>
-				<artifactId>jmimemagic</artifactId>
-				<version>0.1.5</version>
-				<exclusions>
-					<exclusion>
-						<groupId>xerces</groupId>
-						<artifactId>xercesImpl</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.codehaus.jackson</groupId>
-						<artifactId>jackson-xc</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.codehaus.jackson</groupId>
-						<artifactId>jackson-jaxrs</artifactId>
-					</exclusion>
-					<exclusion>
-						<artifactId>log4j</artifactId>
-						<groupId>log4j</groupId>
-					</exclusion>
-				</exclusions>
-			</dependency>
 			<!-- 未经过测试的-->
 			<!--redisson实现分布式锁-->
 			<dependency>
@@ -1202,12 +1157,13 @@
 			<dependency>
 				<groupId>org.hswebframework.web</groupId>
 				<artifactId>hsweb-concurrent-counter-redis</artifactId>
-				<version>3.0.10</version>
+				<version>3.0.11</version>
 			</dependency>
+			<!--方法参数日志注解-->
 			<dependency>
 				<groupId>wiki.xsx</groupId>
 				<artifactId>slf4j-spring-boot-starter</artifactId>
-				<version>1.2.0</version>
+				<version>1.4.1</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -1265,7 +1221,6 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
 	<build>
 		<finalName>${project.name}</finalName>
 		<resources>
@@ -1425,7 +1380,6 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-
 	<profiles>
 		<profile>
 			<id>dev</id>
@@ -1451,7 +1405,6 @@
 			</properties>
 		</profile>
 	</profiles>
-
 	 <developers>
         <developer>
             <name>hulk</name>
@@ -1463,5 +1416,4 @@
             <timezone>+8</timezone>
         </developer>
     </developers>
-
 </project>
