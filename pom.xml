@@ -216,6 +216,8 @@
 		<opencv.version>4.0.1-1.4.4</opencv.version>
 		<!--视觉处理库集合 封装了计算机视觉编程人员常用库的接口-->
 		<javacv.version>1.5.4</javacv.version>
+		<!--动态代理-->
+		<cglib.version>3.3.0</cglib.version>
 		<!--性能测试工具-->
 		<contiperf.version>2.4.3</contiperf.version>
 		<!--基准测试-->
@@ -224,8 +226,6 @@
 		<wiremock.version>2.27.2</wiremock.version>
 		<!--异步校验工具,用于同步异步操作的小型 Java DSL-->
 		<awaitility.version>4.0.3</awaitility.version>
-		<!--动态代理-->
-		<cglib.version>3.3.0</cglib.version>
 
 		<!--####过气的工具包，已经有新服务替换####-->
 		<!-- 浏览器识别工具 Y2014-->
@@ -483,11 +483,6 @@
 				<groupId>com.baomidou</groupId>
 				<artifactId>mybatis-plus-dts</artifactId>
 				<version>${mybatis-plus-dts.version}</version>
-			</dependency>
-			<dependency>
-			    <groupId>cglib</groupId>
-			    <artifactId>cglib</artifactId>
-			    <version>${cglib.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.tobato</groupId>
@@ -1110,6 +1105,11 @@
 				<groupId>org.bytedeco</groupId>
 				<artifactId>javacv-platform</artifactId>
 				<version>${javacv.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cglib</groupId>
+				<artifactId>cglib</artifactId>
+				<version>${cglib.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.tomakehurst</groupId>
