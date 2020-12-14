@@ -3,23 +3,23 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hulk</groupId>
 	<artifactId>hulk-bom</artifactId>
-	<version>2.3.3</version>
+	<version>2.3.6</version>
 	<packaging>pom</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- ####BOM#### -->
-		<spring-framework.version>5.2.8.RELEASE</spring-framework.version>
-		<spring-boot.version>2.3.3.RELEASE</spring-boot.version>
-		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
-		<spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
+		<spring-framework.version>5.2.11.RELEASE</spring-framework.version>
+		<spring-boot.version>2.3.6.RELEASE</spring-boot.version>
+		<spring-cloud.version>Hoxton.SR9</spring-cloud.version>
+		<spring-cloud-alibaba.version>2.2.3.RELEASE</spring-cloud-alibaba.version>
 		<software.amazon.awssdk.version>2.15.26</software.amazon.awssdk.version>
 		<spring-boot-admin.version>2.3.0</spring-boot-admin.version>
 		<!--SpringCloud微服务核心-->
-		<mica.version>2.0.6-GA</mica.version>
+		<mica.version>2.1.0-GA</mica.version>
 		<!--Java工具类库-->
-		<hutool.vesion>5.4.2</hutool.vesion>
+		<hutool.vesion>5.5.2</hutool.vesion>
 		<!--瑞士军刀Java工具类库-->
 		<jodd.version>5.1.6</jodd.version>
 		<!--
@@ -28,11 +28,10 @@
 		Vertx，是基于事件总线设计的高性能架构，保证应用中不同部分以一种非堵塞的线程安全方式通讯。
 		Vertx，是借鉴Erlang和Akka架构设计，能充分利用多核处理器性能并实现高并发编程需求的框架。
         -->
-		<vertx-bom.version>3.9.2</vertx-bom.version>
+		<vertx-bom.version>4.0.0</vertx-bom.version>
 		<!-- ####BOM#### -->
 		<!--#####参考spring-web#####-->
-		<!--<jackson.version>2.10.3</jackson.version>
-		<jackson-bom.version>${jackson.version}</jackson-bom.version>-->
+		<!--<jackson-bom.version>${jackson.version}</jackson-bom.version>-->
 		<!--#####参考spring-web#####-->
 		<!--apache-common 扩展和增加标准的 Collection框架-->
 		<commons-collections4.version>4.4</commons-collections4.version>
@@ -62,47 +61,48 @@
 		<!--一次性口令( HOTP和 TOTP )-->
 		<java-otp.version>0.2.0</java-otp.version>
 		<!--mybatis-->
-		<mybatis.version>3.5.5</mybatis.version>
-		<mybatis-spring-boot-starter.version>2.1.3</mybatis-spring-boot-starter.version>
+		<mybatis.version>3.5.6</mybatis.version>
+		<mybatis-spring-boot-starter.version>2.1.4</mybatis-spring-boot-starter.version>
 		<!--mybatis-plus-->
-		<mybatis-plus.version>3.4.0</mybatis-plus.version>
+		<mybatis-plus.version>3.4.1</mybatis-plus.version>
 		<mybatis-plus-boot-starter.version>${mybatis-plus.version}</mybatis-plus-boot-starter.version>
 		<!--持久层分布式事务-->
 		<mybatis-plus-dts.version>3.3.1</mybatis-plus-dts.version>
 		<!--动态数据源-->
-		<dynamic-datasource-spring-boot-starter.version>3.2.0</dynamic-datasource-spring-boot-starter.version>
+		<dynamic-datasource-spring-boot-starter.version>3.2.1</dynamic-datasource-spring-boot-starter.version>
 		<!--SQL语法解释器-->
 		<jsqlparser.version>3.2</jsqlparser.version>
 		<!--数据库连接池-->
-		<druid.version>1.1.23</druid.version>
+		<druid.version>1.2.4</druid.version>
 		<druid-spring-boot-starter.version>${druid.version}</druid-spring-boot-starter.version>
 		<!--分布式数据库中间件-->
 		<sharding-sphere.version>4.1.1</sharding-sphere.version>
 		<sharding-jdbc-spring.version>${sharding-sphere.version}</sharding-jdbc-spring.version>
 		<sharding-jdbc-spring-boot-starter.version>${sharding-sphere.version}</sharding-jdbc-spring-boot-starter.version>
 		<!--Api文档-->
-		<springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+		<springfox-swagger.version>3.0.0</springfox-swagger.version>
+		<springfox-boot-starter.version>${springfox-swagger.version}</springfox-boot-starter.version>
 		<!--knife4j是为Java MVC框架集成Swagger生成Api文档的增强-->
-		<knife4j.version>2.0.4</knife4j.version>
+		<knife4j.version>3.0.2</knife4j.version>
 		<!--knife4j Spring Boot 项目starter,快速使用knife4j增强文档 -->
 		<knife4j-spring-boot-starter.version>${knife4j.version}</knife4j-spring-boot-starter.version>
 		<!--knife4j Spring Cloud微服务架构下,子服务无需引用前端UI模块,只需引入后端的Jar包 -->
 		<knife4j-micro-spring-boot-starter.version>${knife4j.version}</knife4j-micro-spring-boot-starter.version>
-		<!--轻量级的分布式日志标记追踪神器-->
-		<tlog-all-spring-boot-starter.version>1.0.3</tlog-all-spring-boot-starter.version>
 		<!--无需额外注解的通过注释的 SpringBoot API文档生成工具-->
-		<japidocs.version>1.4.3</japidocs.version>
+		<japidocs.version>1.4.4</japidocs.version>
+		<!--轻量级的分布式日志标记追踪神器-->
+		<tlog-all-spring-boot-starter.version>1.2.0</tlog-all-spring-boot-starter.version>
 		<!-- 模版引擎 -->
-		<beetl.version>3.2.0.RELEASE</beetl.version>
+		<beetl.version>3.3.0.RELEASE</beetl.version>
 		<!--分布式事物-->
 		<codingapi.txlcn.version>5.0.2.RELEASE</codingapi.txlcn.version>
 		<!--alibaba的json api工具-->
-		<fastjson.version>1.2.73</fastjson.version>
+		<fastjson.version>1.2.75</fastjson.version>
 		<!--分布式应用，缓存，分布式会话，分布式任务/服务/延迟执行服务，Redis客户端-->
-		<redisson.version>3.13.4</redisson.version>
+		<redisson.version>3.14.0</redisson.version>
 		<redisson-spring-boot-starter.version>${redisson.version}</redisson-spring-boot-starter.version>
 		<!--Java安全框架,执行身份验证、授权、密码和会话管理-->
-		<shiro.version>1.6.0</shiro.version>
+		<shiro.version>1.7.0</shiro.version>
 		<shiro-spring-boot-web-starter.version>${shiro.version}</shiro-spring-boot-web-starter.version>
 		<!--滑动和点选验证码 推荐使用-->
 		<captcha.version>1.2.4</captcha.version>
@@ -112,8 +112,8 @@
 		<!--验证码工具 Y2015-->
 		<kaptcha-penggle.version>2.3.2</kaptcha-penggle.version>
 		<!--二维码工具-->
-		<zxing.version>3.4.0</zxing.version>
-		<!--二维码工具 -->
+		<zxing.version>3.4.1</zxing.version>
+		<!--二维码工具 Y2017-->
 		<qrext4j.version>1.3.1</qrext4j.version>
 		<!-- 并发框架 -->
         <disruptor.version>3.4.2</disruptor.version>
@@ -133,87 +133,85 @@
 		<!--支持中文字符和拼音之间的转换 Y2016-->
 		<pinyin4j.version>2.5.1</pinyin4j.version>
 		<!--8583工具-->
-		<jpos.version>2.1.4</jpos.version>
+		<jpos.version>2.1.5</jpos.version>
 		<!--8583工具-->
 		<j8583.version>1.17.0</j8583.version>
 		<!--端到端的JWT创建和验证的Java库-->
 		<jjwt.version>0.9.1</jjwt.version>
 		<!-- 业务流程引擎-->
-		<flowable.version>6.5.0</flowable.version>
+		<flowable.version>6.6.0</flowable.version>
 		<flowable-spring-boot-starter-basic.version>${flowable.version}</flowable-spring-boot-starter-basic.version>
 		<!-- 缓存框架-->
 		<jetcache.version>2.6.0</jetcache.version>
 		<jetcache-starter-redis.version>${jetcache.version}</jetcache-starter-redis.version>
 		<jetcache-starter-redis-springdata.version>${jetcache.version}</jetcache-starter-redis-springdata.version>
 		<jetcache-starter-redis-lettuce.version>${jetcache.version}</jetcache-starter-redis-lettuce.version>
-		<!-- mvc路径伪静态 begin -->
-		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
 		<!-- 在使用线程池等会缓存线程的组件情况下传递ThreadLocal -->
-		<ttl.version>2.11.5</ttl.version>
+		<ttl.version>2.12.0</ttl.version>
 		<!-- 数据库操作跟踪工具-->
 		<p6spy.version>3.9.1</p6spy.version>
 		<!-- 获取系统信息 -->
-		<oshi.version>5.2.5</oshi.version>
+		<oshi.version>5.3.6</oshi.version>
 		<!-- 运行期动态访问系统本地库-->
 		<jna.version>5.6.0</jna.version>
 		<jna-platform.version>${jna.version}</jna-platform.version>
 		<!-- JVM性能监控-->
-		<javamelody.version>1.85.0</javamelody.version>
+		<javamelody.version>1.86.0</javamelody.version>
 		<javamelody-spring-boot-starter.version>${javamelody.version}</javamelody-spring-boot-starter.version>
 		<!-- PDF工具-->
-		<itextpdf.version>5.5.13.1</itextpdf.version>
+		<itextpdf.version>5.5.13.2</itextpdf.version>
 		<!--日期时间处理库-->
-		<joda-time.version>2.10.6</joda-time.version>
+		<joda-time.version>2.10.8</joda-time.version>
 		<!--Web应用程序框架-->
-		<spark-core.version>2.9.2</spark-core.version>
+		<spark-core.version>2.9.3</spark-core.version>
 		<!--jasypt配置文件加解密-->
 		<jasypt.version>1.9.3</jasypt.version>
 		<jasypt-spring-boot-starter.version>3.0.3</jasypt-spring-boot-starter.version>
 		<!--对象存储服务器-->
-		<minio.version>7.1.2</minio.version>
+		<minio.version>8.0.3</minio.version>
 		<!--alibaba对象存储服务器-->
 		<fastdfs_taobao_client.version>1.27.2</fastdfs_taobao_client.version>
 		<!--加解密-->
-		<bouncycastle.version>1.66</bouncycastle.version>
+		<bouncycastle.version>1.67</bouncycastle.version>
 		<!--基于布式定时任务锁, 实现分布式调度-->
-		<shedlock.version>4.14.0</shedlock.version>
+		<shedlock.version>4.19.0</shedlock.version>
 		<shedlock-provider-jdbc-template.version>${shedlock.version}</shedlock-provider-jdbc-template.version>
 		<shedlock-provider-redis-spring.version>${shedlock.version}</shedlock-provider-redis-spring.version>
 		<shedlock-provider-mongo.version>${shedlock.version}</shedlock-provider-mongo.version>
 		<shedlock-provider-elasticsearch.version>${shedlock.version}</shedlock-provider-elasticsearch.version>
 		<!--alibaba极速操作excel工具-->
-		<easyexcel.version>2.2.6</easyexcel.version>
+		<easyexcel.version>2.2.7</easyexcel.version>
 		<!--poi扩展工具-->
 		<easypoi.version>4.2.0</easypoi.version>
 		<easypoi-spring-boot-starter.version>${easypoi.version}</easypoi-spring-boot-starter.version>
 		<!--微信开发JavaSDK-->
-		<wx-java.version>3.9.0</wx-java.version>
+		<wx-java.version>4.0.0</wx-java.version>
 		<wx-java-spring-boot-starter.version>${wx-java.version}</wx-java-spring-boot-starter.version>
 		<!--聚合支付，封装了微信支付、QQ支付、支付宝支付、京东支付、银联支付、PayPal支付-->
-		<ijpay.version>2.7.0</ijpay.version>
+		<ijpay.version>2.7.1</ijpay.version>
 		<!--分布式调度-->
 		<xxl-job-core.version>2.2.0</xxl-job-core.version>
 		<!--NIO框架-->
-		<tio.version>3.6.2.v20200808-RELEASE</tio.version>
+		<tio.version>3.7.0.v20201010-RELEASE</tio.version>
 		<tio-websocket-spring-boot-starter.version>${tio.version}</tio-websocket-spring-boot-starter.version>
 		<!--AIO框架-->
-		<smartboot-aio.version>1.4.12</smartboot-aio.version>
+		<smartboot-aio.version>1.5.2</smartboot-aio.version>
 		<!--bean copy转换-->
 		<mapstruct.version>1.4.1.Final</mapstruct.version>
 		<!-- 极简的RPC方式的HTTP调用API框架-->
-		<spring-boot-starter-forest.version>1.4.8</spring-boot-starter-forest.version>
+		<spring-boot-starter-forest.version>1.4.12</spring-boot-starter-forest.version>
 		<!--IOS推送通知服务 Y2017-->
 		<apns4j.version>1.1.4</apns4j.version>
 		<!--oracle数据库驱动 -->
-		<ojdbc8.version>19.7.0.0</ojdbc8.version>
+		<ojdbc8.version>19.8.0.0</ojdbc8.version>
 		<!--中文分词器-->
 		<ansj_seg.version>5.1.6</ansj_seg.version>
 		<!--中文分词器-->
 		<jcseg-core.version>2.6.2</jcseg-core.version>
 		<!-- 图片Meta获取 -->
-		<metadata-extractor.version>2.14.0</metadata-extractor.version>
+		<metadata-extractor.version>2.15.0</metadata-extractor.version>
 		<!-- 图片裁剪压缩 -->
-		<thumbnailator.version>0.4.12</thumbnailator.version>
+		<thumbnailator.version>0.4.13</thumbnailator.version>
 		<!--图像识别-->
 		<tess4j.version>4.5.3</tess4j.version>
 		<!--OpenCV是一个用于图像处理、分析、机器视觉方面的库-->
@@ -225,7 +223,7 @@
 		<!--性能测试工具-->
 		<contiperf.version>2.4.3</contiperf.version>
 		<!--基准测试-->
-		<jmh.version>1.25.2</jmh.version>
+		<jmh.version>1.27</jmh.version>
 		<!--基于HTTP的API模拟器-->
 		<wiremock.version>2.27.2</wiremock.version>
 		<!--异步校验工具,用于同步异步操作的小型 Java DSL-->
@@ -234,6 +232,8 @@
 		<ureport.version>2.2.9</ureport.version>
 
 		<!--####过气的工具包，已经有新服务替换####-->
+		<!-- mvc路径伪静态 Y2012 -->
+		<urlrewritefilter.version>4.0.4</urlrewritefilter.version>
 		<!-- 浏览器识别工具 Y2014-->
 		<uasparser.version>0.6.2</uasparser.version>
 		<!--zookeeper客户端工具-->
@@ -244,7 +244,7 @@
 		<curator.version>2.12.0</curator.version>
 		<!--####过气的工具包，已经有新服务替换####-->
 		<!--####私服包####-->
-		<sequence.version>1.0.0</sequence.version>
+		<sequence.version>1.0.1</sequence.version>
 		<!--####私服包####-->
 
 
@@ -508,26 +508,6 @@
 				<version>${fastdfs_taobao_client.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.curator</groupId>
-				<artifactId>curator-framework</artifactId>
-				<version>${curator.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.curator</groupId>
-				<artifactId>curator-client</artifactId>
-				<version>${curator.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.curator</groupId>
-				<artifactId>curator-test</artifactId>
-				<version>${curator.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.curator</groupId>
-				<artifactId>curator-x-discovery</artifactId>
-				<version>${curator.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>com.sparkjava</groupId>
 				<artifactId>spark-core</artifactId>
 				<version>${spark-core.version}</version>
@@ -540,12 +520,43 @@
 			<dependency>
 				<groupId>io.springfox</groupId>
 				<artifactId>springfox-swagger2</artifactId>
-				<version>${springfox-swagger2.version}</version>
+				<version>${springfox-swagger.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.springfox</groupId>
 				<artifactId>springfox-swagger-ui</artifactId>
-				<version>${springfox-swagger2.version}</version>
+				<version>${springfox-swagger.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-boot-starter</artifactId>
+				<version>${springfox-boot-starter.version}</version>
+			</dependency>
+			<!--微服务项目引用注解,同UI剥离 -->
+			<dependency>
+				<groupId>com.github.xiaoymin</groupId>
+				<artifactId>knife4j-spring-ui</artifactId>
+				<version>${knife4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.xiaoymin</groupId>
+				<artifactId>knife4j-spring</artifactId>
+				<version>${knife4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.xiaoymin</groupId>
+				<artifactId>knife4j-micro-spring-boot-starter</artifactId>
+				<version>${knife4j-micro-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.xiaoymin</groupId>
+				<artifactId>knife4j-spring-boot-starter</artifactId>
+				<version>${knife4j-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.github.yedaxia</groupId>
+				<artifactId>japidocs</artifactId>
+				<version>${japidocs.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.shiro</groupId>
@@ -626,11 +637,6 @@
 				<groupId>com.belerweb</groupId>
 				<artifactId>pinyin4j</artifactId>
 				<version>${pinyin4j.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.tuckey</groupId>
-				<artifactId>urlrewritefilter</artifactId>
-				<version>${urlrewritefilter.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>eu.bitwalker</groupId>
@@ -1037,36 +1043,10 @@
 				<artifactId>minio</artifactId>
 				<version>${minio.version}</version>
 			</dependency>
-			<!--微服务项目引用注解,同UI剥离 -->
-			<dependency>
-				<groupId>com.github.xiaoymin</groupId>
-				<artifactId>knife4j-spring-ui</artifactId>
-				<version>${knife4j.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.xiaoymin</groupId>
-				<artifactId>knife4j-spring</artifactId>
-				<version>${knife4j.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.xiaoymin</groupId>
-				<artifactId>knife4j-micro-spring-boot-starter</artifactId>
-				<version>${knife4j-micro-spring-boot-starter.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.xiaoymin</groupId>
-				<artifactId>knife4j-spring-boot-starter</artifactId>
-				<version>${knife4j-spring-boot-starter.version}</version>
-			</dependency>
 			<dependency>
 				<groupId>com.yomahub</groupId>
 				<artifactId>tlog-all-spring-boot-starter</artifactId>
 				<version>${tlog-all-spring-boot-starter.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>io.github.yedaxia</groupId>
-				<artifactId>japidocs</artifactId>
-				<version>${japidocs.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>cn.teaey.apns4j</groupId>
@@ -1166,6 +1146,11 @@
 
 			<!--过气的工具包 -->
 			<dependency>
+				<groupId>org.tuckey</groupId>
+				<artifactId>urlrewritefilter</artifactId>
+				<version>${urlrewritefilter.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.101tec</groupId>
 				<artifactId>zkclient</artifactId>
 				<version>${zkclient.version}</version>
@@ -1202,7 +1187,7 @@
 			</dependency>
 			<!--私服包 -->
 			<dependency>
-				<groupId>cn.ms</groupId>
+				<groupId>cn.ms.sequence</groupId>
 				<artifactId>sequence</artifactId>
 				<version>${sequence.version}</version>
 			</dependency>
