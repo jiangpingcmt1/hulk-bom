@@ -250,12 +250,12 @@
 
 		<!--####插件包####-->
 		<!--代码格式插件，默认使用spring 规则-->
-		<spring-checkstyle-plugin.version>0.0.23</spring-checkstyle-plugin.version>
-		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<spring-javaformat-maven-plugin.version>0.0.23</spring-javaformat-maven-plugin.version>
 		<jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
 		<nexus-staging-plugin.version>1.6.8</nexus-staging-plugin.version>
-		<git-commit-id-plugin.version>2.2.5</git-commit-id-plugin.version>
-		<build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>
+		<!--<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>-->
+		<!--<git-commit-id-plugin.version>3.0.1</git-commit-id-plugin.version>-->
+		<!--<build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>-->
 
 		<docker.registry>192.168.0.13</docker.registry>
 		<docker.host>http://192.168.0.13:2375</docker.host>
@@ -1293,7 +1293,7 @@
 			<plugin>
 				<groupId>io.spring.javaformat</groupId>
 				<artifactId>spring-javaformat-maven-plugin</artifactId>
-				<version>${spring-checkstyle-plugin.version}</version>
+				<version>${spring-javaformat-maven-plugin.version}</version>
 			</plugin>
 		</plugins>
 		<pluginManagement>
