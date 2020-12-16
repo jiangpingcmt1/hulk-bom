@@ -253,9 +253,9 @@
 		<spring-javaformat-maven-plugin.version>0.0.23</spring-javaformat-maven-plugin.version>
 		<jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
 		<nexus-staging-plugin.version>1.6.8</nexus-staging-plugin.version>
-		<!--<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>-->
-		<!--<git-commit-id-plugin.version>3.0.1</git-commit-id-plugin.version>-->
-		<!--<build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>-->
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<git-commit-id-plugin.version>3.0.1</git-commit-id-plugin.version>
+		<build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>
 
 		<docker.registry>192.168.0.13</docker.registry>
 		<docker.host>http://192.168.0.13:2375</docker.host>
