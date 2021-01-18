@@ -233,7 +233,7 @@
 		<ureport.version>2.2.9</ureport.version>
 		<!--SSH工具 hutool依赖-->
 		<jsch.version>0.1.54</jsch.version>
-		<!--对于Mysql中UTF8编码数据中的Emoji字符进行处理（转换、清除）-->
+		<!--对于Mysql中UTF8编码数据中的Emoji字符进行处理（转换、清除）hutool依赖-->
 		<emoji-java.version>4.0.0</emoji-java.version>
 
 		<!--####过气的工具包，已经有新服务替换####-->
