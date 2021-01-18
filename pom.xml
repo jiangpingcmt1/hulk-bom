@@ -43,7 +43,7 @@
 		<commons-configuration2.version>2.7</commons-configuration2.version>
 		<!--apache-common 文件上传-->
 		<commons-fileupload.version>1.4</commons-fileupload.version>
-		<!--apache-common 网络协议的客户端-->
+		<!--apache-common 网络协议的客户端 hutool依赖-->
 		<commons-net.version>3.6</commons-net.version>
 		<!--#####参考spring-cloud-alibaba#####-->
 		<!--消息中间件-->
@@ -231,6 +231,10 @@
 		<awaitility.version>4.0.3</awaitility.version>
 		<!--报表-->
 		<ureport.version>2.2.9</ureport.version>
+		<!--SSH工具 hutool依赖-->
+		<jsch.version>0.1.54</jsch.version>
+		<!--对于Mysql中UTF8编码数据中的Emoji字符进行处理（转换、清除）-->
+		<emoji-java.version>4.0.0</emoji-java.version>
 
 		<!--####过气的工具包，已经有新服务替换####-->
 		<!-- mvc路径伪静态 Y2012 -->
@@ -1148,6 +1152,16 @@
 				<groupId>com.bstek.ureport</groupId>
 				<artifactId>ureport2-console</artifactId>
 				<version>${ureport.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.jcraft</groupId>
+				<artifactId>jsch</artifactId>
+				<version>${jsch.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vdurmont</groupId>
+				<artifactId>emoji-java</artifactId>
+				<version>${emoji-java.version}</version>
 			</dependency>
 
 			<!--过气的工具包 -->
