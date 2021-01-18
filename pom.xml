@@ -43,7 +43,8 @@
 		<commons-configuration2.version>2.7</commons-configuration2.version>
 		<!--apache-common 文件上传-->
 		<commons-fileupload.version>1.4</commons-fileupload.version>
-
+		<!--apache-common 网络协议的客户端-->
+		<commons-net.version>3.6</commons-net.version>
 		<!--#####参考spring-cloud-alibaba#####-->
 		<!--消息中间件-->
 		<rocketmq.version>4.7.1</rocketmq.version>
@@ -67,7 +68,7 @@
 		<mybatis-plus.version>3.4.1</mybatis-plus.version>
 		<mybatis-plus-boot-starter.version>${mybatis-plus.version}</mybatis-plus-boot-starter.version>
 		<!--持久层分布式事务-->
-		<mybatis-plus-dts.version>3.3.1</mybatis-plus-dts.version>
+		<!--<mybatis-plus-dts.version>3.3.1</mybatis-plus-dts.version>-->
 		<!--动态数据源-->
 		<dynamic-datasource-spring-boot-starter.version>3.2.1</dynamic-datasource-spring-boot-starter.version>
 		<!--SQL语法解释器-->
@@ -373,6 +374,11 @@
 				<version>${commons-io.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>commons-net</groupId>
+				<artifactId>commons-net</artifactId>
+				<version>${commons-net.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.springframework.security.oauth</groupId>
 				<artifactId>spring-security-oauth2</artifactId>
 				<version>${security.oauth.version}</version>
@@ -497,11 +503,11 @@
 				<artifactId>dynamic-datasource-spring-boot-starter</artifactId>
 				<version>${dynamic-datasource-spring-boot-starter.version}</version>
 			</dependency>
-			<dependency>
+			<!--<dependency>
 				<groupId>com.baomidou</groupId>
 				<artifactId>mybatis-plus-dts</artifactId>
 				<version>${mybatis-plus-dts.version}</version>
-			</dependency>
+			</dependency>-->
 			<dependency>
 				<groupId>com.github.tobato</groupId>
 				<artifactId>fastdfs-client</artifactId>
