@@ -389,32 +389,32 @@
 			<dependency>
 				<groupId>com.fujieid</groupId>
 				<artifactId>jap-core</artifactId>
-				<version>{jap.version}</version>
+				<version>${jap.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fujieid</groupId>
 				<artifactId>jap-social</artifactId>
-				<version>{jap.version}</version>
+				<version>${jap.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fujieid</groupId>
 				<artifactId>jap-oauth2</artifactId>
-				<version>{jap.version}</version>
+				<version>${jap.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fujieid</groupId>
 				<artifactId>jap-oidc</artifactId>
-				<version>{jap.version}</version>
+				<version>${jap.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fujieid</groupId>
 				<artifactId>jap-mfa</artifactId>
-				<version>{jap.version}</version>
+				<version>${jap.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.fujieid</groupId>
 				<artifactId>jap-simple</artifactId>
-				<version>{jap.version}</version>
+				<version>${jap.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.security.experimental</groupId>
