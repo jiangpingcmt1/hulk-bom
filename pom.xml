@@ -47,38 +47,34 @@
 		<commons-net.version>3.7.2</commons-net.version>
 		<!--#####参考spring-cloud-alibaba#####-->
 		<!--消息中间件-->
-		<rocketmq.version>4.7.1</rocketmq.version>
-		<rocketmq-spring-boot-starter.version>2.1.1</rocketmq-spring-boot-starter.version>
+		<rocketmq.version>4.8.0</rocketmq.version>
+		<rocketmq-spring-boot-starter.version>2.2.0</rocketmq-spring-boot-starter.version>
 		<!--分布式事务中间件-->
-		<seata.version>1.3.0</seata.version>
+		<seata.version>1.4.1</seata.version>
 		<!--#####参考spring-cloud-alibaba#####-->
-		<!--所有需要身份认证的应用提供一套标准的解决方案，集成所有 APP。方便开发者无缝对接任何第三方应用或者自有系统。-->
-		<jap.version>1.0.0</jap.version>
 		<!--适配 OAuth 协议的授权服务器项目，旨在替代原有的 Spring Security OAuth-->
 		<spring-security-oauth2-authorization-server.version>0.1.0</spring-security-oauth2-authorization-server.version>
 		<!--稳定版本，替代spring security bom内置-->
 		<security.oauth.version>2.3.6.RELEASE</security.oauth.version>
 		<!--第三方授权登录的工具类库-->
-		<JustAuth.version>1.15.7</JustAuth.version>
-		<justauth-spring-boot-starter.version>1.3.4</justauth-spring-boot-starter.version>
-		<!--谷歌身份验证器 TOTP-->
+		<JustAuth.version>1.15.9</JustAuth.version>
+		<justauth-spring-boot-starter.version>1.3.5</justauth-spring-boot-starter.version>
+		<!--所有需要身份认证的应用提供一套标准的解决方案，集成所有 APP。方便开发者无缝对接任何第三方应用或者自有系统。-->
+		<jap.version>1.0.0</jap.version>
+		<!--谷歌身份验证器 TOTP 参考jap-mfa-->
 		<googleauth.version>1.5.0</googleauth.version>
-		<!--一次性口令( HOTP和 TOTP )-->
-		<java-otp.version>0.2.0</java-otp.version>
 		<!--mybatis-->
 		<mybatis.version>3.5.6</mybatis.version>
 		<mybatis-spring-boot-starter.version>2.1.4</mybatis-spring-boot-starter.version>
 		<!--mybatis-plus-->
-		<mybatis-plus.version>3.4.1</mybatis-plus.version>
+		<mybatis-plus.version>3.4.2</mybatis-plus.version>
 		<mybatis-plus-boot-starter.version>${mybatis-plus.version}</mybatis-plus-boot-starter.version>
-		<!--持久层分布式事务-->
-		<!--<mybatis-plus-dts.version>3.3.1</mybatis-plus-dts.version>-->
 		<!--动态数据源-->
-		<dynamic-datasource-spring-boot-starter.version>3.2.1</dynamic-datasource-spring-boot-starter.version>
+		<dynamic-datasource-spring-boot-starter.version>3.3.1</dynamic-datasource-spring-boot-starter.version>
 		<!--SQL语法解释器-->
-		<jsqlparser.version>3.2</jsqlparser.version>
+		<jsqlparser.version>4.0</jsqlparser.version>
 		<!--数据库连接池-->
-		<druid.version>1.2.4</druid.version>
+		<druid.version>1.2.5</druid.version>
 		<druid-spring-boot-starter.version>${druid.version}</druid-spring-boot-starter.version>
 		<!--分布式数据库中间件-->
 		<sharding-sphere.version>4.1.1</sharding-sphere.version>
@@ -96,23 +92,23 @@
 		<!--无需额外注解的通过注释的 SpringBoot API文档生成工具-->
 		<japidocs.version>1.4.4</japidocs.version>
 		<!--轻量级的分布式日志标记追踪神器-->
-		<tlog-all-spring-boot-starter.version>1.2.0</tlog-all-spring-boot-starter.version>
+		<tlog-all-spring-boot-starter.version>1.2.4</tlog-all-spring-boot-starter.version>
 		<!-- 模版引擎 -->
-		<beetl.version>3.3.0.RELEASE</beetl.version>
-		<!--分布式事物-->
+		<beetl.version>3.3.2.RELEASE</beetl.version>
+		<!--分布式事物 Y2019-->
 		<codingapi.txlcn.version>5.0.2.RELEASE</codingapi.txlcn.version>
 		<!--alibaba的json api工具-->
 		<fastjson.version>1.2.75</fastjson.version>
 		<!--分布式应用，缓存，分布式会话，分布式任务/服务/延迟执行服务，Redis客户端-->
-		<redisson.version>3.14.0</redisson.version>
+		<redisson.version>3.15.0</redisson.version>
 		<redisson-spring-boot-starter.version>${redisson.version}</redisson-spring-boot-starter.version>
 		<!--Java安全框架,执行身份验证、授权、密码和会话管理-->
-		<shiro.version>1.7.0</shiro.version>
+		<shiro.version>1.7.1</shiro.version>
 		<shiro-spring-boot-web-starter.version>${shiro.version}</shiro-spring-boot-web-starter.version>
 		<!--滑动和点选验证码 推荐使用-->
-		<captcha.version>1.2.4</captcha.version>
+		<captcha.version>1.2.7</captcha.version>
 		<captcha-spring-boot-starter.version>${captcha.version}</captcha-spring-boot-starter.version>
-		<!--验证码工具 推荐使用-->
+		<!--验证码工具 推荐使用 Y2019-->
 		<easy-captcha.version>1.6.2</easy-captcha.version>
 		<!--验证码工具 Y2015-->
 		<kaptcha-penggle.version>2.3.2</kaptcha-penggle.version>
@@ -124,7 +120,7 @@
         <disruptor.version>3.4.2</disruptor.version>
 		<!--轻量级的java HTTP Server Y2016-->
         <nanohttpd.version>2.3.1</nanohttpd.version>
-		<!--规则引擎-->
+		<!--规则引擎 Y2017-->
         <easyrules.version>2.5.0</easyrules.version>
 		<easyrules-spring-boot-starter.version>${easyrules.version}</easyrules-spring-boot-starter.version>
 		<!-- html工具 -->
@@ -141,7 +137,7 @@
 		<jpos.version>2.1.5</jpos.version>
 		<!--8583工具-->
 		<j8583.version>1.17.0</j8583.version>
-		<!--端到端的JWT创建和验证的Java库-->
+		<!--端到端的JWT创建和验证的Java库 Y2018-->
 		<jjwt.version>0.9.1</jjwt.version>
 		<!-- 业务流程引擎-->
 		<flowable.version>6.6.0</flowable.version>
@@ -152,13 +148,13 @@
 		<jetcache-starter-redis-springdata.version>${jetcache.version}</jetcache-starter-redis-springdata.version>
 		<jetcache-starter-redis-lettuce.version>${jetcache.version}</jetcache-starter-redis-lettuce.version>
 		<!-- 在使用线程池等会缓存线程的组件情况下传递ThreadLocal -->
-		<ttl.version>2.12.0</ttl.version>
+		<ttl.version>2.12.1</ttl.version>
 		<!-- 数据库操作跟踪工具-->
 		<p6spy.version>3.9.1</p6spy.version>
 		<!-- 获取系统信息 -->
-		<oshi.version>5.3.6</oshi.version>
+		<oshi.version>5.6.0</oshi.version>
 		<!-- 运行期动态访问系统本地库-->
-		<jna.version>5.6.0</jna.version>
+		<jna.version>5.7.0</jna.version>
 		<jna-platform.version>${jna.version}</jna-platform.version>
 		<!-- JVM性能监控-->
 		<javamelody.version>1.86.0</javamelody.version>
@@ -179,7 +175,7 @@
 		<!--加解密-->
 		<bouncycastle.version>1.67</bouncycastle.version>
 		<!--基于布式定时任务锁, 实现分布式调度-->
-		<shedlock.version>4.19.0</shedlock.version>
+		<shedlock.version>4.20.1</shedlock.version>
 		<shedlock-provider-jdbc-template.version>${shedlock.version}</shedlock-provider-jdbc-template.version>
 		<shedlock-provider-redis-spring.version>${shedlock.version}</shedlock-provider-redis-spring.version>
 		<shedlock-provider-mongo.version>${shedlock.version}</shedlock-provider-mongo.version>
@@ -539,11 +535,6 @@
 				<artifactId>dynamic-datasource-spring-boot-starter</artifactId>
 				<version>${dynamic-datasource-spring-boot-starter.version}</version>
 			</dependency>
-			<!--<dependency>
-				<groupId>com.baomidou</groupId>
-				<artifactId>mybatis-plus-dts</artifactId>
-				<version>${mybatis-plus-dts.version}</version>
-			</dependency>-->
 			<dependency>
 				<groupId>com.github.tobato</groupId>
 				<artifactId>fastdfs-client</artifactId>
@@ -779,11 +770,6 @@
 				<groupId>com.warrenstrange</groupId>
 				<artifactId>googleauth</artifactId>
 				<version>${googleauth.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.eatthepath</groupId>
-				<artifactId>java-otp</artifactId>
-				<version>${java-otp.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jasypt</groupId>
