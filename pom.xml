@@ -3,23 +3,23 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hulk</groupId>
 	<artifactId>hulk-bom</artifactId>
-	<version>2.3.6</version>
+	<version>2.4.3</version>
 	<packaging>pom</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- ####BOM#### -->
-		<spring-framework.version>5.2.11.RELEASE</spring-framework.version>
-		<spring-boot.version>2.3.6.RELEASE</spring-boot.version>
-		<spring-cloud.version>Hoxton.SR9</spring-cloud.version>
-		<spring-cloud-alibaba.version>2.2.3.RELEASE</spring-cloud-alibaba.version>
-		<software.amazon.awssdk.version>2.15.44</software.amazon.awssdk.version>
-		<spring-boot-admin.version>2.3.0</spring-boot-admin.version>
+		<spring-framework.version>5.3.4</spring-framework.version>
+		<spring-boot.version>2.4.3</spring-boot.version>
+		<spring-cloud.version>2020.0.1</spring-cloud.version>
+		<spring-cloud-alibaba.version>2.2.5.RELEASE</spring-cloud-alibaba.version>
+		<software.amazon.awssdk.version>2.16.9</software.amazon.awssdk.version>
+		<spring-boot-admin.version>2.4.0</spring-boot-admin.version>
 		<!--SpringCloud微服务核心-->
-		<mica.version>2.1.0-GA</mica.version>
+		<mica.version>2.4.3-GA</mica.version>
 		<!--Java工具类库-->
-		<hutool.vesion>5.5.2</hutool.vesion>
+		<hutool.vesion>5.5.9</hutool.vesion>
 		<!--瑞士军刀Java工具类库-->
 		<jodd.version>5.1.6</jodd.version>
 		<!--
@@ -28,7 +28,7 @@
 		Vertx，是基于事件总线设计的高性能架构，保证应用中不同部分以一种非堵塞的线程安全方式通讯。
 		Vertx，是借鉴Erlang和Akka架构设计，能充分利用多核处理器性能并实现高并发编程需求的框架。
         -->
-		<vertx-bom.version>4.0.0</vertx-bom.version>
+		<vertx-bom.version>4.0.2</vertx-bom.version>
 		<!-- ####BOM#### -->
 		<!--#####参考spring-web#####-->
 		<!--<jackson-bom.version>${jackson.version}</jackson-bom.version>-->
@@ -44,7 +44,7 @@
 		<!--apache-common 文件上传-->
 		<commons-fileupload.version>1.4</commons-fileupload.version>
 		<!--apache-common 网络协议的客户端 hutool依赖-->
-		<commons-net.version>3.6</commons-net.version>
+		<commons-net.version>3.7.2</commons-net.version>
 		<!--#####参考spring-cloud-alibaba#####-->
 		<!--消息中间件-->
 		<rocketmq.version>4.7.1</rocketmq.version>
@@ -327,13 +327,6 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<!--<dependency>
-				<groupId>com.fasterxml.jackson</groupId>
-				<artifactId>jackson-bom</artifactId>
-				<version>${jackson-bom.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>-->
 			<dependency>
 				<groupId>org.jodd</groupId>
 				<artifactId>jodd-bom</artifactId>
