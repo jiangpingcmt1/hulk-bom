@@ -162,18 +162,18 @@
 		<!-- PDF工具-->
 		<itextpdf.version>5.5.13.2</itextpdf.version>
 		<!--日期时间处理库-->
-		<joda-time.version>2.10.8</joda-time.version>
+		<joda-time.version>2.10.10</joda-time.version>
 		<!--Web应用程序框架-->
 		<spark-core.version>2.9.3</spark-core.version>
 		<!--jasypt配置文件加解密-->
 		<jasypt.version>1.9.3</jasypt.version>
 		<jasypt-spring-boot-starter.version>3.0.3</jasypt-spring-boot-starter.version>
 		<!--对象存储服务器-->
-		<minio.version>8.0.3</minio.version>
+		<minio.version>8.1.0</minio.version>
 		<!--alibaba对象存储服务器-->
 		<fastdfs_taobao_client.version>1.27.2</fastdfs_taobao_client.version>
 		<!--加解密-->
-		<bouncycastle.version>1.67</bouncycastle.version>
+		<bouncycastle.version>1.68</bouncycastle.version>
 		<!--基于布式定时任务锁, 实现分布式调度-->
 		<shedlock.version>4.20.1</shedlock.version>
 		<shedlock-provider-jdbc-template.version>${shedlock.version}</shedlock-provider-jdbc-template.version>
@@ -189,23 +189,23 @@
 		<wx-java.version>4.0.0</wx-java.version>
 		<wx-java-spring-boot-starter.version>${wx-java.version}</wx-java-spring-boot-starter.version>
 		<!--聚合支付，封装了微信支付、QQ支付、支付宝支付、京东支付、银联支付、PayPal支付-->
-		<ijpay.version>2.7.1</ijpay.version>
+		<ijpay.version>2.7.3</ijpay.version>
 		<!--分布式调度-->
-		<xxl-job-core.version>2.2.0</xxl-job-core.version>
+		<xxl-job-core.version>2.3.0</xxl-job-core.version>
 		<!--NIO框架-->
-		<tio.version>3.7.0.v20201010-RELEASE</tio.version>
+		<tio.version>3.7.1.v20210106-RELEASE</tio.version>
 		<tio-websocket-spring-boot-starter.version>${tio.version}</tio-websocket-spring-boot-starter.version>
 		<!--AIO框架-->
-		<smartboot-aio.version>1.5.2</smartboot-aio.version>
+		<smartboot-aio.version>1.5.5</smartboot-aio.version>
 		<!--bean copy转换-->
-		<mapstruct.version>1.4.1.Final</mapstruct.version>
+		<mapstruct.version>1.4.2.Final</mapstruct.version>
 		<!-- 极简的RPC方式的HTTP调用API框架-->
 		<spring-boot-starter-forest.version>1.4.12</spring-boot-starter-forest.version>
 		<!--IOS推送通知服务 Y2017-->
 		<apns4j.version>1.1.4</apns4j.version>
 		<!--oracle数据库驱动 -->
-		<ojdbc8.version>19.8.0.0</ojdbc8.version>
-		<!--中文分词器-->
+		<ojdbc8.version>21.1.0.0</ojdbc8.version>
+		<!--中文分词器 Y2018-->
 		<ansj_seg.version>5.1.6</ansj_seg.version>
 		<!--中文分词器-->
 		<jcseg-core.version>2.6.2</jcseg-core.version>
@@ -221,20 +221,20 @@
 		<javacv.version>1.5.4</javacv.version>
 		<!--动态代理-->
 		<cglib.version>3.3.0</cglib.version>
-		<!--性能测试工具-->
+		<!--性能测试工具 Y2019-->
 		<contiperf.version>2.4.3</contiperf.version>
 		<!--基准测试-->
-		<jmh.version>1.27</jmh.version>
+		<jmh.version>1.28</jmh.version>
 		<!--基于HTTP的API模拟器-->
 		<wiremock.version>2.27.2</wiremock.version>
 		<!--异步校验工具,用于同步异步操作的小型 Java DSL-->
 		<awaitility.version>4.0.3</awaitility.version>
-		<!--报表-->
+		<!--报表 Y2018-->
 		<ureport.version>2.2.9</ureport.version>
-		<!--SSH工具 hutool依赖-->
+		<!--SSH工具 hutool依赖 Y2018-->
 		<jsch.version>0.1.54</jsch.version>
-		<!--对于Mysql中UTF8编码数据中的Emoji字符进行处理（转换、清除）hutool依赖-->
-		<emoji-java.version>4.0.0</emoji-java.version>
+		<!--对于Mysql中UTF8编码数据中的Emoji字符进行处理（转换、清除）hutool依赖 Y2019-->
+		<emoji-java.version>5.1.1</emoji-java.version>
 
 		<!--####过气的工具包，已经有新服务替换####-->
 		<!-- mvc路径伪静态 Y2012 -->
@@ -954,6 +954,11 @@
 			<dependency>
 				<groupId>com.github.javen205</groupId>
 				<artifactId>IJPay-XPay</artifactId>
+				<version>${ijpay.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.javen205</groupId>
+				<artifactId>IJPay-All</artifactId>
 				<version>${ijpay.version}</version>
 			</dependency>
 			<dependency>
