@@ -44,7 +44,7 @@
 		<!--apache-common 文件上传-->
 		<commons-fileupload.version>1.4</commons-fileupload.version>
 		<!--apache-common 网络协议的客户端 hutool依赖-->
-		<commons-net.version>3.6</commons-net.version>
+		<commons-net.version>3.7.2</commons-net.version>
 		<!--#####参考spring-cloud-alibaba#####-->
 		<!--消息中间件-->
 		<rocketmq.version>4.7.1</rocketmq.version>
