@@ -18,9 +18,11 @@
 		<spring-boot-admin.version>2.4.0</spring-boot-admin.version>
 		<!--SpringCloud微服务核心-->
 		<mica.version>2.4.3-GA</mica.version>
-		<!--Java工具类库-->
+		<!--Java工具类库(国产)-->
 		<hutool.vesion>5.5.9</hutool.vesion>
-		<!--瑞士军刀Java工具类库-->
+		<!--Java 工具类库(google)-->
+		<guava.vesion>5.5.9</guava.vesion>
+		<!--Java工具类库(瑞士军刀)-->
 		<jodd.version>5.1.6</jodd.version>
 		<!--
 		Vertx，是一个基于JVM、轻量级、高性能的应用平台，非常适用于移动端后台、互联网、企业应用架构。
@@ -705,6 +707,11 @@
 				<groupId>cn.hutool</groupId>
 				<artifactId>hutool-all</artifactId>
 				<version>${hutool.vesion}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.vesion}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.flowable</groupId>
