@@ -21,7 +21,7 @@
 		<!--Java工具类库(国产)-->
 		<hutool.vesion>5.5.9</hutool.vesion>
 		<!--Java 工具类库(google)-->
-		<guava.vesion>5.5.9</guava.vesion>
+		<guava.vesion>30.1-jre</guava.vesion>
 		<!--Java工具类库(瑞士军刀)-->
 		<jodd.version>5.1.6</jodd.version>
 		<!--
