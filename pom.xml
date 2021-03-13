@@ -19,7 +19,7 @@
 		<!--SpringCloud微服务核心-->
 		<mica.version>2.1.0-GA</mica.version>
 		<!--Java工具类库-->
-		<hutool.vesion>5.5.2</hutool.vesion>
+		<hutool.vesion>5.5.7</hutool.vesion>
 		<!--瑞士军刀Java工具类库-->
 		<jodd.version>5.1.6</jodd.version>
 		<!--
