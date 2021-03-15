@@ -95,6 +95,8 @@
 		<japidocs.version>1.4.4</japidocs.version>
 		<!--轻量级的分布式日志标记追踪神器-->
 		<tlog-all-spring-boot-starter.version>1.2.4</tlog-all-spring-boot-starter.version>
+		<!--日志传输收集管道-->
+		<logstash-logback-encoder.version>6.6</logstash-logback-encoder.version>
 		<!-- 模版引擎 -->
 		<beetl.version>3.3.2.RELEASE</beetl.version>
 		<!--分布式事物 Y2019-->
@@ -1087,6 +1089,11 @@
 				<groupId>com.yomahub</groupId>
 				<artifactId>tlog-all-spring-boot-starter</artifactId>
 				<version>${tlog-all-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.logstash.logback</groupId>
+				<artifactId>logstash-logback-encoder</artifactId>
+				<version>${logstash-logback-encoder.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>cn.teaey.apns4j</groupId>
