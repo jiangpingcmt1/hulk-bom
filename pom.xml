@@ -156,9 +156,9 @@
 		<!-- 数据库操作跟踪工具-->
 		<p6spy.version>3.9.1</p6spy.version>
 		<!-- 获取系统信息 -->
-		<oshi.version>5.6.0</oshi.version>
+		<oshi.version>5.6.1</oshi.version>
 		<!-- 运行期动态访问系统本地库-->
-		<jna.version>5.7.0</jna.version>
+		<jna.version>5.8.0</jna.version>
 		<jna-platform.version>${jna.version}</jna-platform.version>
 		<!-- JVM性能监控-->
 		<javamelody.version>1.86.0</javamelody.version>
@@ -263,8 +263,8 @@
 		<jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
 		<nexus-staging-plugin.version>1.6.8</nexus-staging-plugin.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-		<git-commit-id-plugin.version>3.0.1</git-commit-id-plugin.version>
 		<build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>
+		<exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
 
 		<docker.registry>192.168.0.13</docker.registry>
 		<docker.host>http://192.168.0.13:2375</docker.host>
@@ -1412,11 +1412,7 @@
 						</execution>
 					</executions>
 				</plugin>
-				<plugin>
-					<groupId>pl.project13.maven</groupId>
-					<artifactId>git-commit-id-plugin</artifactId>
-					<version>${git-commit-id-plugin.version}</version>
-				</plugin>
+
 				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
 					<artifactId>nexus-staging-maven-plugin</artifactId>
@@ -1478,6 +1474,11 @@
 							</configuration>
 						</execution>
 					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<version>${exec-maven-plugin.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
