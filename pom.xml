@@ -204,7 +204,7 @@
 		<!--bean copy转换-->
 		<mapstruct.version>1.4.2.Final</mapstruct.version>
 		<!-- 极简的RPC方式的HTTP调用API框架-->
-		<spring-boot-starter-forest.version>1.4.12</spring-boot-starter-forest.version>
+		<forest-spring-boot-starter.version>1.5.0</forest-spring-boot-starter.version>
 		<!--IOS推送通知服务 Y2017-->
 		<apns4j.version>1.1.4</apns4j.version>
 		<!--oracle数据库驱动 -->
@@ -982,8 +982,8 @@
 			</dependency>
 			<dependency>
 				<groupId>com.dtflys.forest</groupId>
-				<artifactId>spring-boot-starter-forest</artifactId>
-				<version>${spring-boot-starter-forest.version}</version>
+				<artifactId>forest-spring-boot-starter</artifactId>
+				<version>${forest-spring-boot-starter.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.shardingsphere</groupId>
