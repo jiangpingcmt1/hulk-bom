@@ -165,7 +165,7 @@
 		<!-- 数据库操作跟踪工具-->
 		<p6spy.version>3.9.1</p6spy.version>
 		<!-- 获取系统信息 -->
-		<oshi.version>5.6.1</oshi.version>
+		<oshi.version>5.8.0</oshi.version>
 		<!-- 运行期动态访问系统本地库-->
 		<jna.version>5.8.0</jna.version>
 		<jna-platform.version>${jna.version}</jna-platform.version>
@@ -221,31 +221,31 @@
 		<!--中文分词器-->
 		<jcseg-core.version>2.6.2</jcseg-core.version>
 		<!-- 图片Meta获取 -->
-		<metadata-extractor.version>2.15.0</metadata-extractor.version>
+		<metadata-extractor.version>2.16.0</metadata-extractor.version>
 		<!-- 图片裁剪压缩 -->
-		<thumbnailator.version>0.4.13</thumbnailator.version>
+		<thumbnailator.version>0.4.14</thumbnailator.version>
 		<!--图像识别-->
-		<tess4j.version>4.5.3</tess4j.version>
-		<!--OpenCV是一个用于图像处理、分析、机器视觉方面的库-->
-		<opencv.version>4.0.1-1.4.4</opencv.version>
-		<!--视觉处理库集合 封装了计算机视觉编程人员常用库的接口-->
-		<javacv.version>1.5.4</javacv.version>
+		<tess4j.version>4.5.5</tess4j.version>
 		<!--动态代理-->
 		<cglib.version>3.3.0</cglib.version>
 		<!--性能测试工具 Y2019-->
 		<contiperf.version>2.4.3</contiperf.version>
 		<!--基准测试-->
-		<jmh.version>1.28</jmh.version>
+		<jmh.version>1.32</jmh.version>
 		<!--基于HTTP的API模拟器-->
 		<wiremock.version>2.27.2</wiremock.version>
 		<!--异步校验工具,用于同步异步操作的小型 Java DSL-->
-		<awaitility.version>4.0.3</awaitility.version>
+		<awaitility.version>4.1.0</awaitility.version>
 		<!--报表 Y2018-->
 		<ureport.version>2.2.9</ureport.version>
 		<!--SSH工具 hutool依赖 Y2018-->
-		<jsch.version>0.1.54</jsch.version>
+		<jsch.version>0.1.55</jsch.version>
 		<!--对于Mysql中UTF8编码数据中的Emoji字符进行处理（转换、清除）hutool依赖 Y2019-->
 		<emoji-java.version>5.1.1</emoji-java.version>
+
+		<!--####私服包####-->
+		<sequence.version>1.0.1</sequence.version>
+		<!--####私服包####-->
 
 		<!--####过气的工具包，已经有新服务替换####-->
 		<!-- mvc路径伪静态 Y2012 -->
@@ -259,10 +259,6 @@
 		<!--zookeeper客户端工具,参考platform-bom-->
 		<curator.version>2.12.0</curator.version>
 		<!--####过气的工具包，已经有新服务替换####-->
-		<!--####私服包####-->
-		<sequence.version>1.0.1</sequence.version>
-		<!--####私服包####-->
-
 
 		<!--####插件包####-->
 		<!--代码格式插件，默认使用spring 规则-->
@@ -281,7 +277,6 @@
 		<docker.password>admin12345</docker.password>
 		<docker.plugin.version>0.33.0</docker.plugin.version>
 		<!--####插件包####-->
-
 	</properties>
 
 	<dependencyManagement>
@@ -1189,26 +1184,6 @@
 				<groupId>net.sourceforge.tess4j</groupId>
 				<artifactId>tess4j</artifactId>
 				<version>${tess4j.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco.javacpp-presets</groupId>
-				<artifactId>opencv</artifactId>
-				<version>${opencv.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco.javacpp-presets</groupId>
-				<artifactId>opencv-platform</artifactId>
-				<version>${opencv.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>javacv</artifactId>
-				<version>${javacv.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.bytedeco</groupId>
-				<artifactId>javacv-platform</artifactId>
-				<version>${javacv.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>cglib</groupId>
