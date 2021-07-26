@@ -15,14 +15,14 @@
 		<spring-native.version>0.10.1</spring-native.version>
 		<spring-cloud.version>2020.0.3</spring-cloud.version>
 		<spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
-		<software.amazon.awssdk.version>2.16.9</software.amazon.awssdk.version>
-		<spring-boot-admin.version>2.4.2</spring-boot-admin.version>
+		<spring-boot-admin.version>2.4.3</spring-boot-admin.version>
+		<software.amazon.awssdk.version>2.17.4</software.amazon.awssdk.version>
 		<!--SpringCloud微服务核心-->
 		<mica.version>2.5.2</mica.version>
 		<!--Java工具类库(国产)-->
-		<hutool.vesion>5.7.3</hutool.vesion>
+		<hutool.vesion>5.7.5</hutool.vesion>
 		<!--Java 工具类库(google)-->
-		<guava.vesion>30.1-jre</guava.vesion>
+		<guava.vesion>30.1.1-jre</guava.vesion>
 		<!--Java工具类库(瑞士军刀)-->
 		<jodd.version>5.1.6</jodd.version>
 		<!--
@@ -31,58 +31,57 @@
 		Vertx，是基于事件总线设计的高性能架构，保证应用中不同部分以一种非堵塞的线程安全方式通讯。
 		Vertx，是借鉴Erlang和Akka架构设计，能充分利用多核处理器性能并实现高并发编程需求的框架。
         -->
-		<vertx-bom.version>4.0.2</vertx-bom.version>
+		<vertx-bom.version>4.1.2</vertx-bom.version>
 		<!-- ####BOM#### -->
-		<!--#####参考spring-web#####-->
-		<!--<jackson-bom.version>${jackson.version}</jackson-bom.version>-->
-		<!--#####参考spring-web#####-->
+		<!--Web应用程序框架-->
+		<spark-core.version>2.9.3</spark-core.version>
 		<!--apache-common 扩展和增加标准的 Collection框架-->
 		<commons-collections4.version>4.4</commons-collections4.version>
 		<!--apache-common 反射和自省API的包装-->
 		<commons-beanutils.version>1.9.4</commons-beanutils.version>
 		<!--apache-common I/O 工具集-->
-		<commons-io.version>2.8.0</commons-io.version>
+		<commons-io.version>2.11.0</commons-io.version>
 		<!--apache-common 对各种各式的配置和参考文件提供读取帮助-->
 		<commons-configuration2.version>2.7</commons-configuration2.version>
 		<!--apache-common 文件上传-->
 		<commons-fileupload.version>1.4</commons-fileupload.version>
 		<!--apache-common 网络协议的客户端 hutool依赖-->
-		<commons-net.version>3.7.2</commons-net.version>
+		<commons-net.version>3.8.0</commons-net.version>
 		<!--#####参考spring-cloud-alibaba#####-->
 		<!--消息中间件-->
-		<rocketmq.version>4.8.0</rocketmq.version>
+		<rocketmq.version>4.9.0</rocketmq.version>
 		<rocketmq-spring-boot-starter.version>2.2.0</rocketmq-spring-boot-starter.version>
 		<!--分布式事务中间件-->
-		<seata.version>1.4.1</seata.version>
+		<seata.version>1.4.2</seata.version>
 		<!--#####参考spring-cloud-alibaba#####-->
 		<!--适配 OAuth 协议的授权服务器项目，旨在替代原有的 Spring Security OAuth-->
-		<spring-security-oauth2-authorization-server.version>0.1.0</spring-security-oauth2-authorization-server.version>
+		<spring-security-oauth2-authorization-server.version>0.1.2</spring-security-oauth2-authorization-server.version>
 		<!--稳定版本，替代spring security bom内置-->
 		<security.oauth.version>2.3.6.RELEASE</security.oauth.version>
 		<!--权限认证框架-->
-		<sa-token.version>1.19.0</sa-token.version>
+		<sa-token.version>1.24.0</sa-token.version>
 
 		<!--第三方授权登录的工具类库-->
-		<JustAuth.version>1.15.9</JustAuth.version>
-		<justauth-spring-boot-starter.version>1.3.5</justauth-spring-boot-starter.version>
+		<JustAuth.version>1.16.1</JustAuth.version>
+		<justauth-spring-boot-starter.version>1.4.0</justauth-spring-boot-starter.version>
 		<!--所有需要身份认证的应用提供一套标准的解决方案，集成所有 APP。方便开发者无缝对接任何第三方应用或者自有系统。-->
-		<jap.version>1.0.0</jap.version>
+		<jap.version>1.0.2</jap.version>
 		<!--谷歌身份验证器 TOTP 参考jap-mfa-->
 		<googleauth.version>1.5.0</googleauth.version>
 		<!--mybatis-->
 		<mybatis.version>3.5.7</mybatis.version>
-		<mybatis-spring-boot-starter.version>2.1.4</mybatis-spring-boot-starter.version>
+		<mybatis-spring-boot-starter.version>2.2.0</mybatis-spring-boot-starter.version>
 		<!--MyBatis官方动态SQL扩展-->
 		<mybatis-dynamic-sql.version>1.3.0</mybatis-dynamic-sql.version>
 		<!--mybatis-plus-->
-		<mybatis-plus.version>3.4.3</mybatis-plus.version>
+		<mybatis-plus.version>3.4.3.1</mybatis-plus.version>
 		<mybatis-plus-boot-starter.version>${mybatis-plus.version}</mybatis-plus-boot-starter.version>
 		<!--动态数据源-->
 		<dynamic-datasource-spring-boot-starter.version>3.4.0</dynamic-datasource-spring-boot-starter.version>
 		<!--SQL语法解释器-->
-		<jsqlparser.version>4.0</jsqlparser.version>
+		<jsqlparser.version>4.1</jsqlparser.version>
 		<!--数据库连接池-->
-		<druid.version>1.2.7</druid.version>
+		<druid.version>1.2.6</druid.version>
 		<druid-spring-boot-starter.version>${druid.version}</druid-spring-boot-starter.version>
 		<!--分布式数据库中间件-->
 		<sharding-sphere.version>4.1.1</sharding-sphere.version>
@@ -100,19 +99,19 @@
 		<!--无需额外注解的通过注释的 SpringBoot API文档生成工具-->
 		<japidocs.version>1.4.4</japidocs.version>
 		<!--轻量级的分布式日志标记追踪神器-->
-		<tlog-all-spring-boot-starter.version>1.2.4</tlog-all-spring-boot-starter.version>
+		<tlog-spring-boot-starter.version>1.3.1</tlog-spring-boot-starter.version>
 		<!--日志传输收集管道-->
 		<logstash-logback-encoder.version>6.6</logstash-logback-encoder.version>
 		<!--lok日志收集分析-->
 		<loki-logback-appender-jdk8.version>1.2.0</loki-logback-appender-jdk8.version>
 		<!-- 模版引擎 -->
-		<beetl.version>3.3.2.RELEASE</beetl.version>
+		<beetl.version>3.4.0.RELEASE</beetl.version>
 		<!--分布式事物 Y2019-->
 		<codingapi.txlcn.version>5.0.2.RELEASE</codingapi.txlcn.version>
 		<!--alibaba的json api工具-->
-		<fastjson.version>1.2.75</fastjson.version>
+		<fastjson.version>1.2.76</fastjson.version>
 		<!--分布式应用，缓存，分布式会话，分布式任务/服务/延迟执行服务，Redis客户端-->
-		<redisson.version>3.15.0</redisson.version>
+		<redisson.version>3.16.0</redisson.version>
 		<redisson-spring-boot-starter.version>${redisson.version}</redisson-spring-boot-starter.version>
 		<!--Java安全框架,执行身份验证、授权、密码和会话管理-->
 		<shiro.version>1.7.1</shiro.version>
@@ -129,28 +128,30 @@
 		<!--二维码工具 Y2017-->
 		<qrext4j.version>1.3.1</qrext4j.version>
 		<!-- 并发框架 -->
-        <disruptor.version>3.4.2</disruptor.version>
+        <disruptor.version>3.4.4</disruptor.version>
 		<!--轻量级的java HTTP Server Y2016-->
         <nanohttpd.version>2.3.1</nanohttpd.version>
 		<!--规则引擎 Y2017-->
         <easyrules.version>2.5.0</easyrules.version>
 		<easyrules-spring-boot-starter.version>${easyrules.version}</easyrules-spring-boot-starter.version>
 		<!-- html工具 -->
-        <jsoup.version>1.13.1</jsoup.version>
+        <jsoup.version>1.14.1</jsoup.version>
 		<!-- 反射工具 -->
         <reflections.version>0.9.12</reflections.version>
 		<!-- 反射工具 java8环境 请引入joor-java-8-->
-		<joor.version>0.9.13</joor.version>
+		<joor.version>0.9.14</joor.version>
 		<!-- 浏览器识别工具 Y2018-->
 		<UserAgentUtils.version>1.21</UserAgentUtils.version>
 		<!--支持中文字符和拼音之间的转换 Y2016-->
 		<pinyin4j.version>2.5.1</pinyin4j.version>
 		<!--8583工具-->
-		<jpos.version>2.1.5</jpos.version>
+		<jpos.version>2.1.6</jpos.version>
 		<!--8583工具-->
 		<j8583.version>1.17.0</j8583.version>
 		<!--端到端的JWT创建和验证的Java库 Y2018-->
 		<jjwt.version>0.9.1</jjwt.version>
+		<!-- 阿里巴巴内存业务流程引擎-->
+		<compileflow.version>1.1.0-Beta2</compileflow.version>
 		<!-- 业务流程引擎-->
 		<flowable.version>6.6.0</flowable.version>
 		<flowable-spring-boot-starter-basic.version>${flowable.version}</flowable-spring-boot-starter-basic.version>
@@ -169,50 +170,48 @@
 		<jna.version>5.8.0</jna.version>
 		<jna-platform.version>${jna.version}</jna-platform.version>
 		<!-- JVM性能监控-->
-		<javamelody.version>1.86.0</javamelody.version>
+		<javamelody.version>1.88.0</javamelody.version>
 		<javamelody-spring-boot-starter.version>${javamelody.version}</javamelody-spring-boot-starter.version>
 		<!-- PDF工具-->
 		<itextpdf.version>5.5.13.2</itextpdf.version>
 		<!--日期时间处理库-->
 		<joda-time.version>2.10.10</joda-time.version>
-		<!--Web应用程序框架-->
-		<spark-core.version>2.9.3</spark-core.version>
 		<!--jasypt配置文件加解密-->
 		<jasypt.version>1.9.3</jasypt.version>
 		<jasypt-spring-boot-starter.version>3.0.3</jasypt-spring-boot-starter.version>
 		<!--对象存储服务器-->
-		<minio.version>8.1.0</minio.version>
+		<minio.version>8.3.0</minio.version>
 		<!--alibaba对象存储服务器-->
 		<fastdfs_taobao_client.version>1.27.2</fastdfs_taobao_client.version>
 		<!--加解密-->
-		<bouncycastle.version>1.68</bouncycastle.version>
+		<bouncycastle.version>1.69</bouncycastle.version>
 		<!--基于布式定时任务锁, 实现分布式调度-->
-		<shedlock.version>4.20.1</shedlock.version>
+		<shedlock.version>4.25.0</shedlock.version>
 		<shedlock-provider-jdbc-template.version>${shedlock.version}</shedlock-provider-jdbc-template.version>
 		<shedlock-provider-redis-spring.version>${shedlock.version}</shedlock-provider-redis-spring.version>
 		<shedlock-provider-mongo.version>${shedlock.version}</shedlock-provider-mongo.version>
 		<shedlock-provider-elasticsearch.version>${shedlock.version}</shedlock-provider-elasticsearch.version>
 		<!--alibaba极速操作excel工具-->
-		<easyexcel.version>2.2.7</easyexcel.version>
+		<easyexcel.version>2.2.10</easyexcel.version>
 		<!--poi扩展工具-->
-		<easypoi.version>4.2.0</easypoi.version>
+		<easypoi.version>4.4.0</easypoi.version>
 		<easypoi-spring-boot-starter.version>${easypoi.version}</easypoi-spring-boot-starter.version>
 		<!--微信开发JavaSDK-->
-		<wx-java.version>4.0.0</wx-java.version>
+		<wx-java.version>4.1.0</wx-java.version>
 		<wx-java-spring-boot-starter.version>${wx-java.version}</wx-java-spring-boot-starter.version>
 		<!--聚合支付，封装了微信支付、QQ支付、支付宝支付、京东支付、银联支付、PayPal支付-->
-		<ijpay.version>2.7.3</ijpay.version>
+		<ijpay.version>2.7.6</ijpay.version>
 		<!--分布式调度-->
 		<xxl-job-core.version>2.3.0</xxl-job-core.version>
 		<!--NIO框架-->
-		<tio.version>3.7.1.v20210106-RELEASE</tio.version>
+		<tio.version>3.7.3.v20210706-RELEASE</tio.version>
 		<tio-websocket-spring-boot-starter.version>${tio.version}</tio-websocket-spring-boot-starter.version>
 		<!--AIO框架-->
-		<smartboot-aio.version>1.5.5</smartboot-aio.version>
+		<smartboot-aio.version>1.5.10</smartboot-aio.version>
 		<!--bean copy转换-->
 		<mapstruct.version>1.4.2.Final</mapstruct.version>
 		<!-- 极简的RPC方式的HTTP调用API框架-->
-		<forest-spring-boot-starter.version>1.5.0</forest-spring-boot-starter.version>
+		<forest-spring-boot-starter.version>1.5.1</forest-spring-boot-starter.version>
 		<!--IOS推送通知服务 Y2017-->
 		<apns4j.version>1.1.4</apns4j.version>
 		<!--oracle数据库驱动 -->
@@ -351,6 +350,13 @@
 				<scope>import</scope>
 			</dependency>
 			<dependency>
+				<groupId>com.fujieid</groupId>
+				<artifactId>jap-bom</artifactId>
+				<version>${jap.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
 				<groupId>io.vertx</groupId>
 				<artifactId>vertx-stack-depchain</artifactId>
 				<version>${vertx-bom.version}</version>
@@ -358,6 +364,11 @@
 				<scope>import</scope>
 			</dependency>
 			<!--bom-->
+			<dependency>
+				<groupId>com.sparkjava</groupId>
+				<artifactId>spark-core</artifactId>
+				<version>${spark-core.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.springframework.experimental</groupId>
 				<artifactId>spring-native</artifactId>
@@ -392,36 +403,6 @@
 				<groupId>commons-net</groupId>
 				<artifactId>commons-net</artifactId>
 				<version>${commons-net.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fujieid</groupId>
-				<artifactId>jap-core</artifactId>
-				<version>${jap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fujieid</groupId>
-				<artifactId>jap-social</artifactId>
-				<version>${jap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fujieid</groupId>
-				<artifactId>jap-oauth2</artifactId>
-				<version>${jap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fujieid</groupId>
-				<artifactId>jap-oidc</artifactId>
-				<version>${jap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fujieid</groupId>
-				<artifactId>jap-mfa</artifactId>
-				<version>${jap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fujieid</groupId>
-				<artifactId>jap-simple</artifactId>
-				<version>${jap.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.security.experimental</groupId>
@@ -589,16 +570,6 @@
 				<version>${dynamic-datasource-spring-boot-starter.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.tobato</groupId>
-				<artifactId>fastdfs-client</artifactId>
-				<version>${fastdfs_taobao_client.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.sparkjava</groupId>
-				<artifactId>spark-core</artifactId>
-				<version>${spark-core.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>com.github.jsqlparser</groupId>
 				<artifactId>jsqlparser</artifactId>
 				<version>${jsqlparser.version}</version>
@@ -763,6 +734,11 @@
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
 				<version>${guava.vesion}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba.compileflow</groupId>
+				<artifactId>compileflow</artifactId>
+				<version>${compileflow.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.flowable</groupId>
@@ -1135,9 +1111,39 @@
 				<version>${minio.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.github.tobato</groupId>
+				<artifactId>fastdfs-client</artifactId>
+				<version>${fastdfs_taobao_client.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.yomahub</groupId>
 				<artifactId>tlog-all-spring-boot-starter</artifactId>
-				<version>${tlog-all-spring-boot-starter.version}</version>
+				<version>${tlog-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yomahub</groupId>
+				<artifactId>tlog-feign-spring-boot-starter</artifactId>
+				<version>${tlog-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yomahub</groupId>
+				<artifactId>tlog-xxljob-spring-boot-starter</artifactId>
+				<version>${tlog-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yomahub</groupId>
+				<artifactId>tlog-gateway-spring-boot-starter</artifactId>
+				<version>${tlog-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yomahub</groupId>
+				<artifactId>tlog-web-spring-boot-starter</artifactId>
+				<version>${tlog-spring-boot-starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yomahub</groupId>
+				<artifactId>tlog-soul-spring-boot-starter</artifactId>
+				<version>${tlog-spring-boot-starter.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>net.logstash.logback</groupId>
