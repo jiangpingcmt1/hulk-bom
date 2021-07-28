@@ -62,10 +62,10 @@
 		<sa-token.version>1.24.0</sa-token.version>
 
 		<!--第三方授权登录的工具类库-->
-		<JustAuth.version>1.16.1</JustAuth.version>
+		<JustAuth.version>1.16.2</JustAuth.version>
 		<justauth-spring-boot-starter.version>1.4.0</justauth-spring-boot-starter.version>
 		<!--所有需要身份认证的应用提供一套标准的解决方案，集成所有 APP。方便开发者无缝对接任何第三方应用或者自有系统。-->
-		<jap.version>1.0.2</jap.version>
+		<jap.version>1.0.3</jap.version>
 		<!--谷歌身份验证器 TOTP 参考jap-mfa-->
 		<googleauth.version>1.5.0</googleauth.version>
 		<!--mybatis-->
