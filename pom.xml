@@ -74,7 +74,7 @@
 		<!--MyBatis官方动态SQL扩展-->
 		<mybatis-dynamic-sql.version>1.3.0</mybatis-dynamic-sql.version>
 		<!--mybatis-plus-->
-		<mybatis-plus.version>3.4.3.1</mybatis-plus.version>
+		<mybatis-plus.version>3.4.3.2</mybatis-plus.version>
 		<mybatis-plus-boot-starter.version>${mybatis-plus.version}</mybatis-plus-boot-starter.version>
 		<!--动态数据源-->
 		<dynamic-datasource-spring-boot-starter.version>3.4.0</dynamic-datasource-spring-boot-starter.version>
